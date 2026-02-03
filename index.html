@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang-zh="我的个人网站" data-lang-en="My Personal Website">我的个人网站</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#home" data-lang-zh="我的网站" data-lang-en="My Website">我的网站</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home" data-lang-zh="主頁" data-lang-en="Home">主頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Activities.html" data-lang-zh="課外活動" data-lang-en="Extracurricular Activities">課外活動</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#websites" data-lang-zh="工作與項目經驗" data-lang-en="Work & Project Experience">工作與項目經驗</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tools" data-lang-zh="小工具匯總" data-lang-en="Tools Collection">小工具匯總</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 语言切换按钮 -->
+            <button id="lang-toggle" class="btn btn-outline-light ms-3" data-lang-zh="EN" data-lang-en="中文">EN</button>
+        </div>
+    </nav>
+
+    <!-- 主内容 -->
+    <div class="container mt-5">
+        <!-- Home 部分 -->
+        <section id="home">
+            <h2 data-lang-zh="Home" data-lang-en="Home">Home</h2>
+            <p data-lang-zh="欢迎来到我的个人网站！" data-lang-en="Welcome to my personal website!">欢迎来到我的个人网站！</p>
+            <h3 data-lang-zh="实习项目" data-lang-en="Internship Projects">实习项目</h3>
+            <ul>
+                <li><a href="internship-project1.html" data-lang-zh="实习项目1" data-lang-en="Internship Project 1">实习项目1</a></li>
+                <li><a href="internship-project2.html" data-lang-zh="实习项目2" data-lang-en="Internship Project 2">实习项目2</a></li>
+                <!-- 添加更多链接 -->
+            </ul>
+            <h3 data-lang-zh="学校项目" data-lang-en="School Projects">学校项目</h3>
+            <ul>
+                <li><a href="school-project1.html" data-lang-zh="学校项目1" data-lang-en="School Project 1">学校项目1</a></li>
+                <li><a href="school-project2.html" data-lang-zh="学校项目2" data-lang-en="School Project 2">学校项目2</a></li>
+                <!-- 添加更多链接 -->
+            </ul>
+        </section>
+
+        <!-- 课外活动 部分 -->
+        <section id="activities" class="mt-5">
+            <h2 data-lang-zh="课外活动" data-lang-en="Extracurricular Activities">课外活动</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <h3 data-lang-zh="羽毛球" data-lang-en="Badminton">羽毛球</h3>
+                    <p data-lang-zh="描述羽毛球活动..." data-lang-en="Description of badminton activities...">描述羽毛球活动...</p>
+                </div>
+                <div class="col-md-3">
+                    <h3 data-lang-zh="商赛" data-lang-en="Business Competition">商赛</h3>
+                    <p data-lang-zh="描述商赛活动..." data-lang-en="Description of business competition activities...">描述商赛活动...</p>
+                </div>
+                <div class="col-md-3">
+                    <h3 data-lang-zh="健身" data-lang-en="Fitness">健身</h3>
+                    <p data-lang-zh="描述健身活动..." data-lang-en="Description of fitness activities...">描述健身活动...</p>
+                </div>
+                <div class="col-md-3">
+                    <h3 data-lang-zh="历史" data-lang-en="History">历史</h3>
+                    <p data-lang-zh="描述历史活动..." data-lang-en="Description of history activities...">描述历史活动...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 有用的网站 部分 -->
+        <section id="websites" class="mt-5">
+            <h2 data-lang-zh="有用的网站" data-lang-en="Useful Websites">有用的网站</h2>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <a href="https://example.com" data-lang-zh="网站1" data-lang-en="Website 1">网站1</a> - <span data-lang-zh="简单评价：很有用。" data-lang-en="Simple review: Very useful.">简单评价：很有用。</span>
+                </li>
+                <li class="list-group-item">
+                    <a href="https://example.com" data-lang-zh="网站2" data-lang-en="Website 2">网站2</a> - <span data-lang-zh="简单评价：推荐。" data-lang-en="Simple review: Recommended.">简单评价：推荐。</span>
+                </li>
+                <!-- 添加更多网站 -->
+            </ul>
+        </section>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- 语言切换 JS -->
+    <script>
+        let currentLang = 'zh'; // 默认中文
+
+        function switchLanguage() {
+            currentLang = currentLang === 'zh' ? 'en' : 'zh';
+            const elements = document.querySelectorAll('[data-lang-' + currentLang + ']');
+            elements.forEach(el => {
+                el.textContent = el.getAttribute('data-lang-' + currentLang);
+            });
+            // 更新按钮文本
+            const button = document.getElementById('lang-toggle');
+            button.textContent = currentLang === 'zh' ? 'EN' : '中文';
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // 初始化为中文
+            const elements = document.querySelectorAll('[data-lang-zh]');
+            elements.forEach(el => {
+                el.textContent = el.getAttribute('data-lang-zh');
+            });
+            document.getElementById('lang-toggle').textContent = 'EN';
+        });
+
+        document.getElementById('lang-toggle').addEventListener('click', switchLanguage);
+    </script>
+</body>
+</html>
