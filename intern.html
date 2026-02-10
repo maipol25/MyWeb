@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,12 +14,15 @@
     <!-- 自定义CSS -->
     <link href="css/styles.css" rel="stylesheet">
 </head>
+
 <body>
-    <!-- 导航栏 -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <!-- 導航欄 -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html" data-lang-zh="ZHANG ZHEN IVAN" data-lang-en="ZHANG ZHEN IVAN">ZHANG ZHEN IVAN</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="index.html" data-lang-zh="ZHANG ZHEN IVAN"
+                data-lang-en="ZHANG ZHEN IVAN">ZHANG ZHEN IVAN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -27,80 +31,349 @@
                         <a class="nav-link" href="index.html" data-lang-zh="主頁" data-lang-en="Home">主頁</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="intern.html" data-lang-zh="實習經歷" data-lang-en="Internship Experience">實習經歷</a>
+                        <a class="nav-link active" href="intern.html" data-lang-zh="實習經歷"
+                            data-lang-en="Internship Experience">實習經歷</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="project.html" data-lang-zh="項目經驗" data-lang-en="Project Experience">項目經驗</a>
+                        <a class="nav-link" href="project.html" data-lang-zh="項目經驗"
+                            data-lang-en="Project Experience">項目經驗</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="activities.html" data-lang-zh="興趣" data-lang-en="Activities">興趣</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="tools.html" data-lang-zh="實用工具分享" data-lang-en="Useful Tools Share">實用工具分享</a>
+                        <a class="nav-link" href="tools.html" data-lang-zh="實用工具分享"
+                            data-lang-en="Useful Tools Share">實用工具分享</a>
                     </li>
                 </ul>
             </div>
-            <!-- 语言切换按钮 -->
+            <!-- 語言切換按鈕 -->
             <button id="lang-toggle" class="btn btn-outline-light ms-3" data-lang-zh="EN" data-lang-en="中文">EN</button>
         </div>
     </nav>
-<br>
-    <div class="container mt-5">
-        
-        <h1 class="text-center mb-5" data-lang-zh="實習經歷" data-lang-en="Internship Experience">實習經歷</h1>
-        
+    <br><br><br>
+    <!-- 頭部標題區域 -->
+    <header class="intern-header">
+        <div class="container">
+            <h1 class="fade-in-up" data-aos="fade-down" data-lang-zh="實習經歷" data-lang-en="Internship Experience">實習經歷
+            </h1>
 
-        <!-- URA Internship -->
-        <section class="mb-5">
-            <h2 data-lang-zh="Urban Renewal Authority - IT Intern (AI and Data Analysis)" data-lang-en="Urban Renewal Authority - IT Intern (AI and Data Analysis)">Urban Renewal Authority - IT Intern (AI and Data Analysis)</h2>
-            <p class="text-muted" data-lang-zh="Summer Internship, June to August 2025" data-lang-en="Summer Internship, June to August 2025">Summer Internship, June to August 2025</p>
-                 <p data-lang-zh="我在市區重建局作為IT實習生，主要完成並積累了三個項目的工作經驗，分別是<strong>數據分析，AI優化，自動化工具，</strong>這段經歷令我成長許多，接觸了不少專業的項目，並強化了我在團隊合作和個人技能方面的技巧，以下我會逐個介紹這三個項目。" data-lang-en="As an IT intern at the Urban Renewal Authority, I completed and accumulated experience in three projects: data analysis, AI optimization, and automation tools. This experience helped me grow significantly, exposed me to professional projects, and strengthened my skills in teamwork and personal development. Below, I will introduce each of these three projects in detail.">
-我在市區重建局作為IT實習生，主要完成並積累了三個項目的工作經驗，分別是<strong>數據分析，AI優化，自動化工具，</strong>這段經歷令我成長許多，接觸了不少專業的項目，並強化了我在團隊合作和個人技能方面的技巧，以下我會逐個介紹這三個項目。
-</p>
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="image/cat.jpg" alt="URA Internship" class="img-fluid mb-3">
+        </div>
+    </header>
+
+    <!-- 主要內容區域 -->
+    <div class="container intern-container">
+
+        <!-- URA 實習項目1數據分析-->
+        <div class="intern-card" data-aos="fade-up">
+            <div class="company-header">
+                <h2 class="company-name" data-lang-zh="市區重建局 - IT實習生 (AI與數據分析)"
+                    data-lang-en="Urban Renewal Authority - IT Intern (AI and Data Analysis)">
+                    市區重建局 - IT實習生 (AI與數據分析)
+                </h2>
+                <p class="company-period" data-lang-zh="暑期實習，2025年6月至8月"
+                    data-lang-en="Summer Internship, June to August 2025">
+                    暑期實習，2025年6月至8月
+                </p>
+            </div>
+
+            <div class="company-description">
+                <p data-lang-zh="我在市區重建局作為IT實習生，主要完成並積累了三個項目的工作經驗，分別是<strong>數據分析，AI優化，自動化工具，</strong>這段經歷令我成長許多，接觸不少專業的項目，並強化了我在團隊合作和個人技能方面的技巧。"
+                    data-lang-en="As an IT intern at the Urban Renewal Authority, I completed and accumulated experience in three projects: <strong>data analysis, AI optimization, and automation tools.</strong> This experience helped me grow significantly, exposed me to professional projects, and strengthened my skills in teamwork and personal development.">
+                    我在市區重建局作為IT實習生，主要完成並積累了三個項目的工作經驗，分別是<strong>數據分析，AI優化，自動化工具，</strong>這段經歷令我成長許多，接觸了不少專業的項目，並強化了我在團隊合作和個人技能方面的技巧。
+                </p>
+            </div>
+
+            <!-- 項目一：數據分析 - Tableau -->
+            <div class="row g-4 project-section">
+                <!-- 左側圖片區域 -->
+                <div class="col-lg-6">
+                    <div class="image-container" data-aos="zoom-in">
+                        <img src="image/tableau.png" alt="URA Tableau Dashboard" class="img-fluid">
+                    </div>
                 </div>
-                <div class="col-md-6">
-               
-                    <ul>
-                        <li data-lang-zh="使用Tableau开发关于3800份问卷案例的交互式仪表板用于内部分析" data-lang-en="Developed interactive dashboards using Tableau for internal analysis of 3800 survey cases">使用Tableau开发关于3800份问卷案例的交互式仪表板用于内部分析</li>
-                        <li data-lang-zh="编写AI提示优化AI代理在数据库使用中的性能（工具：N8N）" data-lang-en="Wrote AI prompts to optimize AI agent performance in database usage (Tool: N8N)">编写AI提示优化AI代理在数据库使用中的性能（工具：N8N）</li>
-                        <li data-lang-zh="在一周内制作自动化工具支持内部邮件流程，提高50%效率（工具：Power Apps, Power Automate）" data-lang-en="Created automation tools within a week to support internal email processes, improving efficiency by 50% (Tools: Power Apps, Power Automate)">在一周内制作自动化工具支持内部邮件流程，提高50%效率（工具：Power Apps, Power Automate）</li>
-                        <li data-lang-zh="制作视频教授同事使用URA的AI工具，获得超过500名同事的积极反馈" data-lang-en="Produced videos to teach colleagues how to use URA's AI tools, receiving positive feedback from over 500 colleagues">制作视频教授同事使用URA的AI工具，获得超过500名同事的积极反馈</li>
-                        <li data-lang-zh="测试内部AI工具的图像识别和文本理解能力" data-lang-en="Tested internal AI tools for image recognition and text understanding capabilities">测试内部AI工具的图像识别和文本理解能力</li>
-                    </ul>
+
+                <!-- 右側內容區域 -->
+                <div class="col-lg-6">
+                    <h3 class="project-title">
+                        <i class="fas fa-chart-line"></i>
+                        <span data-lang-zh="項目一：數據分析 - Tableau" data-lang-en="Project One: Data Analysis - Tableau">
+                            項目一：數據分析 - Tableau
+                        </span>
+                    </h3>
+
+                    <!-- 項目詳細信息 -->
+                    <div class="project-details">
+                        <!-- 背景 -->
+                        <div class="detail-item">
+                            <strong data-lang-zh="背景：" data-lang-en="Situation:">背景：</strong>
+                            <span data-lang-zh="市建局為更加了解全港各大廈的需要，對大廈戶主進行實地探訪，並將採訪數據用於未來的支援活動。"
+                                data-lang-en="The Urban Renewal Authority conducted on-site visits to building owners across Hong Kong to better understand their needs, and used the collected interview data for future support activities.">
+                                市建局為更加了解全港各大廈的需要，對大廈戶主進行實地探訪，並將採訪數據用於未來的支援活動。
+                            </span>
+                        </div>
+
+                        <!-- 任務 -->
+                        <div class="detail-item">
+                            <strong data-lang-zh="任務：" data-lang-en="Task:">任務：</strong>
+                            <span data-lang-zh="使用Tableau進行數據可視化，開發dashboard分析採訪結果，將複雜數據轉換為易於理解的圖表和文字。"
+                                data-lang-en="Used Tableau for data visualization and developed dashboards to analyze interview results. Transfers complex data into easy-to-understand charts and text.">
+                                使用Tableau進行數據可視化，開發dashboard分析採訪結果，將複雜數據轉換為易於理解的圖表和文字。
+                            </span>
+                        </div>
+
+                        <!-- 過程 -->
+                        <div class="detail-item">
+                            <strong data-lang-zh="過程：" data-lang-en="Action:">過程：</strong>
+                            <span
+                                data-lang-zh="基於三份主要數據源<strong>(xlsx形式，超過2萬行數據)</strong>，為關鍵問題開發可視化圖表，並針對圖表結果完成約1000字的分析報告，以供決策部門開會分析所用。"
+                                data-lang-en="Based on three main data sources <strong>(in xlsx format, over 20,000 rows of data)</strong>, developed visual charts for key issues and completed approximately 1,000-word analytical reports based on chart results for decision-making meetings.">
+                                基於三份主要數據源<strong>(xlsx形式，超過2萬行數據)</strong>，為關鍵問題開發可視化圖表，並針對圖表結果完成約1000字的分析報告，以供決策部門開會分析所用。
+                            </span>
+                        </div>
+                        <!-- 項目成果 -->
+                        <div class="outcome-section">
+                            <p>
+                                <strong data-lang-zh="成果：" data-lang-en="Result:">成果：</strong>
+                                <span
+                                    data-lang-zh="成功開發多功能的dashboard（timeline，filter，statistic graphs），幫助市建局更好地分析和理解採訪數據，並為決策提供了有價值的見解。"
+                                    data-lang-en="Successfully developed multi-functional dashboards (timeline, filter, statistical graphs), helping the Urban Renewal Authority better analyze and understand interview data, and providing valuable insights for decision-making.">
+                                    成功開發多功能的dashboard（timeline，filter，statistic
+                                    graphs），幫助市建局更好地分析和理解採訪數據，並為決策提供了有價值的見解。
+                                </span>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+        <br>
 
-        <!-- MakeOmnia Internship -->
-        <section class="mb-5">
-            <h2 data-lang-zh="MakeOmnia - Business Assistant (Marketing)" data-lang-en="MakeOmnia - Business Assistant (Marketing)">MakeOmnia - Business Assistant (Marketing)</h2>
-            <p class="text-muted" data-lang-zh="Summer Internship, June to September 2023" data-lang-en="Summer Internship, June to September 2023">Summer Internship, June to September 2023</p>
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="image/cat.jpg" alt="MakeOmnia Internship" class="img-fluid mb-3">
+        <!-- 第二个实习项目 -->
+        <div class="intern-card" data-aos="fade-up" data-aos-delay="100">
+            <br>
+            <!-- 項目一：AI Prompt優化 -->
+            <div class="row g-4 project-section">
+                <!-- 左側圖片區域 -->
+
+                <div class="col-lg-6">
+                    <div class="image-container" data-aos="zoom-in">
+                        <img src="image/n8n.png" alt="Project Image" class="img-fluid project-image">
+                        <p>
+                            <strong data-lang-zh="AI測試：" data-lang-en="AI Testing:">AI測試：</strong>
+                            <span
+                                data-lang-zh="除了優化AI Prompt，我還對URA目前使用的幾個AI模型的圖像識別與信息提取能力進行了詳細測試，包括模型的OCR圖像識別能力測試，測試不同模型是否能準確識別並提取出圖像中的信息，例如銀行信息，身份證明文件，並將結果整理成<strong>易理解的，可量化的</strong>詳盡報告供IT部門參考。"
+                                data-lang-en="Besides optimizing AI prompts, I also conducted detailed testing on several AI models currently used by URA for image recognition and information extraction capabilities, including OCR image recognition testing of models, testing whether different models can accurately identify and extract information from images, such as bank information and identity documents, and compiled the results into <strong>easy-to-understand, quantifiable</strong> comprehensive reports for IT department reference.">
+                                除了優化AI
+                                Prompt，我還對URA目前使用的幾個AI模型的圖像識別與信息提取能力進行了詳細測試，包括模型的OCR圖像識別能力測試，測試不同模型是否能準確識別並提取出圖像中的信息，例如銀行信息，身份證明文件，並將結果整理成<strong>易理解的，可量化的</strong>詳盡報告供IT部門參考。
+                            </span>
+                        </p>
+                        <img src="image/video.png" alt="AI Video" class="img-fluid project-image">
+                    </div>
+                    <br>
+
+                    <p>
+                        <strong data-lang-zh="AI影片：" data-lang-en="AI Video:">AI影片：</strong>
+                        <span
+                            data-lang-zh="我在完成測試和prompt的優化後，製作了一條五分鐘的教學影片，供內部員工了解URA現時的AI模型和學習如何高效使用模型輔助工作，並收穫了同事的高度評價與讚賞。"
+                            data-lang-en="After completing the testing and prompt optimization, I created a five-minute instructional video for internal employees to understand URA's current AI models and learn how to use them efficiently for work assistance, which received high praise and appreciation from colleagues.">
+                            我在完成測試和prompt的優化後，製作了一條五分鐘的教學影片，供內部員工了解URA現時的AI模型和學習如何高效使用模型輔助工作，並收穫了同事的高度評價與讚賞。
+                        </span>
+                    </p>
                 </div>
-                <div class="col-md-6">
-                    <ul>
-                        <li data-lang-zh="撰写市场调研发展提案和教学计划（SWOT分析、竞争产品分析等）" data-lang-en="Wrote market research development proposals and teaching plans (SWOT analysis, competitive product analysis, etc.)">撰写市场调研发展提案和教学计划（SWOT分析、竞争产品分析等）</li>
-                        <li data-lang-zh="为学生教授3D打印工作坊，获得学校和学生的高度赞扬" data-lang-en="Taught 3D printing workshops to students, receiving high praise from schools and students">为学生教授3D打印工作坊，获得学校和学生的高度赞扬</li>
-                        <li data-lang-zh="设计社交媒体营销帖子和海报（Instagram, Facebook）" data-lang-en="Designed social media marketing posts and posters (Instagram, Facebook)">设计社交媒体营销帖子和海报（Instagram, Facebook）</li>
-                        <li data-lang-zh="在展会中运营3D打印产品展位，为政府官员和教育专业人士服务" data-lang-en="Operated 3D printing product booths at exhibitions, serving government officials and education professionals">在展会中运营3D打印产品展位，为政府官员和教育专业人士服务</li>
-                    </ul>
+
+                <!-- 右側內容區域 -->
+                <div class="col-lg-6">
+                    <h3 class="project-title">
+                        <i class="fas fa-project-diagram"></i>
+                        <span data-lang-zh="項目二：AI prompt優化與測試-N8N"
+                            data-lang-en="Project Two: AI Prompt Optimization and Testing - N8N">
+                            項目二：AI prompt優化與測試-N8N
+                        </span>
+                    </h3>
+
+                    <!-- 項目詳細信息 -->
+                    <div class="project-details">
+                        <!-- 背景 -->
+                        <div class="detail-item">
+                            <strong data-lang-zh="背景：" data-lang-en="Situation:">背景：</strong>
+                            <span data-lang-zh="市建局希望提升本地AI模型的性能，需要我通過優化prompt來提高模型的功能性和效率，以更好地支持業務需求。"
+                                data-lang-en="The Urban Renewal Authority wanted to improve the performance of local AI models, requiring me to enhance model functionality and efficiency through prompt optimization to better support business needs.">
+                                市建局希望提升本地AI模型的性能，需要我通過優化prompt來提高模型的功能性和效率，以更好地支持業務需求。
+                            </span>
+                        </div>
+
+                        <!-- 任務 -->
+                        <div class="detail-item">
+                            <strong data-lang-zh="任務：" data-lang-en="Task:">任務：</strong>
+                            <span data-lang-zh="對現有的一個負責輔助員工查詢內部數據庫的AI模型進行優化，提升其準確性和響應速度，並使用N8N平台進行自動化測試以評估優化效果。"
+                                data-lang-en="Optimize an existing AI model responsible for assisting employees in querying internal databases, improving its accuracy and response speed, and use the N8N platform for automated testing to evaluate optimization effectiveness.">
+                                對現有的一個負責輔助員工查詢內部數據庫的AI模型進行優化，提升其準確性和響應速度，並使用N8N平台進行自動化測試以評估優化效果。
+                            </span>
+                        </div>
+
+                        <!-- 過程 -->
+                        <div class="detail-item">
+                            <strong data-lang-zh="過程：" data-lang-en="Action:">過程：</strong>
+                            <span
+                                data-lang-zh="將原本prompt質量欠佳的AI model prompt優化為更具體和結構化的格式，例如提供項目背景，教會AI查詢數據的正確流程，並使用N8N平台進行自動化測試，以評估優化後prompt對模型性能的提升效果。"
+                                data-lang-en="Transformed the originally poor-quality AI model prompts into more specific and structured formats, such as providing project background and teaching AI the correct data querying process, and used the N8N platform for automated testing to evaluate the performance improvement effect of optimized prompts on model performance.">
+                                將原本prompt質量欠佳的AI model
+                                prompt優化為更具體和結構化的格式，例如提供項目背景，教會AI查詢數據的正確流程，並使用N8N平台進行自動化測試，以評估優化後prompt對模型性能的提升效果。
+                            </span>
+                        </div>
+
+                        <!-- 項目成果 -->
+                        <div class="outcome-section">
+                            <p>
+                                <strong data-lang-zh="成果：" data-lang-en="Result:">成果：</strong>
+                                <span data-lang-zh="AI模型的準確性提升了50%，響應速度提升了20%，優化後的prompt成功幫助員工更高效地查詢內部數據庫，顯示優化效果顯著。"
+                                    data-lang-en="The AI model's accuracy improved by 50%, response speed increased by 20%, and the optimized prompts successfully helped employees query internal databases more efficiently, demonstrating significant optimization effects.">
+                                    AI模型的準確性提升了50%，響應速度提升了20%，優化後的prompt成功幫助員工更高效地查詢內部數據庫，顯示優化效果顯著。
+                                </span>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <!-- 可以添加更多实习 -->
+        <br>
+        <!-- 第三个实习项目 -->
+        <div class="intern-card" data-aos="fade-up" data-aos-delay="200">
+            <br>
+            <!-- 項目一：項目名稱 - 技術/工具 -->
+            <div class="row g-4 project-section">
+                <!-- 左側圖片區域 -->
+                <div class="col-lg-6">
+                    <div class="image-container" data-aos="zoom-in">
+                        <img src="image/email.png" alt="Project Image" class="img-fluid">
+                    </div>
+                </div>
+
+                <!-- 右側內容區域 -->
+                <div class="col-lg-6">
+                    <h3 class="project-title">
+                        <i class="fas fa-project-diagram"></i>
+                        <span data-lang-zh="項目三：Incoming Mail Register-Power Apps/Power Automate"
+                            data-lang-en="Project Three: Incoming Mail Register-Power Apps - Power Automate">
+                            項目三：Incoming Mail Register-Power Apps/Power Automate
+                        </span>
+                        </span>
+                    </h3>
+
+                    <!-- 項目詳細信息 -->
+                    <div class="project-details">
+                        <!-- 背景 -->
+                        <div class="detail-item">
+                            <strong data-lang-zh="背景：" data-lang-en="Situation:">背景：</strong>
+                            <span data-lang-zh="URA曾使用Excel VBA為員工提供自動email填寫功能，但由於VBA效率較低，不方便數據管理，便希望轉移到Power Apps這個更加強大的平台"
+                                data-lang-en="Describe the background situation of the project, such as business requirements, technical challenges, or market opportunities and other environmental factors.">
+                                描述項目產生的背景情況，比如業務需求、技術挑戰或者市場機會等相關環境因素。
+                            </span>
+                        </div>
+
+                        <!-- 任務 -->
+                        <div class="detail-item">
+                            <strong data-lang-zh="任務：" data-lang-en="Task:">任務：</strong>
+                            <span data-lang-zh="使用Power Apps和Power Automate建立一個自動填寫email的應用程式，並使用Power Automate建立自動寄送email的流程，提升員工處理email的效率和準確性。"
+                                data-lang-en="Clearly state your specific responsibilities in this project and the work objectives and deliverables that need to be completed.">
+                                明確說明你在這個項目中承擔的具體職責和需要完成的工作目標及交付成果。
+                            </span>
+                        </div>
+
+                        <!-- 過程 -->
+                        <div class="detail-item">
+                            <strong data-lang-zh="過程：" data-lang-en="Action:">過程：</strong>
+                            <span data-lang-zh="首先，我重新設計了Power Apps應用程式的界面，使其相較於原來更加簡潔清晰，對用戶友好，其次，使用Power Automate建立自動寄送email的流程。在開發過程中，將程式收集到數據同步到SharePoint，解決了長期數據維護和用戶體驗方面的問題。"
+                                data-lang-en="Describe in detail the project execution steps, technical methods used, challenges encountered, and solutions to key links.">
+                                詳細描述項目執行的步驟流程，使用的技術方法，遇到的挑戰以及解決方案等關鍵環節。
+                            </span>
+                        </div>
+
+                        <!-- 項目成果 -->
+                        <div class="outcome-section">
+                            <p>
+                                <strong data-lang-zh="成果：" data-lang-en="Result:">成果：</strong>
+                                <span data-lang-zh="完成Incoming Mail Register的平台轉移，並使用Power Automate建立自動寄送email的流程，提升員工處理email的效率和準確性。"
+                                    data-lang-en="Quantify the specific results achieved by the project, such as efficiency improvement percentage, user growth numbers, cost savings amount, and other measurable indicators.">
+                                    量化展示項目取得的具體成果，如效率提升百分比、用戶增長數量、成本節省金額等可衡量指標。
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+
+        <br>
+        <!-- MakeOmnia 實習項目 -->
+        <div class="intern-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="company-header">
+                <h2 class="company-name" data-lang-zh="MakeOmnia - 商務助理 (市場營銷)"
+                    data-lang-en="MakeOmnia - Business Assistant (Marketing)">
+                    MakeOmnia - 商務助理 (市場營銷)
+                </h2>
+                <p class="company-period" data-lang-zh="暑期實習，2023年6月至9月"
+                    data-lang-en="Summer Internship, June to September 2023">
+                    暑期實習，2023年6月至9月
+                </p>
+            </div>
+
+            <div class="row g-4 project-section">
+                <div class="col-lg-6">
+                    <div class="image-container" data-aos="zoom-in">
+                        <img src="image/cat.jpg" alt="MakeOmnia Internship" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <i class="fas fa-file-alt me-2"></i>
+                            <span data-lang-zh="撰写市场调研发展提案和教学计划（SWOT分析、竞争产品分析等）"
+                                data-lang-en="Wrote market research development proposals and teaching plans (SWOT analysis, competitive product analysis, etc.)">
+                                撰写市场调研发展提案和教学计划（SWOT分析、竞争产品分析等）
+                            </span>
+                        </div>
+
+                        <div class="detail-item">
+                            <i class="fas fa-chalkboard-teacher me-2"></i>
+                            <span data-lang-zh="为学生教授3D打印工作坊，获得学校和学生的高度赞扬"
+                                data-lang-en="Taught 3D printing workshops to students, receiving high praise from schools and students">
+                                为学生教授3D打印工作坊，获得学校和学生的高度赞扬
+                            </span>
+                        </div>
+
+                        <div class="detail-item">
+                            <i class="fas fa-paint-brush me-2"></i>
+                            <span data-lang-zh="设计社交媒体营销帖子和海报（Instagram, Facebook）"
+                                data-lang-en="Designed social media marketing posts and posters (Instagram, Facebook)">
+                                设计社交媒体营销帖子和海报（Instagram, Facebook）
+                            </span>
+                        </div>
+
+                        <div class="detail-item">
+                            <i class="fas fa-handshake me-2"></i>
+                            <span data-lang-zh="在展会中运营3D打印产品展位，为政府官员和教育专业人士服务"
+                                data-lang-en="Operated 3D printing product booths at exhibitions, serving government officials and education professionals">
+                                在展会中运营3D打印产品展位，为政府官员和教育专业人士服务
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 可以添加更多實習 -->
     </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- 自定义JS -->
+    <!-- 自定義JS -->
     <script src="js/script.js"></script>
 </body>
+
 </html>
