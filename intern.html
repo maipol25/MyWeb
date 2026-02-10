@@ -182,8 +182,8 @@
                     </p>
                 </div>
 
-                <!-- 右側內容區域 -->
-                <div class="col-lg-6">
+                <!-- 右側內容區域 - 使用内联样式确保紧凑布局 -->
+                <div class="col-lg-6" style="align-self: flex-start;">
                     <h3 class="project-title">
                         <i class="fas fa-project-diagram"></i>
                         <span data-lang-zh="項目二：AI prompt優化與測試-N8N"
@@ -193,9 +193,9 @@
                     </h3>
 
                     <!-- 項目詳細信息 -->
-                    <div class="project-details">
+                    <div class="project-details" style="display: flex; flex-direction: column; gap: 0.6rem; padding: 1.3rem;">
                         <!-- 背景 -->
-                        <div class="detail-item">
+                        <div class="detail-item" style="margin-bottom: 0.6rem !important; flex-shrink: 0;">
                             <strong data-lang-zh="背景：" data-lang-en="Situation:">背景：</strong>
                             <span data-lang-zh="市建局希望提升本地AI模型的性能，需要我通過優化prompt來提高模型的功能性和效率，以更好地支持業務需求。"
                                 data-lang-en="The Urban Renewal Authority wanted to improve the performance of local AI models, requiring me to enhance model functionality and efficiency through prompt optimization to better support business needs.">
@@ -204,7 +204,7 @@
                         </div>
 
                         <!-- 任務 -->
-                        <div class="detail-item">
+                        <div class="detail-item" style="margin-bottom: 0.6rem !important; flex-shrink: 0;">
                             <strong data-lang-zh="任務：" data-lang-en="Task:">任務：</strong>
                             <span data-lang-zh="對現有的一個負責輔助員工查詢內部數據庫的AI模型進行優化，提升其準確性和響應速度，並使用N8N平台進行自動化測試以評估優化效果。"
                                 data-lang-en="Optimize an existing AI model responsible for assisting employees in querying internal databases, improving its accuracy and response speed, and use the N8N platform for automated testing to evaluate optimization effectiveness.">
@@ -213,7 +213,7 @@
                         </div>
 
                         <!-- 過程 -->
-                        <div class="detail-item">
+                        <div class="detail-item" style="margin-bottom: 0.6rem !important; flex-shrink: 0;">
                             <strong data-lang-zh="過程：" data-lang-en="Action:">過程：</strong>
                             <span
                                 data-lang-zh="將原本prompt質量欠佳的AI model prompt優化為更具體和結構化的格式，例如提供項目背景，教會AI查詢數據的正確流程，並使用N8N平台進行自動化測試，以評估優化後prompt對模型性能的提升效果。"
@@ -224,7 +224,7 @@
                         </div>
 
                         <!-- 項目成果 -->
-                        <div class="outcome-section">
+                        <div class="outcome-section" style="margin-bottom: 0 !important; flex-shrink: 0;">
                             <p>
                                 <strong data-lang-zh="成果：" data-lang-en="Result:">成果：</strong>
                                 <span data-lang-zh="AI模型的準確性提升了50%，響應速度提升了20%，優化後的prompt成功幫助員工更高效地查詢內部數據庫，顯示優化效果顯著。"
