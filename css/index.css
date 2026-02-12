@@ -1,0 +1,323 @@
+/* ══════════════════════════════════════════════════════════════════════════════ */
+/*                              INDEX.HTML STYLES                               */
+/*                           首頁專屬樣式 (index.html) - 调整版                 */
+/* ══════════════════════════════════════════════════════════════════════════════ */
+
+/* 主容器樣式 */
+.main-container {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding-top: 5px; /* 减少顶部padding */
+    position: relative;
+    overflow: hidden;
+}
+
+.main-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+}
+
+/* 左側個人資訊區域 */
+.personal-info-column {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 20px; /* 减少顶部padding */
+    color: white;
+}
+
+.personal-info-wrapper {
+    max-width: 600px;
+    width: 100%;
+    text-align: left;
+}
+
+.welcome-text {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.main-title {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+    font-weight: 800;
+    background: linear-gradient(45deg, #ffffff, #e0e0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 個人信息文字樣式 */
+.info-content {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.info-text {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.info-text:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(5px);
+}
+
+.info-icon {
+    margin-right: 15px;
+    font-size: 1.2rem;
+    color: #667eea;
+    min-width: 25px;
+}
+
+.career-objective {
+    background: rgba(102, 126, 234, 0.2) !important;
+    border-left: 4px solid #667eea;
+}
+
+.career-objective:hover {
+    background: rgba(102, 126, 234, 0.3) !important;
+}
+
+/* 右側探索區域 */
+.explore-column {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 40px; /* 减少顶部padding */
+    color: white;
+}
+
+.explore-wrapper {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.explore-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 40px;
+    position: relative;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.explore-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(45deg, #ffffff, #e0e0ff);
+    border-radius: 2px;
+}
+
+/* 探索網格布局 */
+.explore-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.explore-item {
+    transition: all 0.3s ease;
+}
+
+.explore-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.explore-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.explore-card:hover {
+    transform: translateY(-15px) scale(1.05);
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.explore-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: white;
+    transition: all 0.3s ease;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.explore-card:hover .explore-icon {
+    transform: scale(1.2);
+    color: #667eea;
+}
+
+.explore-card h3 {
+    font-weight: 600;
+    margin: 0;
+    color: white;
+    transition: all 0.3s ease;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    font-size: 1.3rem;
+}
+
+/* 響應式設計 */
+@media (max-width: 992px) {
+    .personal-info-column,
+    .explore-column {
+        padding: 20px 30px; /* 进一步减少padding */
+        justify-content: center;
+    }
+    
+    .personal-info-wrapper,
+    .explore-wrapper {
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    .main-title {
+        font-size: 2.8rem;
+    }
+    
+    .explore-title {
+        font-size: 2.2rem;
+    }
+    
+    .info-text {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        padding-top: 80px; /* 移动端适当增加一点padding */
+    }
+    
+    .row {
+        flex-direction: column;
+    }
+    
+    .personal-info-column,
+    .explore-column {
+        width: 100%;
+        padding: 20px 15px; /* 移动端padding */
+    }
+    
+    .main-title {
+        font-size: 2.5rem;
+    }
+    
+    .explore-title {
+        font-size: 2rem;
+    }
+    
+    .explore-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .explore-card {
+        padding: 20px 15px;
+    }
+    
+    .explore-icon {
+        font-size: 2.5rem;
+    }
+    
+    .explore-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .info-content {
+        padding: 20px;
+    }
+    
+    .info-text {
+        padding: 10px 12px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .explore-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .main-title {
+        font-size: 2rem;
+    }
+    
+    .explore-title {
+        font-size: 1.8rem;
+    }
+    
+    .welcome-text {
+        font-size: 1.5rem;
+    }
+}
+
+/* 郵箱鏈接樣式 */
+.email-link {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+}
+
+.email-link:hover {
+    color: #667eea;
+    border-bottom: 1px solid #667eea;
+    transform: translateX(2px);
+}
+
+/* 為了保持樣式一致性，也可以添加電話號碼的鏈接 */
+.phone-link {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+}
+
+.phone-link:hover {
+    color: #667eea;
+    border-bottom: 1px solid #667eea;
+    transform: translateX(2px);
+}
