@@ -12,8 +12,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- 自定义CSS -->
+    <!-- 通用CSS -->
     <link href="css/styles.css" rel="stylesheet">
+    <!-- 首页專用CSS -->
+    <link href="css/index.css" rel="stylesheet">
 </head>
 
 <body>
@@ -40,7 +42,8 @@
                             data-lang-en="Project Experience">項目經驗</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="activities.html" data-lang-zh="興趣" data-lang-en="Activities">興趣</a>
+                        <a class="nav-link" href="activities.html" data-lang-zh="興趣與活動"
+                            data-lang-en="Hobbies and Activities">興趣與活動</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="tools.html" data-lang-zh="實用工具分享"
@@ -53,92 +56,102 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-8">
-                    <p class="welcome-text" data-lang-zh="歡迎光臨Ivan的小站" data-lang-en="Welcome to Ivan's Personal Website"
-                        data-aos="fade-down">歡迎光臨Ivan的個人網站</p>
-                    <h1 data-lang-zh="張楨 Ivan" data-lang-en="ZHANG ZHEN IVAN" data-aos="fade-up" data-aos-delay="200">
-                        ZHANG ZHEN IVAN</h1>
+    <!-- 主要內容區域 -->
+    <div class="main-container">
+        <div class="container-fluid">
+            <div class="row min-vh-100 align-items-center">
+                <!-- 左側：個人資訊 -->
+                <div class="col-lg-6 personal-info-column">
+                    <div class="personal-info-wrapper" data-aos="fade-right">
+                        <p class="welcome-text" data-lang-zh="歡迎光臨Ivan的小站"
+                            data-lang-en="Welcome to Ivan's Personal Website">
+                            歡迎光臨Ivan的小站
+                        </p>
+                        <h1 class="main-title" data-lang-zh="張楨 Ivan" data-lang-en="ZHANG ZHEN IVAN">
+                            張楨 Ivan
+                        </h1>
 
-                    <!-- 整合的個人資訊容器 -->
-                    <div class="info-container" data-aos="fade-up" data-aos-delay="400">
                         <div class="info-content">
-                            <p>
-                                <i class="fas fa-graduation-cap"></i>
-                                <span data-lang-zh="香港城市大學(2022-2026)-主修資訊管理，輔修電腦"
-                                    data-lang-en="City University of Hong Kong - Major in Information Management , Minor in Computing(2022-2026)">
-                                    香港城市大學(2022-2026)-主修資訊管理，輔修電腦
+                            <p class="info-text">
+                                <i class="fas fa-graduation-cap info-icon"></i>
+                                <span data-lang-zh="香港城市大學(2022-2026)-主修資訊管理，輔修計算機科學"
+                                    data-lang-en="City University of Hong Kong(2022-2026) - Major in Information Management , Minor in Computing">
+                                    香港城市大學(2022-2026)-主修資訊管理，輔修計算機科學
                                 </span>
                             </p>
-                            <p>
-                                <i class="fas fa-phone"></i>
+
+                            <p class="info-text">
+                                <i class="fas fa-phone info-icon"></i>
                                 <span>+852 56012597</span>
-                                <i class="fas fa-envelope"></i>
-                                <span>ivanzhang973@gmail.com</span>
+                                <i class="fas fa-envelope info-icon ms-3"></i>
+                                <!-- 添加邮箱超链接 -->
+                                <a href="mailto:ivanzhang973@gmail.com" class="email-link">
+                                    <span>ivanzhang973@gmail.com</span>
+                                </a>
                             </p>
-                          
-                            <p>
-                                <i class="fas fa-bullseye"></i>
-                                <span class="career-text"
+
+                            <p class="info-text career-objective">
+                                <i class="fas fa-bullseye info-icon"></i>
+                                <span
                                     data-lang-zh="求職意向：Graduate Trainee(Business/Technology) / Junior Product Manager / Business Analyst/ Data Analyst"
                                     data-lang-en="Career Goal: Graduate Trainee(Business/Technology) / Junior Product Manager / Business Analyst / Data Analyst">
-                                    求職意向：Graduate Trainee(Business/Technology) / Junior Product Manager / Business Analyst / Data Analyst
+                                    求職意向：Graduate Trainee(Business/Technology) / Junior Product Manager / Business
+                                    Analyst / Data Analyst
                                 </span>
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 text-center">
-                    <div class="profile-avatar" data-aos="zoom-in" data-aos-delay="600"></div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Explore Section -->
-    <section class="section bg-light">
-        <div class="container">
-            <h2 class="explore-title text-center" data-lang-zh="探索更多" data-lang-en="Explore More" data-aos="fade-up">
-                探索更多</h2>
-            <div class="row text-center">
-                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
-                    <a href="intern.html" class="text-decoration-none">
-                        <div class="circle-link">
-                            <i class="fas fa-briefcase fa-3x mb-3"></i>
-                            <h5 data-lang-zh="實習經歷" data-lang-en="Internship">實習經歷</h5>
+                <!-- 右側：探索區域 -->
+                <div class="col-lg-6 explore-column">
+                    <div class="explore-wrapper" data-aos="fade-left">
+                        <h2 class="explore-title" data-lang-zh="探索更多" data-lang-en="Explore More">
+                            探索更多
+                        </h2>
+
+                        <div class="explore-grid">
+                            <div class="explore-item" data-aos="fade-up" data-aos-delay="200">
+                                <a href="intern.html" class="explore-link">
+                                    <div class="explore-card">
+                                        <i class="fas fa-briefcase explore-icon"></i>
+                                        <h3 data-lang-zh="實習經歷" data-lang-en="Internship">實習經歷</h3>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="explore-item" data-aos="fade-up" data-aos-delay="400">
+                                <a href="project.html" class="explore-link">
+                                    <div class="explore-card">
+                                        <i class="fas fa-project-diagram explore-icon"></i>
+                                        <h3 data-lang-zh="項目經驗" data-lang-en="Projects">項目經驗</h3>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="explore-item" data-aos="fade-up" data-aos-delay="600">
+                                <a href="activities.html" class="explore-link">
+                                    <div class="explore-card">
+                                        <i class="fas fa-heart explore-icon"></i>
+                                        <h3 data-lang-zh="興趣與活動" data-lang-en="Hobbies and Activities">興趣與活動</h3>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="explore-item" data-aos="fade-up" data-aos-delay="800">
+                                <a href="tools.html" class="explore-link">
+                                    <div class="explore-card">
+                                        <i class="fas fa-tools explore-icon"></i>
+                                        <h3 data-lang-zh="實用工具" data-lang-en="Tools">實用工具</h3>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
-                    </a>
-                </div>
-                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="400">
-                    <a href="project.html" class="text-decoration-none">
-                        <div class="circle-link">
-                            <i class="fas fa-project-diagram fa-3x mb-3"></i>
-                            <h5 data-lang-zh="項目經驗" data-lang-en="Projects">項目經驗</h5>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="600">
-                    <a href="activities.html" class="text-decoration-none">
-                        <div class="circle-link">
-                            <i class="fas fa-heart fa-3x mb-3"></i>
-                            <h5 data-lang-zh="興趣" data-lang-en="Activities">興趣</h5>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="800">
-                    <a href="tools.html" class="text-decoration-none">
-                        <div class="circle-link">
-                            <i class="fas fa-tools fa-3x mb-3"></i>
-                            <h5 data-lang-zh="實用工具" data-lang-en="Tools">實用工具</h5>
-                        </div>
-                    </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
