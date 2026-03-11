@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>实用工具分享</title>
+    <title data-lang-zh="實用工具分享" data-lang-en="Useful Tools Share">实用工具分享</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -12,13 +12,16 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- 自定义CSS -->
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/tools.css" rel="stylesheet">
 </head>
 <body>
-    <!-- 导航栏 -->
+    <!-- 導航欄 -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html" data-lang-zh="ZHANG ZHEN IVAN" data-lang-en="ZHANG ZHEN IVAN">ZHANG ZHEN IVAN</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="index.html" data-lang-zh="ZHANG ZHEN IVAN"
+                data-lang-en="ZHANG ZHEN IVAN">ZHANG ZHEN IVAN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -27,81 +30,142 @@
                         <a class="nav-link" href="index.html" data-lang-zh="主頁" data-lang-en="Home">主頁</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="intern.html" data-lang-zh="實習經歷" data-lang-en="Internship Experience">實習經歷</a>
+                        <a class="nav-link" href="activities.html" data-lang-zh="個人簡介與課外活動"
+                            data-lang-en="About Me and Extracurricular Activities">個人簡介與課外活動</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="project.html" data-lang-zh="項目經驗" data-lang-en="Project Experience">項目經驗</a>
+                        <a class="nav-link" href="intern.html" data-lang-zh="實習經歷"
+                            data-lang-en="Internship Experience">實習經歷</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="activities.html" data-lang-zh="興趣與活動" data-lang-en="Hobbies and Activities">興趣與活動</a>
+                        <a class="nav-link" href="project.html" data-lang-zh="項目經驗"
+                            data-lang-en="Project Experience">項目經驗</a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link active" href="tools.html" data-lang-zh="實用工具分享" data-lang-en="Useful Tools Share">實用工具分享</a>
+                        <a class="nav-link" href="tools.html" data-lang-zh="實用工具分享"
+                            data-lang-en="Useful Tools Share">實用工具分享</a>
                     </li>
                 </ul>
             </div>
-            <!-- 语言切换按钮 -->
+            <!-- 語言切換按鈕 -->
             <button id="lang-toggle" class="btn btn-outline-light ms-3" data-lang-zh="EN" data-lang-en="中文">EN</button>
         </div>
     </nav>
 <br>
     <div class="container mt-5">
         
-        <h1 class="text-center mb-5" data-lang-zh="實用工具分享" data-lang-en="Useful Tools Share">實用工具分享</h1>
-        <p>感謝你訪問我的網站，這個頁面是一些我用來提升生產力，或有趣好用的工具/網站，算是我準備的一點小禮物，希望對你有幫助。</p>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="skill-item">
-                    <h5 data-lang-zh="Office & Excel" data-lang-en="Office & Excel">Office & Excel</h5>
-                    <p data-lang-zh="熟练使用Microsoft Office和高级Excel功能：Lookup, VBA, Pivot Table, What-if Analysis, 数据可视化。" data-lang-en="Proficient in Microsoft Office and advanced Excel functions: Lookup, VBA, Pivot Table, What-if Analysis, data visualization.">熟练使用Microsoft Office和高级Excel功能：Lookup, VBA, Pivot Table, What-if Analysis, 数据可视化。</p>
-                </div>
+        <header class="tools-header">
+            <h1 data-lang-zh="實用工具分享" data-lang-en="Useful Tools Share">實用工具分享</h1>
+        </header>
+        
+        <div class="tools-intro-wrapper" data-aos="fade-up">
+            <div class="intro-icon">
+                <i class="fas fa-lightbulb"></i>
             </div>
-            <div class="col-md-6">
-                <div class="skill-item">
-                    <h5 data-lang-zh="Python" data-lang-en="Python">Python</h5>
-                    <p data-lang-zh="数据处理：Numpy, Pandas, Matplotlib, Beautiful Soup, Statsmodels, Scikit-learn。" data-lang-en="Data Processing: Numpy, Pandas, Matplotlib, Beautiful Soup, Statsmodels, Scikit-learn.">数据处理：Numpy, Pandas, Matplotlib, Beautiful Soup, Statsmodels, Scikit-learn。</p>
-                </div>
-            </div>
+            <p class="tools-intro" data-lang-zh="非常感謝你願意花費寶貴的時間訪問我的網站，<span class='highlight'>相遇即是緣分</span>。這個頁面是我精心挑選的實用工具與有趣網站，旨在<span class='highlight'>授人以漁</span>，純屬主觀推薦。點擊右側按鈕即可直接訪問對應網站，希望這些資源能為你的學習和工作帶來幫助！" data-lang-en="Thank you very much for taking your precious time to visit my website. <span class='highlight'>It's fate that we meet here</span>. This page features carefully selected practical tools and interesting websites, aiming to <span class='highlight'>teach you how to fish</span> rather than just giving you fish. These are purely personal recommendations. Click the button on the right to visit the corresponding website directly. I hope these resources can help with your learning and work!">
+                非常感謝你願意花費寶貴的時間訪問我的網站，<span class="highlight">相遇即是緣分</span>。這個頁面是我精心挑選的實用工具與有趣網站，旨在<span class="highlight">授人以漁</span>，純屬主觀推薦。點擊右側按鈕即可直接訪問對應網站，希望這些資源能為你的學習和工作帶來幫助！
+            </p>
         </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="skill-item">
-                    <h5 data-lang-zh="Tableau/Power BI" data-lang-en="Tableau/Power BI">Tableau/Power BI</h5>
-                    <p data-lang-zh="数据可视化，制作交互式仪表板和分析报告。" data-lang-en="Data visualization, creating interactive dashboards and analytical reports.">数据可视化，制作交互式仪表板和分析报告。</p>
+
+        <div class="tools-table">
+            <div class="tool-row">
+                <div class="tool-desc">
+                    <h5 data-lang-zh="📺 觀看全世界的電視" data-lang-en="📺 Watch TV from Around the World">📺 觀看全世界的電視</h5>
+                    <p data-lang-zh="在线观看全球各地的电视频道，探索不同国家和地区的电视节目。" data-lang-en="Watch live TV channels from around the globe online. Explore TV programs from different countries and regions.">在线观看全球各地的电视频道，探索不同国家和地区的电视节目。</p>
+                </div>
+                <div class="tool-link">
+                    <a href="https://tv.garden/" target="_blank" rel="noopener" data-lang-zh="立即訪問" data-lang-en="Visit Now">立即訪問</a>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="skill-item">
-                    <h5 data-lang-zh="SQL" data-lang-en="SQL">SQL</h5>
-                    <p data-lang-zh="商业SQL：数据检索、操作、管理关系数据库。" data-lang-en="Business SQL: Data retrieval, manipulation, and management of relational databases.">商业SQL：数据检索、操作、管理关系数据库。</p>
+
+            <div class="tool-row">
+                <div class="tool-desc">
+                    <h5 data-lang-zh="📻 收聽全世界的電台" data-lang-en="📻 Listen to Radio Worldwide">📻 收聽全世界的電台</h5>
+                    <p data-lang-zh="收听来自世界各地的广播电台，体验不同文化和音乐风格。" data-lang-en="Listen to radio stations from all over the world. Experience different cultures and music styles.">收听来自世界各地的广播电台，体验不同文化和音乐风格。</p>
+                </div>
+                <div class="tool-link">
+                    <a href="http://radio.garden" target="_blank" rel="noopener" data-lang-zh="立即訪問" data-lang-en="Visit Now">立即訪問</a>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="skill-item">
-                    <h5 data-lang-zh="R/SAS" data-lang-en="R/SAS">R/SAS</h5>
-                    <p data-lang-zh="数据可视化、回归模型、数据操作、机器学习、统计分析、数据处理。" data-lang-en="Data visualization, regression models, data manipulation, machine learning, statistical analysis, data processing.">数据可视化、回归模型、数据操作、机器学习、统计分析、数据处理。</p>
+
+            <div class="tool-row">
+                <div class="tool-desc">
+                    <h5 data-lang-zh="🤖 AI 工具大合集" data-lang-en="🤖 AI Tools Collection">🤖 AI 工具大合集</h5>
+                    <p data-lang-zh="搜罗市面上大部分 AI 工具，一站式发现最新的 AI 应用和资源。" data-lang-en="Discover most AI tools available on the market. Find the latest AI applications and resources in one place.">搜罗市面上大部分 AI 工具，一站式发现最新的 AI 应用和资源。</p>
+                </div>
+                <div class="tool-link">
+                    <a href="https://ai-bio.cn/" target="_blank" rel="noopener" data-lang-zh="立即訪問" data-lang-en="Visit Now">立即訪問</a>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="skill-item">
-                    <h5 data-lang-zh="AI Tools" data-lang-en="AI Tools">AI Tools</h5>
-                    <p data-lang-zh="AI工具提示和代理经验，熟悉主流AI工具如GPT, Gemini, Tongyi, Deepseek。" data-lang-en="AI tool prompts and agent experience, familiar with mainstream AI tools like GPT, Gemini, Tongyi, Deepseek.">AI工具提示和代理经验，熟悉主流AI工具如GPT, Gemini, Tongyi, Deepseek。</p>
+
+            <div class="tool-row">
+                <div class="tool-desc">
+                    <h5 data-lang-zh="📄 PDF 編輯工具" data-lang-en="📄 PDF Editing Tools">📄 PDF 編輯工具</h5>
+                    <p data-lang-zh="提供大量免费的 PDF 功能，包括转换、编辑、合并、压缩等。" data-lang-en="Provides extensive free PDF functions including conversion, editing, merging, compression, and more.">提供大量免费的 PDF 功能，包括转换、编辑、合并、压缩等。</p>
+                </div>
+                <div class="tool-link">
+                    <a href="https://www.ilovepdf.com/zh-tw" target="_blank" rel="noopener" data-lang-zh="立即訪問" data-lang-en="Visit Now">立即訪問</a>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="skill-item">
-                    <h5 data-lang-zh="HTML+CSS+JavaScript" data-lang-en="HTML+CSS+JavaScript">HTML+CSS+JavaScript</h5>
-                    <p data-lang-zh="数据爬取和网站开发及设计概念知识。" data-lang-en="Data scraping and website development and design concept knowledge.">数据爬取和网站开发及设计概念知识。</p>
+
+            <div class="tool-row">
+                <div class="tool-desc">
+                    <h5 data-lang-zh="📚 Z-Library 電子書搜索" data-lang-en="📚 Z-Library E-book Search">📚 Z-Library 電子書搜索</h5>
+                    <p data-lang-zh="超强电子书搜索网站，拥有丰富的电子图书资源。" data-lang-en="Powerful e-book search engine with an extensive collection of digital books.">超强电子书搜索网站，拥有丰富的电子图书资源。</p>
+                </div>
+                <div class="tool-link">
+                    <a href="https://zh.zlib.li/" target="_blank" rel="noopener" data-lang-zh="立即訪問" data-lang-en="Visit Now">立即訪問</a>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="skill-item">
-                    <h5 data-lang-zh="Other Skills" data-lang-en="Other Skills">Other Skills</h5>
-                    <p data-lang-zh="视频编辑, VS Code, N8N, PowerApps, Power Automate, Photography, Stable Diffusion。" data-lang-en="Video editing, VS Code, N8N, PowerApps, Power Automate, Photography, Stable Diffusion.">视频编辑, VS Code, N8N, PowerApps, Power Automate, Photography, Stable Diffusion。</p>
+
+            <div class="tool-row">
+                <div class="tool-desc">
+                    <h5 data-lang-zh="🏛️ 歷史網站" data-lang-en="🏛️ History Timeline">🏛️ 歷史網站</h5>
+                    <p data-lang-zh="用时间轴的角度看历史，探索人类文明的发展历程。" data-lang-en="Explore history through a timeline perspective. Discover the development journey of human civilization.">用时间轴的角度看历史，探索人类文明的发展历程。</p>
+                </div>
+                <div class="tool-link">
+                    <a href="https://www.allhistory.com/" target="_blank" rel="noopener" data-lang-zh="立即訪問" data-lang-en="Visit Now">立即訪問</a>
+                </div>
+            </div>
+
+            <div class="tool-row">
+                <div class="tool-desc">
+                    <h5 data-lang-zh="🎨 免費藝術珍稀類書籍" data-lang-en="🎨 Free Rare Art Books">🎨 免費藝術珍稀類書籍</h5>
+                    <p data-lang-zh="提供免费的艺术珍稀类书籍，欣赏世界各地的艺术珍品。" data-lang-en="Free rare art books available. Appreciate art treasures from around the world.">提供免费的艺术珍稀类书籍，欣赏世界各地的艺术珍品。</p>
+                </div>
+                <div class="tool-link">
+                    <a href="https://www.shuge.org/" target="_blank" rel="noopener" data-lang-zh="立即訪問" data-lang-en="Visit Now">立即訪問</a>
+                </div>
+            </div>
+
+            <div class="tool-row">
+                <div class="tool-desc">
+                    <h5 data-lang-zh="🌍 全球旅遊景點全景" data-lang-en="🌍 Global Tourist Attractions 360°">🌍 全球旅遊景點全景</h5>
+                    <p data-lang-zh="全景观看全球旅游景点，旅游做攻略必备，身临其境的视觉体验。" data-lang-en="360° panoramic views of tourist attractions worldwide. Essential for travel planning. Immersive visual experience.">全景观看全球旅游景点，旅游做攻略必备，身临其境的视觉体验。</p>
+                </div>
+                <div class="tool-link">
+                    <a href="https://www.airpano.com/" target="_blank" rel="noopener" data-lang-zh="立即訪問" data-lang-en="Visit Now">立即訪問</a>
+                </div>
+            </div>
+
+            <div class="tool-row">
+                <div class="tool-desc">
+                    <h5 data-lang-zh="🎮 上班偷懶在線小遊戲" data-lang-en="🎮 Online Mini Games for Break Time">🎮 上班偷懶在線小遊戲</h5>
+                    <p data-lang-zh="免费在线小游戏集合，适合休闲娱乐，放松身心。" data-lang-en="Free online mini games collection. Perfect for leisure and relaxation.">免费在线小游戏集合，适合休闲娱乐，放松身心。</p>
+                </div>
+                <div class="tool-link">
+                    <a href="https://poki.com/zh" target="_blank" rel="noopener" data-lang-zh="立即訪問" data-lang-en="Visit Now">立即訪問</a>
+                </div>
+            </div>
+
+            <div class="tool-row">
+                <div class="tool-desc">
+                    <h5 data-lang-zh="🌀 全世界最無聊的網站" data-lang-en="🌀 The Useless Web">🌀 全世界最無聊的網站</h5>
+                    <p data-lang-zh="点击里面按钮随机进入一个网站，探索互联网的奇妙角落。" data-lang-en="Click the button to randomly visit a weird website. Explore the wonderful corners of the internet.">点击里面按钮随机进入一个网站，探索互联网的奇妙角落。</p>
+                </div>
+                <div class="tool-link">
+                    <a href="https://theuselessweb.com/" target="_blank" rel="noopener" data-lang-zh="立即訪問" data-lang-en="Visit Now">立即訪問</a>
                 </div>
             </div>
         </div>

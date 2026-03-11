@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>兴趣</title>
+    <title data-lang-zh="個人簡介與課外活動" data-lang-en="About Me and Extracurricular Activities">個人簡介與課外活動</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -12,9 +13,11 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- 自定义CSS -->
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/activities.css" rel="stylesheet">
 </head>
+
 <body>
-    <!-- 导航栏 -->
+    <!-- 導航欄 -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html" data-lang-zh="ZHANG ZHEN IVAN" data-lang-en="ZHANG ZHEN IVAN">ZHANG ZHEN IVAN</a>
@@ -27,43 +30,164 @@
                         <a class="nav-link" href="index.html" data-lang-zh="主頁" data-lang-en="Home">主頁</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link active" href="activities.html" data-lang-zh="個人簡介與課外活動" data-lang-en="About Me and Extracurricular Activities">個人簡介與課外活動</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="intern.html" data-lang-zh="實習經歷" data-lang-en="Internship Experience">實習經歷</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="project.html" data-lang-zh="項目經驗" data-lang-en="Project Experience">項目經驗</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="activities.html" data-lang-zh="興趣與活動" data-lang-en="Hobbies and Activities">興趣與活動</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="tools.html" data-lang-zh="實用工具分享" data-lang-en="Useful Tools Share">實用工具分享</a>
                     </li>
                 </ul>
             </div>
-            <!-- 语言切换按钮 -->
+            <!-- 語言切換按鈕 -->
             <button id="lang-toggle" class="btn btn-outline-light ms-3" data-lang-zh="EN" data-lang-en="中文">EN</button>
         </div>
     </nav>
 
-    <div class="container mt-5">
-        <h1 class="text-center mb-5" data-lang-zh="興趣" data-lang-en="Interests">興趣</h1>
+    <!-- 主要內容區域 -->
+    <div class="main-container">
+        <div class="container">
+            <div style="height:82px"></div>
+            <h1 class="page-main-title text-center mb-5" data-aos="fade-up" data-lang-zh="個人簡介與課外活動" data-lang-en="About Me and Extracurricular Activities">個人簡介與課外活動</h1>
+            <!-- 個人簡介 -->
+            <section class="section" data-aos="fade-up" data-aos-delay="200">
+                <h2 class="section-title" data-lang-zh="個人簡介" data-lang-en="Personal Profile">個人簡介</h2>
+                <div class="content-card">
+                    <p data-lang-zh="我叫張楨 (Ivan)，福建長大，中一來到香港讀書，在香港生活了 10 年時間，現可流利用粵語，英文，普通話交流。中學畢業於路德會呂明才中學，2022 年由 DSE 考入香港城市大學資訊系統學系，2026 年 6 月畢業。希望尋找的職位是 Junior Product Manager/Assistant，Busines/Data Analyst，或商業相關的 Graduate/Management Trainee。預期薪資 HK$18,000 – HK$22,000。以下內容是關於我的性格，興趣愛好和對未來的展望。"
+                        data-lang-en="My name is Zhang Zhen (Ivan). I grew up in Fujian and came to Hong Kong to study in Form 1. I've been living in Hong Kong for 10 years and can communicate fluently in Cantonese, English, and Mandarin. I graduated from Lutheran Lui Ming Choi Secondary School and entered City University of Hong Kong's Information Systems program through DSE in 2022, graduating in June 2026. I'm looking for positions as Junior Product Manager/Assistant, Business/Data Analyst, or business-related Graduate/Management Trainee. Expected salary is HK$18,000 – HK$22,000. The following content is about my personality, interests, and future outlook.">
+                        我叫張楨 (Ivan)，福建長大，中一來到香港讀書，在香港生活了 10 年時間，現可流利用粵語，英文，普通話交流。中學畢業於路德會呂明才中學，2022 年由 DSE 考入香港城市大學資訊系統學系，2026 年 6 月畢業。希望尋找的職位是 Junior Product Manager/Assistant，Busines/Data Analyst，或商業相關的 Graduate/Management Trainee。預期薪資 HK$18,000 – HK$22,000。以下內容是關於我的性格，興趣愛好和對未來的展望。
+                    </p>
+                </div>
+            </section>
 
-        <!-- 活动1：羽毛球 -->
-        <div class="activity-block">
-            <div class="activity-title" data-lang-zh="羽毛球" data-lang-en="Badminton">羽毛球</div>
-            <div class="activity-description" data-lang-zh="CityU羽毛球俱乐部经理 (2023-2025)：日常运营羽毛球俱乐部和运动队。通过与各方沟通组织与其他大学的羽毛球比赛。关键学习：沟通、组织技能、领导力。" data-lang-en="CityU Badminton Club Manager (2023-2025): Daily operation of badminton club and sports teams. Organized badminton matches with other universities through communication with various parties. Key learnings: Communication, organizational skills, leadership.">
-CityU羽毛球俱乐部经理 (2023-2025)：日常运营羽毛球俱乐部和运动队。通过与各方沟通组织与其他大学的羽毛球比赛。关键学习：沟通、组织技能、领导力。
+            <!-- 興趣愛好與課外活動 -->
+            <section class="section" data-aos="fade-up" data-aos-delay="400">
+
+                <!-- 興趣愛好 -->
+                <div class="subsection">
+                    <h3 class="section-title" data-aos="fade-up" data-aos-delay="250" data-lang-zh="性格和興趣愛好" data-lang-en="Personality and Interests">興趣愛好</h3>
+                    <div class="content-card">
+                      <div class="row mb-4 align-items-center">
+                          <div class="col-lg-7">
+                              <p data-lang-zh="我是一个較為理性冷静，做事认真，可以迅速學習適應變化的的人，思考問題時注重逻辑性。關於我的愛好，我平時也熱愛運動健身，平時經常打羽毛球和健身，中學時也參加了不少運動社團例如排球社，足球社，射箭隊，代表學校參加過校外射箭比賽拿過獎項。這是一段令人懷念的回憶，是對我運動愛好的啟蒙。到了大學接觸了羽毛球這項運動，愛上了羽毛球。也因此認識到一班同樣熱愛羽毛球的朋友，一起參加羽毛球社團。"
+                                      data-lang-en="I love sports and fitness. I often play badminton and work out regularly. In secondary school, I participated in many sports clubs such as volleyball club, football club, and archery team, representing the school in external archery competitions and winning awards. This is a memorable memory that sparked my love for sports. In university, I got into badminton and fell in love with it. This also led me to meet a group of friends who share the same passion for badminton and join the badminton club together.">
+                                      我熱愛運動健身，平時經常打羽毛球和健身，中學時也參加了不少運動社團例如排球社，足球社，射箭隊，代表學校參加過校外射箭比賽拿過獎項。這是一段令人懷念的回憶，是對我運動愛好的啟蒙。到了大學接觸了羽毛球這項運動，愛上了羽毛球。也因此認識到一班同樣熱愛羽毛球的朋友，一起參加羽毛球社團。
+                              </p>
+                          </div>
+                          <div class="col-lg-5">
+                              <div class="row g-3">
+                                  <div class="col-6">
+                                      <img src="image/比賽相片1.jpg" alt="Competition Photo 1" class="img-fluid rounded competition-img clickable-image" data-aos="zoom-in" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openImageModal(this.src, '比賽相片 1')">
+                                  </div>
+                                  <div class="col-6">
+                                      <img src="image/比賽相片2.jpg" alt="Competition Photo 2" class="img-fluid rounded competition-img clickable-image" data-aos="zoom-in" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openImageModal(this.src, '比賽相片 2')">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="row">
+                          <div class="col-lg-8">
+                              <p data-lang-zh="我由最初的社員慢慢做到了為期2年的羽毛球社隊長與經理，由於我喜歡打羽毛球，幾乎走遍全香港體育館，便依自己的經驗寫了一篇香港各個主流公共體育館的評價攻略，加上我積極參與社團活動，也因此有機會管理城大的羽毛球社團與羽毛球隊。我將社團人數由幾十人慢慢擴大到過千人，也與其他大學溝通，組織了多場友誼賽。在這過程中，我需要管理球隊的財政例如隊服，羽毛球，後勤，也需要與不同的人溝通協調，這提升了我的管理能力與溝通能力，培養了我的責任心與做事嚴謹仔細的態度，也加強了我的自信心和抗壓能力。同時我亦都非常熱愛羽毛球，自己也多次積極參加羽毛球比賽和做比賽的裁判或 helper，我會一直熱愛羽毛球這項運動。"
+                                      data-lang-en="I started as a regular member and gradually became the badminton club captain and manager for 2 years. I wrote a review guide for major public sports venues in Hong Kong. Due to my active participation in club activities, I also had the opportunity to manage CityU's badminton club and team. I expanded the club membership from dozens to over a thousand people, communicated with other universities, and organized multiple friendly matches. In this process, I needed to manage team finances such as uniforms, badminton equipment, and logistics, and coordinate with different people, which improved my management and communication skills, cultivated my sense of responsibility and meticulous attitude, and strengthened my confidence and stress resistance. At the same time, I really love badminton, actively participated in badminton competitions multiple times, and served as referees or helpers for competitions. I will continue to love this sport.">
+                                      我由最初的社員慢慢做到了 2 年的羽毛球社隊長與經理，寫了一篇香港各個主流公共體育館的評價攻略，加上我積極參與社團活動，也因此有機會管理城大的羽毛球社團與羽毛球隊。我將社團人數由幾十人慢慢擴大到過千人，也與其他大學溝通，組織了多場友誼賽。在這過程中，我需要管理球隊的財政例如隊服，羽毛球，後勤，也需要與不同的人溝通協調，這提升了我的管理能力與溝通能力，培養了我的責任心與做事嚴謹仔細的態度，也加強了我的自信心和抗壓能力。同時我亦都非常熱愛羽毛球，自己也多次積極參加羽毛球比賽和做比賽的裁判或 helper，我會一直熱愛羽毛球這項運動。
+                              </p>
+                          </div>
+                          <div class="col-lg-4">
+                              <img src="image/與HKU友誼賽.jpg" alt="HKU Friendship Match" class="img-fluid rounded hku-img clickable-image" data-aos="zoom-in" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openImageModal(this.src, '與 HKU 友誼賽')">
+                          </div>
+                      </div>
+                    </div>
+                </div>
+
+                <!-- 課外活動 -->
+                <div class="subsection mt-5">
+                    <h3 class="section-title" data-aos="fade-up" data-aos-delay="350" data-lang-zh="課外活動" data-lang-en="Extracurricular Activities">課外活動</h3>
+                    <div class="content-card">
+                      <div class="row">
+                          <div class="col-lg-8">
+                              <p data-lang-zh="我作為一個享受失敗的人，會在每次失敗後復盤原因，使自己下次做得更好。我相信世界上沒有完美的產品，只有不斷迭代，由低質量慢慢改善到高質量的產品。而以下這個商賽就是一個我印象深刻的失敗案例。我在課外同樣積極參加活動與比賽，例如 2024FinTech Trailblazers 2024 Competition 最終得到 finalist，我們構思了一個二手物品回收平台，平台目標是以積分制鼓勵用戶在平台放上自己棄置的二手物品例如衣物，文具等，而大部分人未必知道物品是否可回收，他們便可將物品交給平台代以分類，促進棄置物品的二次利用。一個有趣的故事是，我們的提案在初賽時得到很高評價，但去到決賽因隊員個人安排，我們轉為網上用 Zoom present，結果因為音質與網絡問題，評委難以認真理解我們的想法，導致我們止步決賽。這次失敗也讓我學習到最高效的交流永遠是面對面，網絡工具可作為輔助，但難以讓人真正理解你的想法。"
+                                      data-lang-en="As someone who enjoys failure, I always review the reasons after each failure to do better next time. I believe there are no perfect products in the world, only continuous iteration, gradually improving from low quality to high quality. The following business competition is a memorable failure case for me. I also actively participate in extracurricular activities and competitions, such as the 2024 FinTech Trailblazers 2024 Competition where we reached the finalist round. We conceived a second-hand item recycling platform with the goal of using a points system to encourage users to put their discarded second-hand items such as clothes and stationery on the platform. Since most people may not know if items are recyclable, they can hand them over to the platform for classification to promote the secondary use of discarded items. An interesting story is that our proposal received high praise in the preliminary round, but in the final round, due to team members' personal arrangements, we switched to online presentation via Zoom. As a result, due to audio and network issues, the judges had difficulty seriously understanding our ideas, leading us to stop at the final round. This failure also taught me that the most effective communication is always face-to-face, and online tools can be auxiliary, but it's difficult for people to truly understand your ideas.">
+                                      我作為一個享受失敗的人，會在每次失敗後復盤原因，使自己下次做得更好。我相信世界上沒有完美的產品，只有不斷迭代，由低質量慢慢改善到高質量的產品。而以下這個商賽就是一個我印象深刻的失敗案例。我在課外同樣積極參加活動與比賽，例如 2024FinTech Trailblazers 2024 Competition 最終得到 finalist，我們構思了一個二手物品回收平台，平台目標是以積分制鼓勵用戶在平台放上自己棄置的二手物品例如衣物，文具等，而大部分人未必知道物品是否可回收，他們便可將物品交給平台代以分類，促進棄置物品的二次利用。一個有趣的故事是，我們的提案在初賽時得到很高評價，但去到決賽因隊員個人安排，我們轉為網上用 Zoom present，結果因為音質與網絡問題，評委難以認真理解我們的想法，導致我們止步決賽。這次失敗也讓我學習到最高效的交流永遠是面對面，網絡工具可作為輔助，但難以讓人真正理解你的想法。
+                                  </p>
+                          </div>
+                          <div class="col-lg-4">
+                              <img src="image/purifying.png" alt="FinTech Competition" class="img-fluid rounded clickable-image" data-aos="zoom-in" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openImageModal(this.src, 'FinTech Competition')">
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 未來職業道路展望 -->
+            <section class="section" data-aos="fade-up" data-aos-delay="600">
+                <h2 class="section-title" data-lang-zh="未來職業道路展望" data-lang-en="Future Career Outlook">未來職業道路展望</h2>
+                <div class="content-card">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <p data-lang-zh="在我 2022 初入大學的時候，AI 革命爆發，全世界被 AI 的強大震驚，而我在那時就是第一批探索 AI 工具的人，由初步的好奇，到之後慢慢感受到 AI 科技的魅力與強大，我在大學自學了 AI 的各種知識，包括 AI 模型的原理，不同種類的 AI 工具（文字，圖像，語音，Agent）運用，AI Prompt 的概念等等。也學習並通過了 Microsoft AI Fundamentals 的考試，表示我對 AI 相關的基本原理較為了解。也曾試過在 AI 萌芽期借助 AI 的強大功能改變 group project 的方向。所以我認為未來的 AI 會成為每個行業都必不可少的工具，我亦希望我可以在 IT 和 AI 的道路上深造，讓自己可以用學到的 AI 技能結合 Python，Excel，SQL，Tableau 等常用工具為工作賦能。"
+                                data-lang-en="When I first entered university in 2022, the AI revolution erupted, shocking the world with its power. I was one of the first people to explore AI tools at that time. From initial curiosity to gradually feeling the charm and power of AI technology, I self-taught various AI knowledge in university, including AI model principles, applications of different types of AI tools (text, image, speech, Agent), AI Prompt concepts, etc. I also studied and passed the Microsoft AI Fundamentals exam, indicating that I have a good understanding of the basic principles related to AI. I have also tried using AI's powerful functions to change the direction of group projects during the AI budding period. So I believe that AI will become an essential tool in every industry in the future, and I also hope that I can further my studies in IT and AI, so that I can empower my work with the AI skills I have learned combined with common tools like Python, Excel, SQL, Tableau, etc.">
+                                在我 2022 初入大學的時候，AI 革命爆發，全世界被 AI 的強大震驚，而我在那時就是第一批探索 AI 工具的人，由初步的好奇，到之後慢慢感受到 AI 科技的魅力與強大，我在大學自學了 AI 的各種知識，包括 AI 模型的原理，不同種類的 AI 工具（文字，圖像，語音，Agent）運用，AI
+                                Prompt 的概念等等。也學習並通過了 Microsoft AI
+                                Fundamentals 的考試，表示我對 AI 相關的基本原理較為了解。也曾試過在 AI 萌芽期借助 AI 的強大功能改變 group
+                                project 的方向。所以我認為未來的 AI 會成為每個行業都必不可少的工具，我亦希望我可以在 IT 和 AI 的道路上深造，讓自己可以用學到的 AI 技能結合 Python，Excel，SQL，Tableau 等常用工具為工作賦能。
+                            </p>
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="image/ai.png" alt="AI Technology" class="img-fluid rounded clickable-image" data-aos="zoom-in" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openImageModal(this.src, 'AI Technology')">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 ZHANG ZHEN IVAN. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- 圖片查看模態框 -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel">圖片預覽</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="modalImage" src="" alt="Preview" class="img-fluid" style="max-height: 70vh;">
+                    <p id="imageCaption" class="mt-2 text-muted"></p>
+                </div>
             </div>
         </div>
-
-        <!-- 可以添加更多活动 -->
     </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- 自定义JS -->
+    <!-- 自定義JS -->
     <script src="js/script.js"></script>
+
+    <!-- 圖片查看功能 JavaScript -->
+    <script>
+        function openImageModal(imageSrc, caption) {
+            const modalImage = document.getElementById('modalImage');
+            const modalCaption = document.getElementById('imageCaption');
+            const modalTitle = document.getElementById('imageModalLabel');
+
+            modalImage.src = imageSrc;
+            modalCaption.textContent = caption || '';
+            modalTitle.textContent = caption ? caption : '圖片預覽';
+        }
+    </script>
 </body>
+
 </html>

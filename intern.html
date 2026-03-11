@@ -18,7 +18,7 @@
 
 <body>
     <!-- 導航欄 -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html" data-lang-zh="ZHANG ZHEN IVAN"
                 data-lang-en="ZHANG ZHEN IVAN">ZHANG ZHEN IVAN</a>
@@ -32,17 +32,18 @@
                         <a class="nav-link" href="index.html" data-lang-zh="主頁" data-lang-en="Home">主頁</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="intern.html" data-lang-zh="實習經歷"
+                        <a class="nav-link" href="activities.html" data-lang-zh="個人簡介與課外活動"
+                            data-lang-en="About Me and Extracurricular Activities">個人簡介與課外活動</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="intern.html" data-lang-zh="實習經歷"
                             data-lang-en="Internship Experience">實習經歷</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="project.html" data-lang-zh="項目經驗"
                             data-lang-en="Project Experience">項目經驗</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="activities.html" data-lang-zh="興趣與活動"
-                            data-lang-en="Hobbies and Activities">興趣與活動</a>
-                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="tools.html" data-lang-zh="實用工具分享"
                             data-lang-en="Useful Tools Share">實用工具分享</a>
@@ -177,7 +178,6 @@
                             class="img-fluid project-image clickable-image" data-bs-toggle="modal"
                             data-bs-target="#imageModal" onclick="openImageModal(this.src, 'AI Tutorial Video')">
                     </div>
-                    <br>
 
                     <p>
                         <strong data-lang-zh="AI影片：" data-lang-en="AI Video:">AI影片：</strong>
@@ -334,51 +334,43 @@
                     data-lang-en="Summer Internship, June to September 2023">
                     暑期實習，2023年6月至9月
                 </p>
-                <p>MakeOmnia是一間專注於3D打印與教育的初創公司，致力於在香港教育界推廣3D打印，我作為商業助理主要負責市場分析方面的工作，並作為演講者參與了多項推廣活動。</p>
+                <p data-lang-zh="MakeOmnia是一間專注於3D打印與教育的初創公司，致力於在香港教育界推廣3D打印，我作為商業助理主要著重於市場分析方面的工作，並作為負責人參與了多項推廣活動。"
+                    data-lang-en="MakeOmnia is a startup company focused on 3D printing and education, dedicated to promoting 3D printing in Hong Kong's education sector. As a business assistant, I mainly focused on market analysis work and participated in multiple promotional activities as a responsible person.">
+                    MakeOmnia是一間專注於3D打印與教育的初創公司，致力於在香港教育界推廣3D打印，我作為商業助理主要著重於市場分析方面的工作，並作為負責人參與了多項推廣活動。
+                </p>
             </div>
 
             <div class="row g-4 project-section">
                 <div class="col-lg-6">
                     <div class="image-container" data-aos="zoom-in">
-                        <img src="image/cat.jpg" alt="MakeOmnia Internship" class="img-fluid clickable-image"
+                        <img src="image/group.jpg" alt="MakeOmnia Internship" class="img-fluid clickable-image"
                             data-bs-toggle="modal" data-bs-target="#imageModal"
-                            onclick="openImageModal(this.src, 'MakeOmnia Internship')">
+                            onclick="openImageModal(this.src, 'MakeOmnia Internship')"
+                            style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <h3>項目一：市場分析與教案策劃</h3>
+                    <h3 data-lang-zh="項目一：市場分析與教案策劃" data-lang-en="Project One: Market Analysis and Lesson Planning">
+                        項目一：市場分析與教案策劃</h3>
                     <div class="project-details">
                         <div class="detail-item">
                             <i class="fas fa-file-alt me-2"></i>
-                            <span data-lang-zh="撰写市场调研发展提案和教学计划（SWOT分析、竞争产品分析等）"
-                                data-lang-en="Wrote market research development proposals and teaching plans (SWOT analysis, competitive product analysis, etc.)">
+                            <span
+                                data-lang-zh="首先，我負責進行市場調研，對香港現有的3D Printing公司競爭者進行調研搜集資料，之後根據搜集到的信息，完成了2000字的市場分析報告，其中包括完整的SWOT分析，對公司現有產品的優化建議，成功使公司改變未來產品決策，將重心轉向AI教育，使公司的服務更符合市場需求。"
+                                data-lang-en="First, I was responsible for conducting market research, researching and collecting data on existing 3D printing company competitors in Hong Kong. Then, based on the collected information, I completed a 2000-word market analysis report, which included a complete SWOT analysis, optimization suggestions for the company's existing products, and successfully influenced the company's future product decisions, shifting the focus to AI education, making the company's services more aligned with market demands.">
                                 撰写市场调研发展提案和教学计划（SWOT分析、竞争产品分析等）
                             </span>
                         </div>
 
                         <div class="detail-item">
                             <i class="fas fa-chalkboard-teacher me-2"></i>
-                            <span data-lang-zh="为学生教授3D打印工作坊，获得学校和学生的高度赞扬"
-                                data-lang-en="Taught 3D printing workshops to students, receiving high praise from schools and students">
+                            <span
+                                data-lang-zh="其次，MakeOmnia的其中一個重心是推廣STEM教育，因此我也負責撰寫教案，教學生如何從零到一製作3D打印的汽車模型，內容包括了教學目標，課上活動，所需材料，詳細的步驟說明指引，以及學生可能會遇到的問題和解決方案，這份教案後來被公司用於多個學校的3D打印工作坊中，並獲得了老師和學生的高度評價。"
+                                data-lang-en="Secondly, one of MakeOmnia's focuses is promoting STEM education, so I was also responsible for writing teaching plans, teaching students how to create 3D printed car models from scratch. The content included teaching objectives, in-class activities, required materials, detailed step-by-step instructions, and possible problems students might encounter and their solutions. This teaching plan was later used by the company in multiple school 3D printing workshops and received high praise from teachers and students.">
                                 为学生教授3D打印工作坊，获得学校和学生的高度赞扬
                             </span>
                         </div>
 
-                        <div class="detail-item">
-                            <i class="fas fa-paint-brush me-2"></i>
-                            <span data-lang-zh="设计社交媒体营销帖子和海报（Instagram, Facebook）"
-                                data-lang-en="Designed social media marketing posts and posters (Instagram, Facebook)">
-                                设计社交媒体营销帖子和海报（Instagram, Facebook）
-                            </span>
-                        </div>
-
-                        <div class="detail-item">
-                            <i class="fas fa-handshake me-2"></i>
-                            <span data-lang-zh="在展会中运营3D打印产品展位，为政府官员和教育专业人士服务"
-                                data-lang-en="Operated 3D printing product booths at exhibitions, serving government officials and education professionals">
-                                在展会中运营3D打印产品展位，为政府官员和教育专业人士服务
-                            </span>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -387,57 +379,45 @@
         <!-- MakeOmnia 實習項目二 -->
         <div class="intern-card" data-aos="fade-up" data-aos-delay="100">
             <div class="company-header">
-                <h2 class="company-name" data-lang-zh="MakeOmnia - 商務助理 (市場營銷)"
-                    data-lang-en="MakeOmnia - Business Assistant (Marketing)">
-                    MakeOmnia - 商務助理 (市場營銷)
-                </h2>
-                <p class="company-period" data-lang-zh="暑期實習，2023年6月至9月"
-                    data-lang-en="Summer Internship, June to September 2023">
-                    暑期實習，2023年6月至9月
-                </p>
-                <p>MakeOmnia是一間專注於3D打印與教育的初創公司，致力於在香港推廣3Dd打印，我作為商業助理主要負責市場分析方面的工作，並作為演講者參與了多項推廣活動。</p>
+
+                <h5 data-lang-zh="宣傳活動:" data-lang-en="Promotion Activities:">宣傳活動:</h5>
+                <p data-lang-zh="我和MakeOmnia團隊去往各個學校成功舉辦了多個工作坊，作為負責人宣傳公司產品。"
+                    data-lang-en="Along with the MakeOmnia team, I travelled to various schools to successfully conduct multiple workshops and promote the company's products as the lead.">
+                    我和MakeOmnia團隊去往各個學校成功舉辦了多個工作坊，作為負責人宣傳公司產品。</p>
             </div>
 
             <div class="row g-4 project-section">
                 <div class="col-lg-6">
                     <div class="image-container" data-aos="zoom-in">
-                        <img src="image/cat.jpg" alt="MakeOmnia Internship" class="img-fluid clickable-image"
+                        <img src="image/toys.jpg" alt="MakeOmnia Internship" class="img-fluid clickable-image"
                             data-bs-toggle="modal" data-bs-target="#imageModal"
                             onclick="openImageModal(this.src, 'MakeOmnia Internship')">
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <h3>項目一：商業分析</h3>
+                    <h3 data-lang-zh="項目二：宣傳活動" data-lang-en="Project Two: Promotional Activities">項目二：宣傳活動</h3>
                     <div class="project-details">
                         <div class="detail-item">
-                            <i class="fas fa-file-alt me-2"></i>
-                            <span data-lang-zh="撰写市场调研发展提案和教学计划（SWOT分析、竞争产品分析等）"
-                                data-lang-en="Wrote market research development proposals and teaching plans (SWOT analysis, competitive product analysis, etc.)">
-                                撰写市场调研发展提案和教学计划（SWOT分析、竞争产品分析等）
-                            </span>
-                        </div>
-
-                        <div class="detail-item">
                             <i class="fas fa-chalkboard-teacher me-2"></i>
-                            <span data-lang-zh="为学生教授3D打印工作坊，获得学校和学生的高度赞扬"
-                                data-lang-en="Taught 3D printing workshops to students, receiving high praise from schools and students">
-                                为学生教授3D打印工作坊，获得学校和学生的高度赞扬
+                            <span data-lang-zh="作為負責人主持了多場3D打印工作坊，介紹MakeOmnia的3D打印產品與服務，活動得到了學校師生的高度讚揚。"
+                                data-lang-en="As the lead, I hosted multiple 3D printing workshops introducing MakeOmnia's 3D printing products and services. The events were highly praised by teachers and students.">
+                                我为学生举办了多场3D打印工作坊，获得学校及学生高度赞扬。
                             </span>
                         </div>
 
                         <div class="detail-item">
                             <i class="fas fa-paint-brush me-2"></i>
-                            <span data-lang-zh="设计社交媒体营销帖子和海报（Instagram, Facebook）"
-                                data-lang-en="Designed social media marketing posts and posters (Instagram, Facebook)">
-                                设计社交媒体营销帖子和海报（Instagram, Facebook）
+                            <span data-lang-zh="設計並製作了社交媒體（Instagram、Facebook）用的營銷帖子與海報，成功提升品牌在目標受眾中的曝光率與互動率。"
+                                data-lang-en="Designed and produced marketing posts and posters for social media (Instagram, Facebook), successfully increasing brand exposure and engagement among target audiences.">
+                                设计社交媒体营销帖子和海报（Instagram, Facebook），提升品牌曝光。
                             </span>
                         </div>
 
                         <div class="detail-item">
                             <i class="fas fa-handshake me-2"></i>
-                            <span data-lang-zh="在展会中运营3D打印产品展位，为政府官员和教育专业人士服务"
-                                data-lang-en="Operated 3D printing product booths at exhibitions, serving government officials and education professionals">
-                                在展会中运营3D打印产品展位，为政府官员和教育专业人士服务
+                            <span data-lang-zh="在各類展會活動中負責3D打印產品展位的運營，接待政府官員和教育界專業人士，向他們介紹產品功能並收集反饋，為公司建立了專業形象。"
+                                data-lang-en="Managed the 3D printing product booth at various exhibitions, attended by government officials and education professionals. I presented product features and gathered feedback, helping to establish a professional company image.">
+                                在展会活动中运营3D打印产品展位，为政府官员和教育专业人士提供服务。
                             </span>
                         </div>
                     </div>
