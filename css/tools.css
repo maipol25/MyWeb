@@ -1,0 +1,272 @@
+/* tools.html 页面专用样式 */
+
+.tools-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    padding: 2rem 0;
+}
+
+.tools-header h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(45deg, #667eea, #764ba2, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+}
+
+.tools-intro-wrapper {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 3.5rem;
+    padding: 2.5rem 2rem;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(248, 250, 255, 0.85));
+    border-radius: 16px;
+    border: 1px solid rgba(102, 126, 234, 0.1);
+    box-shadow: 0 8px 32px rgba(32, 40, 60, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+.tools-intro-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #667eea, #764ba2, #ff6b35);
+}
+
+.intro-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.intro-icon i {
+    font-size: 2.5rem;
+    color: white;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 12px 28px rgba(102, 126, 234, 0.4);
+    }
+}
+
+.tools-intro {
+    color: #485263;
+    font-size: 1.1rem;
+    line-height: 2;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+.tools-intro .highlight {
+    color: #667eea;
+    font-weight: 700;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    background: rgba(102, 126, 234, 0.08);
+    transition: all 0.3s ease;
+}
+
+.tools-intro .highlight:hover {
+    background: rgba(102, 126, 234, 0.15);
+    transform: translateY(-2px);
+    display: inline-block;
+}
+
+.intro-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.intro-tags .tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+    color: #5a67d8;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 1px solid rgba(102, 126, 234, 0.2);
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.intro-tags .tag:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(102, 126, 234, 0.25);
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.15), rgba(118, 75, 162, 0.15));
+}
+
+.intro-tags .tag i {
+    font-size: 0.95rem;
+}
+
+.tools-table {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+.tool-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 1.5rem 2rem;
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    border: 1px solid rgba(102, 126, 234, 0.07);
+    box-shadow: 0 8px 24px rgba(32, 40, 60, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.tool-row:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 40px rgba(32, 40, 60, 0.12);
+    border-color: rgba(102, 126, 234, 0.15);
+}
+
+.tool-desc {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.tool-desc h5 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #2d3540;
+    margin-bottom: 0.5rem;
+}
+
+.tool-desc p {
+    color: #4b5868;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.tool-link {
+    flex-shrink: 0;
+}
+
+.tool-link a {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.tool-link a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+    color: white;
+}
+
+.tool-link a:active {
+    transform: translateY(0);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .tools-header h1 {
+        font-size: 2rem;
+    }
+    
+    .tools-intro-wrapper {
+        padding: 2rem 1.5rem;
+    }
+    
+    .tools-intro {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+    
+    .intro-tags {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .intro-tags .tag {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+    
+    .tool-row {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1.25rem;
+    }
+    
+    .tool-desc {
+        padding-right: 0;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+    
+    .tool-link {
+        width: 100%;
+    }
+    
+    .tool-link a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Animation for page load */
+.tool-row {
+    opacity: 0;
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.tool-row:nth-child(1) { animation-delay: 0.1s; }
+.tool-row:nth-child(2) { animation-delay: 0.2s; }
+.tool-row:nth-child(3) { animation-delay: 0.3s; }
+.tool-row:nth-child(4) { animation-delay: 0.4s; }
+.tool-row:nth-child(5) { animation-delay: 0.5s; }
+.tool-row:nth-child(6) { animation-delay: 0.6s; }
+.tool-row:nth-child(7) { animation-delay: 0.7s; }
+.tool-row:nth-child(8) { animation-delay: 0.8s; }
+.tool-row:nth-child(9) { animation-delay: 0.9s; }
+.tool-row:nth-child(10) { animation-delay: 1.0s; }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

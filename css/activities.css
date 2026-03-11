@@ -1,0 +1,194 @@
+/* main-title style similar to index page */
+.page-main-title {
+    font-size: 2.8rem;
+    font-weight: 900;
+    line-height: 1.05;
+    background: linear-gradient(45deg,#ffffff,#e0e0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    transition: transform .45s cubic-bezier(.2,.9,.2,1), opacity .6s ease;
+    opacity: 0;
+    transform: translateY(10px) scale(.99);
+}
+
+/* reveal animation when AOS sets element visible */
+.page-main-title.aos-animate, .page-main-title.visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+/* add hover/interactive elevation like index explore-card */
+.content-card {
+    transition: transform .35s cubic-bezier(.2,.9,.2,1), box-shadow .35s ease, border-color .35s ease;
+}
+.content-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 22px 50px rgba(32,40,60,0.12);
+    border-color: rgba(102,126,234,0.12);
+}
+/* small underline accent for section headers */
+.subsection h3::after {
+    content: '';
+    display: block;
+    width: 56px;
+    height: 4px;
+    margin-top: 8px;
+    border-radius: 3px;
+    background: linear-gradient(45deg,#667eea,#764ba2);
+}
+/* Page-specific styles for activities.html - modern card layout */
+.section-title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 0.75rem;
+    display: inline-block;
+    background: linear-gradient(45deg, #667eea, #764ba2, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.06);
+}
+
+.lead {
+    font-size: 1.05rem;
+    color: #485263;
+}
+
+.content-card {
+    background: rgba(255,255,255,0.85);
+    padding: 1.2rem 1.4rem;
+    border-radius: 14px;
+    border: 1px solid rgba(102,126,234,0.07);
+    box-shadow: 0 12px 30px rgba(32,40,60,0.06);
+}
+
+/* layout tweaks */
+.main-container {
+    padding: 40px 0 80px;
+}
+
+h1.text-center {
+    font-weight: 800;
+    background: linear-gradient(45deg,#667eea,#764ba2,#ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1.25rem;
+}
+
+.section {
+    margin-bottom: 1.6rem;
+}
+
+.subsection {
+    margin-bottom: 1.4rem;
+}
+
+.subsection h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+    color: #2d3540;
+}
+
+.subsection p {
+    color: #4b5868;
+    line-height: 1.75;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border: 6px solid rgba(255,255,255,0.85);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+.img-fluid.rounded {
+    transition: transform .28s ease, box-shadow .28s ease;
+}
+.img-fluid.rounded:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 18px 40px rgba(20,30,60,0.12);
+}
+
+/* clickable image style for modal */
+.clickable-image {
+    cursor: pointer;
+    transition: transform .28s ease, box-shadow .28s ease, filter .28s ease;
+}
+
+.clickable-image:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 18px 40px rgba(20,30,60,0.12);
+    filter: brightness(1.05);
+}
+
+/* competition images: avoid cropping, show full image */
+.competition-img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    background: transparent;
+    padding: 2px;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+/* HKU image slightly larger */
+.hku-img {
+    width: 100%;
+    height: auto;
+    max-height: 320px;
+    object-fit: contain;
+    background: #f7f9fc;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+/* Image gallery in interests */
+.subsection .row .img-fluid.rounded {
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(20,30,60,0.06);
+    border: 1px solid rgba(0,0,0,0.03);
+}
+
+/* Two small images layout */
+.col-6 img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* ensure competition images keep native ratio and are not forced by aspect-ratio */
+.col-6 img.competition-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* tighten the gap between small image tiles to reduce side white-space */
+.subsection .row.g-2 {
+    gap: 6px;
+}
+
+/* for the two images column - increased size for better visibility */
+.col-lg-4 .col-6 img {
+    aspect-ratio: auto;
+    min-height: 220px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 992px) {
+    .profile-img { width: 140px; height: 140px; }
+}
+
+@media (max-width: 768px) {
+    .section-title { font-size: 1.6rem; }
+    .content-card { padding: 0.9rem; }
+    .col-6 img { height: 100px; }
+}

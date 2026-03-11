@@ -1,0 +1,516 @@
+/* ══════════════════════════════════════════════════════════════════════════════ */
+/*                             PROJECT.HTML STYLES                             */
+/*                          項目頁面專屬樣式 (project.html)                      */
+/* ══════════════════════════════════════════════════════════════════════════════ */
+
+/* ==================== 項目頁面高級感標題設計 ==================== */
+.project-header {
+    text-align: center;
+    padding: 0;
+}
+
+.project-header h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin: 2rem auto;
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(45deg, #667eea, #764ba2, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px;
+}
+
+/* 標題光暈效果 */
+.project-header h1::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: radial-gradient(circle, rgba(102, 126, 234, 0.1) 0%, transparent 70%);
+    border-radius: 10px;
+    z-index: -1;
+    animation: glow-pulse 3s ease-in-out infinite alternate;
+}
+
+/* 動態光暈動畫 */
+@keyframes glow-pulse {
+    0% {
+        opacity: 0.3;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0.6;
+        transform: scale(1.05);
+    }
+}
+
+/* 懸停效果 */
+.project-header h1:hover {
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+    text-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+/* ==================== 新的項目部分樣式 ==================== */
+
+/* 項目部分樣式 */
+.project-part {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.08),
+        0 2px 8px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 3rem;
+    border: 1px solid rgba(102, 126, 234, 0.1);
+}
+
+.project-part:hover {
+    transform: translateY(-5px);
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.12),
+        0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* 部分標題樣式 */
+.part-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #333;
+    margin: 0;
+    padding: 2rem 2rem 1.5rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #ff6b35 100%);
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+}
+
+.part-title i {
+    font-size: 1.8rem;
+    opacity: 0.9;
+}
+
+/* 部分內容樣式 */
+.part-content {
+    padding: 2rem;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.part-content p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #555;
+    margin: 0;
+}
+
+/* 数据源链接样式 */
+.data-source {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.data-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #ff6b35 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.data-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+    color: white;
+}
+
+.data-link i {
+    font-size: 1.1rem;
+}
+
+.data-link .fa-external-link-alt {
+    opacity: 0.8;
+}
+
+/* 分析點樣式 */
+.analysis-point {
+    margin-bottom: 2.5rem;
+    background: rgba(248, 249, 255, 0.5);
+    border-radius: 15px;
+    padding: 2rem;
+    border: 1px solid rgba(102, 126, 234, 0.08);
+}
+
+.analysis-point:last-child {
+    margin-bottom: 0;
+}
+
+/* 分析標題樣式 */
+.analysis-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid rgba(102, 126, 234, 0.2);
+}
+
+.analysis-title i {
+    color: #667eea;
+    font-size: 1.3rem;
+}
+
+/* 分析內容樣式 */
+.analysis-content {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+    border-radius: 12px;
+    padding: 0.75rem; /* 进一步减少padding */
+    box-shadow: 0 3px 12px rgba(102, 126, 234, 0.08);
+    border: 1px solid rgba(102, 126, 234, 0.1);
+    height: auto; /* 改为auto以减少不必要的留白 */
+    min-height: 150px; /* 进一步减少min-height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.analysis-content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+    margin: 0;
+}
+
+/* 響應式設計調整 */
+@media (max-width: 768px) {
+    .part-title {
+        font-size: 1.8rem;
+        padding: 1.5rem 1.5rem 1rem;
+    }
+
+    .part-content,
+    .analysis-point {
+        padding: 1.5rem;
+    }
+
+    .analysis-title {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .part-title {
+        font-size: 1.6rem;
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+
+    .project-part {
+        margin-bottom: 2rem;
+    }
+}
+
+/* ==================== 圖片懸停放大鏡效果 ==================== */
+.clickable-image {
+    cursor: zoom-in !important;
+    transition: all 0.3s ease;
+    position: relative;
+    border-radius: 12px;
+}
+
+.clickable-image:hover {
+    transform: scale(1.03) !important;
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3) !important;
+    filter: brightness(1.1) saturate(1.05) !important;
+}
+
+/* 添加放大鏡圖示 */
+.clickable-image::after {
+    content: "\f00e" !important; /* Font Awesome放大镜图标 */
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900 !important;
+    position: absolute !important;
+    top: 15px !important;
+    right: 15px !important;
+    background: rgba(102, 126, 234, 0.9) !important;
+    color: white !important;
+    padding: 12px !important;
+    border-radius: 50% !important;
+    font-size: 16px !important;
+    opacity: 0 !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3) !important;
+    z-index: 10 !important;
+}
+
+.clickable-image:hover::after {
+    opacity: 1 !important;
+    transform: scale(1.1) !important;
+}
+
+/* 為project-image也添加相同效果 */
+.project-image.clickable-image {
+    cursor: zoom-in !important;
+}
+
+.project-image.clickable-image:hover {
+    transform: scale(1.03) !important;
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3) !important;
+    filter: brightness(1.1) saturate(1.05) !important;
+}
+
+/* ==================== 模態框樣式優化 ==================== */
+.modal {
+    /* 保证 modal 层级高于 backdrop，避免被遮罩覆盖 */
+    z-index: 2000 !important;
+}
+
+.modal-backdrop {
+    z-index: 1500 !important;
+}
+
+.modal-content {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+}
+
+.modal-header .btn-close {
+    filter: invert(1);
+}
+
+.modal-body {
+    background: #f8f9ff;
+    padding: 2rem;
+}
+
+#modalImage {
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* ==================== 其他原有樣式 ==================== */
+/* 項目容器間距 */
+.project-container {
+    padding: 0;
+}
+
+/* 項目卡片樣式 */
+.project-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 
+        0 4px 12px rgba(0, 0, 0, 0.05),
+        0 1px 3px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: 2.5rem;
+}
+
+.project-card:last-child {
+    margin-bottom: 0;
+}
+
+.project-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 
+        0 6px 16px rgba(0, 0, 0, 0.07),
+        0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 項目信息頭部 */
+.project-header-info {
+    padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+.project-name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.project-period {
+    font-size: 1.1rem;
+    color: #667eea;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+/* 項目描述 */
+.project-description {
+    padding: 0 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-description p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+}
+
+.project-description a {
+    color: #ff6b35;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.project-description a:hover {
+    color: #e55a2b;
+    text-decoration: underline;
+}
+
+.project-description i.fab {
+    margin-right: 0.3rem;
+    color: #20b2aa;
+}
+
+/* 子項目區域樣式 */
+.subproject-section {
+    padding: 0 1.5rem 1.5rem;
+}
+
+/* 圖片容器樣式 */
+.image-container {
+    text-align: center;
+    padding: 15px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.image-container:hover {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.08), rgba(118, 75, 162, 0.05));
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* 子項目標題 */
+.subproject-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.subproject-title i {
+    color: #667eea;
+}
+
+/* 子項目詳細信息容器 */
+.subproject-details {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+    border-radius: 15px;
+    padding: 1.8rem;
+    box-shadow: 
+        0 5px 20px rgba(102, 126, 234, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(102, 126, 234, 0.1);
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.subproject-details::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    border-radius: 15px 15px 0 0;
+}
+
+/* 詳細項目條目 */
+.detail-item {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    padding: 1.2rem;
+    margin-bottom: 0.8rem;
+    border: 1px solid rgba(102, 126, 234, 0.08);
+    border-left: 4px solid #667eea;
+    box-shadow: 
+        0 2px 8px rgba(0, 0, 0, 0.03),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    transition: all 0.2s ease;
+}
+
+.detail-item:last-child {
+    margin-bottom: 0;
+}
+
+.detail-item:hover {
+    background: rgba(255, 255, 255, 1);
+    transform: translateX(5px);
+    box-shadow: 
+        0 4px 12px rgba(102, 126, 234, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 1);
+    border-left-width: 6px;
+}
+
+/* 文字樣式 */
+.detail-item strong {
+    color: #667eea;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-right: 0.6rem;
+    display: inline-block;
+}
+
+.detail-item span {
+    color: #555;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* 成果區域樣式 */
+.outcome-section {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    padding: 1.2rem;
+    margin-bottom: 0.8rem;
+    border: 1px solid rgba(102, 126, 234, 0.08);
+    border-left: 4px solid #667eea;
+    box-shadow: 
+        0 2px 8px rgba(0, 0, 0, 0.03),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    transition: all 0.2s ease;
+}
