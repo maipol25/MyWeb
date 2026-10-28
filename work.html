@@ -14,6 +14,27 @@
     <!-- 自定义CSS -->
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/intern.css" rel="stylesheet">
+    <style>
+        .work-points .project-title {
+            margin-bottom: 0.75rem;
+        }
+        .work-points .project-details {
+            padding: 1rem 1.1rem;
+        }
+        .work-points .detail-item,
+        .work-points .outcome-section {
+            padding: 0.65rem 0.85rem;
+            margin-bottom: 0.4rem;
+        }
+        .work-points .detail-item span,
+        .work-points .outcome-section span,
+        .work-points .outcome-section p {
+            line-height: 1.45;
+        }
+        .work-points .outcome-section p {
+            margin-bottom: 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -64,38 +85,38 @@
     <div class="container intern-container">
         <div class="intern-card" data-aos="fade-up">
             <div class="company-header">
-                <h2 class="company-name" data-lang-zh="AI 代理" data-lang-en="AI Agent">AI 代理</h2>
-                <p class="company-period" data-lang-zh="Gemini Enterprise · 資訊系統學系兩門課程"
-                    data-lang-en="Gemini Enterprise · Two Information Systems courses">
-                    Gemini Enterprise · 資訊系統學系兩門課程
+                <h2 class="company-name" data-lang-zh="AI Agent" data-lang-en="AI Agent">AI Agent</h2>
+                <p class="company-period" data-lang-zh="AI 應用開發專員"
+                    data-lang-en="AI Application Developer">
+                    AI 應用開發專員
                 </p>
             </div>
 
             <div class="company-description">
-                <p data-lang-zh="我使用 Gemini Enterprise，為資訊系統學系的兩門課程設計並開發了一個 AI 代理，服務約 300 名用戶，並獲得高度評價。這份工作的價值在於工具已經用在真實課程裡：用戶用得上，而且有用戶手冊、知識庫，以及按回饋做出的後續改進。"
-                    data-lang-en="Using Gemini Enterprise, I designed and developed an AI agent for two courses in the Information Systems Department. It served approximately 300 users and received high praise. The value of the work is that the tool was used on real courses: people could use it, and it was supported by a user manual, a knowledge base, and later changes based on feedback.">
-                    我使用 Gemini Enterprise，為資訊系統學系的兩門課程設計並開發了一個 AI 代理，服務約 300 名用戶，並獲得高度評價。這份工作的價值在於工具已經用在真實課程裡：用戶用得上，而且有用戶手冊、知識庫，以及按回饋做出的後續改進。
+                <p data-lang-zh="我使用 Gemini Enterprise，為資訊系統學系的兩門課程設計並開發了一個 AI Agent，服務約 300 名用戶，並獲得高度評價。這份工作的價值在於工具已經用在真實課程裡：用戶用得上，而且有用戶手冊、知識庫，以及按回饋做出的後續改進。"
+                    data-lang-en="Using Gemini Enterprise, I designed and developed an AI Agent for two courses in the Information Systems Department. It served approximately 300 users and received high praise. The value of the work is that the tool was used on real courses: people could use it, and it was supported by a user manual, a knowledge base, and later changes based on feedback.">
+                    我使用 Gemini Enterprise，為資訊系統學系的兩門課程設計並開發了一個 AI Agent，服務約 300 名用戶，並獲得高度評價。這份工作的價值在於工具已經用在真實課程裡：用戶用得上，而且有用戶手冊、知識庫，以及按回饋做出的後續改進。
                 </p>
             </div>
 
             <div class="row g-4 project-section">
                 <div class="col-lg-6">
                     <div class="image-container" data-aos="zoom-in">
-                        <img src="image/AI1.png" alt="AI agent design interface" class="img-fluid clickable-image"
+                        <img src="image/AI2.png" alt="AI Agent chat interface" class="img-fluid clickable-image"
                             data-bs-toggle="modal" data-bs-target="#imageModal"
-                            onclick="openImageModal(this.src, 'AI 代理設計介面', 'AI agent design interface')">
+                            onclick="openImageModal(this.src, 'AI Agent 對話介面', 'AI Agent chat interface')">
                     </div>
                     <div class="image-container" data-aos="zoom-in">
-                        <img src="image/AI2.png" alt="AI agent chat interface" class="img-fluid clickable-image"
+                        <img src="image/AI1.png" alt="AI Agent design interface" class="img-fluid clickable-image"
                             data-bs-toggle="modal" data-bs-target="#imageModal"
-                            onclick="openImageModal(this.src, 'AI 代理對話介面', 'AI agent chat interface')">
+                            onclick="openImageModal(this.src, 'AI Agent 設計介面', 'AI Agent design interface')">
                     </div>
                 </div>
 
-                <div class="col-lg-6">
+                <div class="col-lg-6 work-points">
                     <h3 class="project-title">
                         <i class="fas fa-robot"></i>
-                        <span data-lang-zh="開發與持續改進" data-lang-en="Building and improving the agent">
+                        <span data-lang-zh="開發與持續改進" data-lang-en="Building and improving the AI Agent">
                             開發與持續改進
                         </span>
                     </h3>
@@ -103,42 +124,42 @@
                     <div class="project-details">
                         <div class="detail-item">
                             <strong data-lang-zh="開發：" data-lang-en="Built:">開發：</strong>
-                            <span data-lang-zh="使用 Gemini Enterprise 完成代理的設計與開發，供資訊系統學系兩門課程使用，服務約 300 名用戶，並獲得高度評價。"
-                                data-lang-en="Designed and developed the agent with Gemini Enterprise for two Information Systems courses. It served approximately 300 users and received high praise.">
-                                使用 Gemini Enterprise 完成代理的設計與開發，供資訊系統學系兩門課程使用，服務約 300 名用戶，並獲得高度評價。
+                            <span data-lang-zh="使用 Gemini Enterprise 完成 AI Agent 的設計與開發，供資訊系統學系兩門課程使用，服務約 300 名用戶，並獲得高度評價。"
+                                data-lang-en="Designed and developed the AI Agent with Gemini Enterprise for two Information Systems courses. It served approximately 300 users and received high praise.">
+                                使用 Gemini Enterprise 完成 AI Agent 的設計與開發，供資訊系統學系兩門課程使用，服務約 300 名用戶，並獲得高度評價。
                             </span>
                         </div>
 
                         <div class="detail-item">
                             <strong data-lang-zh="手冊與問答：" data-lang-en="Manual and Q&amp;A:">手冊與問答：</strong>
-                            <span data-lang-zh="撰寫了完整的用戶手冊，並為用戶提供問答支援。手冊說明如何使用代理，問答支援則回應使用中的具體問題，讓用戶既有書面指引，也能在遇到問題時得到直接協助。"
-                                data-lang-en="Drafted a comprehensive user manual and provided Q&amp;A support. The manual explains how to use the agent, and the Q&amp;A support answers specific questions that come up in use, so users have written guidance and direct help when they run into a problem.">
-                                撰寫了完整的用戶手冊，並為用戶提供問答支援。手冊說明如何使用代理，問答支援則回應使用中的具體問題，讓用戶既有書面指引，也能在遇到問題時得到直接協助。
+                            <span data-lang-zh="撰寫了完整的用戶手冊，並為用戶提供問答支援。手冊說明如何使用 AI Agent，問答支援則回應使用中的具體問題，讓用戶既有書面指引，也能在遇到問題時得到直接協助。"
+                                data-lang-en="Drafted a comprehensive user manual and provided Q&amp;A support. The manual explains how to use the AI Agent, and the Q&amp;A support answers specific questions that come up in use, so users have written guidance and direct help when they run into a problem.">
+                                撰寫了完整的用戶手冊，並為用戶提供問答支援。手冊說明如何使用 AI Agent，問答支援則回應使用中的具體問題，讓用戶既有書面指引，也能在遇到問題時得到直接協助。
                             </span>
                         </div>
 
                         <div class="detail-item">
                             <strong data-lang-zh="提示工程：" data-lang-en="Prompt engineering:">提示工程：</strong>
-                            <span data-lang-zh="建立提示工程技巧，使 AI 保持可靠表現。這些技巧用來規定代理如何理解問題和組織回答，讓它在兩門課程中維持穩定、可用的表現。"
-                                data-lang-en="Established prompt engineering techniques so that the AI maintains reliable performance. The techniques guide how the agent interprets questions and organises its answers, so its performance stays dependable on both courses.">
-                                建立提示工程技巧，使 AI 保持可靠表現。這些技巧用來規定代理如何理解問題和組織回答，讓它在兩門課程中維持穩定、可用的表現。
+                            <span data-lang-zh="建立提示工程技巧，使 AI 保持可靠表現。這些技巧用來規定 AI Agent 如何理解問題和組織回答，讓它在兩門課程中維持穩定、可用的表現。"
+                                data-lang-en="Established prompt engineering techniques so that the AI maintains reliable performance. The techniques guide how the AI Agent interprets questions and organises its answers, so its performance stays dependable on both courses.">
+                                建立提示工程技巧，使 AI 保持可靠表現。這些技巧用來規定 AI Agent 如何理解問題和組織回答，讓它在兩門課程中維持穩定、可用的表現。
                             </span>
                         </div>
 
                         <div class="detail-item">
                             <strong data-lang-zh="知識庫：" data-lang-en="Knowledge base:">知識庫：</strong>
-                            <span data-lang-zh="收集、整理並清理 AI 訓練材料，建立穩健的知識庫。整理後的材料成為代理回答這兩門課程問題時可依據的內容，使回答有一致的基礎。"
-                                data-lang-en="Collected, structured, and cleaned AI training materials to build a robust knowledge base. The prepared materials are what the agent can rely on when answering questions for these two courses, which gives its answers a consistent base.">
-                                收集、整理並清理 AI 訓練材料，建立穩健的知識庫。整理後的材料成為代理回答這兩門課程問題時可依據的內容，使回答有一致的基礎。
+                            <span data-lang-zh="收集、整理並清理 AI 訓練材料，並透過 OneDrive 連接這些材料，建立穩健的知識庫。整理後的材料成為 AI Agent 回答這兩門課程問題時可依據的內容，使回答有一致的基礎。"
+                                data-lang-en="Collected, structured, and cleaned AI training materials, and connected those materials through OneDrive, to build a robust knowledge base. The prepared materials are what the AI Agent can rely on when answering questions for these two courses, which gives its answers a consistent base.">
+                                收集、整理並清理 AI 訓練材料，並透過 OneDrive 連接這些材料，建立穩健的知識庫。整理後的材料成為 AI Agent 回答這兩門課程問題時可依據的內容，使回答有一致的基礎。
                             </span>
                         </div>
 
                         <div class="outcome-section">
                             <p>
                                 <strong data-lang-zh="回饋與改進：" data-lang-en="Feedback and refinement:">回饋與改進：</strong>
-                                <span data-lang-zh="收集用戶回饋，分析表現數據，並反覆改進邏輯與準確度。回饋和表現數據被用來調整代理如何推理，以及回答是否準確，因此這個服務約 300 名用戶的工具可以按實際使用繼續改進。"
-                                    data-lang-en="Collected user feedback, analysed performance data, and iteratively refined its logic and accuracy. Feedback and performance data were used to adjust how the agent reasons and how accurate its answers are, so the tool serving approximately 300 users could keep improving from actual use.">
-                                    收集用戶回饋，分析表現數據，並反覆改進邏輯與準確度。回饋和表現數據被用來調整代理如何推理，以及回答是否準確，因此這個服務約 300 名用戶的工具可以按實際使用繼續改進。
+                                <span data-lang-zh="收集用戶回饋，分析表現數據，並反覆改進邏輯與準確度。回饋和表現數據被用來調整 AI Agent 如何推理，以及回答是否準確，因此這個服務約 300 名用戶的工具可以按實際使用繼續改進。"
+                                    data-lang-en="Collected user feedback, analysed performance data, and iteratively refined its logic and accuracy. Feedback and performance data were used to adjust how the AI Agent reasons and how accurate its answers are, so the tool serving approximately 300 users could keep improving from actual use.">
+                                    收集用戶回饋，分析表現數據，並反覆改進邏輯與準確度。回饋和表現數據被用來調整 AI Agent 如何推理，以及回答是否準確，因此這個服務約 300 名用戶的工具可以按實際使用繼續改進。
                                 </span>
                             </p>
                         </div>
