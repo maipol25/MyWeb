@@ -514,3 +514,204 @@
         inset 0 1px 0 rgba(255, 255, 255, 0.9);
     transition: all 0.2s ease;
 }
+
+/* ==================== Card gallery (project.html) ==================== */
+.project-intro {
+    text-align: center;
+    max-width: 42rem;
+    margin: 0 auto 2rem;
+    color: #5c6370;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.project-card-grid {
+    margin-bottom: 3rem;
+}
+
+.project-tile {
+    cursor: pointer;
+    border: 1px solid rgba(102, 126, 234, 0.12);
+    border-radius: 16px;
+    background: #fff;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.project-tile:hover,
+.project-tile:focus-visible {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(102, 126, 234, 0.18);
+    border-color: rgba(102, 126, 234, 0.35);
+    outline: none;
+}
+
+.project-tile-thumb {
+    position: relative;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background: linear-gradient(135deg, #f0f2ff 0%, #e8ecff 100%);
+}
+
+.project-tile-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.35s ease;
+}
+
+.project-tile:hover .project-tile-thumb img {
+    transform: scale(1.04);
+}
+
+.project-tile-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 0.35rem 0.65rem;
+    border-radius: 999px;
+    background: rgba(102, 126, 234, 0.92);
+    color: #fff;
+}
+
+.project-tile-body {
+    padding: 1.25rem 1.35rem 1.4rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-tile-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+    line-height: 1.35;
+}
+
+.project-tile-blurb {
+    font-size: 0.95rem;
+    color: #5c6370;
+    line-height: 1.55;
+    margin-bottom: 1rem;
+    flex: 1;
+}
+
+.project-tile-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.project-tile-tags .tag {
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 0.25rem 0.55rem;
+    border-radius: 6px;
+    background: rgba(102, 126, 234, 0.1);
+    color: #5a67d8;
+}
+
+.project-tile-cta {
+    margin-top: 1rem;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #667eea;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.project-detail-sources {
+    display: none !important;
+}
+
+#projectDetailModal .modal-dialog {
+    max-width: min(920px, 96vw);
+}
+
+#projectDetailModal .modal-body {
+    max-height: min(78vh, 720px);
+    overflow-y: auto;
+    padding: 1.5rem 1.75rem 2rem;
+    background: #f8f9ff;
+}
+
+#projectDetailModal .modal-header {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+    border: none;
+}
+
+#projectDetailModal .modal-header .btn-close {
+    filter: invert(1);
+}
+
+#projectDetailModal .modal-title {
+    font-weight: 700;
+    font-size: 1.35rem;
+}
+
+.project-detail-lead {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: #4a5568;
+    margin-bottom: 1.5rem;
+}
+
+.project-metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 0.75rem;
+    margin-bottom: 1.75rem;
+}
+
+.project-metric {
+    background: #fff;
+    border-radius: 12px;
+    padding: 0.85rem 1rem;
+    border: 1px solid rgba(102, 126, 234, 0.12);
+    text-align: center;
+}
+
+.project-metric .metric-value {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #5a67d8;
+}
+
+.project-metric .metric-label {
+    font-size: 0.8rem;
+    color: #718096;
+    margin-top: 0.25rem;
+}
+
+.project-detail-section strong.work-highlight,
+.project-detail-lead strong.work-highlight {
+    font-weight: 600;
+    color: #4a5568;
+}
+
+.project-detail-section strong.key-metric,
+.project-detail-lead strong.key-metric {
+    font-weight: 700;
+    color: #5a67d8;
+}
+
+@media (max-width: 576px) {
+    .project-tile-body {
+        padding: 1rem 1.1rem 1.2rem;
+    }
+    #projectDetailModal .modal-body {
+        padding: 1rem 1.1rem 1.5rem;
+    }
+}

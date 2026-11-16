@@ -5,19 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-lang-zh="項目經驗" data-lang-en="Project Experience">項目經驗</title>
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- 自定义CSS -->
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/project.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- 導航欄 -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html" data-lang-zh="ZHANG ZHEN IVAN"
@@ -28,247 +23,305 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html" data-lang-zh="首頁" data-lang-en="Home">首頁</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="work.html" data-lang-zh="工作經歷" data-lang-en="Work">工作經歷</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="activities.html" data-lang-zh="個人簡介" data-lang-en="About">個人簡介</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="intern.html" data-lang-zh="實習經歷" data-lang-en="Internships">實習經歷</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="project.html" data-lang-zh="項目經驗" data-lang-en="Projects">項目經驗</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="tools.html" data-lang-zh="實用工具" data-lang-en="Tools">實用工具</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html" data-lang-zh="首頁" data-lang-en="Home">首頁</a></li>
+                    <li class="nav-item"><a class="nav-link" href="work.html" data-lang-zh="工作經歷" data-lang-en="Work">工作經歷</a></li>
+                    <li class="nav-item"><a class="nav-link" href="activities.html" data-lang-zh="個人簡介" data-lang-en="About">個人簡介</a></li>
+                    <li class="nav-item"><a class="nav-link" href="intern.html" data-lang-zh="實習經歷" data-lang-en="Internships">實習經歷</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="project.html" data-lang-zh="項目經驗" data-lang-en="Projects">項目經驗</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tools.html" data-lang-zh="實用工具" data-lang-en="Tools">實用工具</a></li>
                 </ul>
             </div>
-            <!-- 語言切換按鈕 -->
             <button id="lang-toggle" class="btn btn-outline-light ms-3" data-lang-zh="EN" data-lang-en="中文">EN</button>
         </div>
     </nav>
 
     <br><br>
-    <!-- 頭部標題區域 --> 
     <header class="project-header">
         <div class="container">
-            <h1 class="fade-in-up" data-aos="fade-down" data-lang-zh="項目經驗" data-lang-en="Project Experience">項目經驗
-            </h1>
+            <h1 class="fade-in-up" data-aos="fade-down" data-lang-zh="項目經驗" data-lang-en="Project Experience">項目經驗</h1>
+            <p class="project-intro" data-aos="fade-up" data-aos-delay="80"
+                data-lang-zh="點擊卡片查看完整項目說明、技術棧與成果展示。"
+                data-lang-en="Click a card to open the full write-up, tech stack, and visuals.">
+                點擊卡片查看完整項目說明、技術棧與成果展示。
+            </p>
         </div>
     </header>
 
-    <!-- 主要內容區域 -->
     <div class="container project-container">
-
-        <!-- 項目一：Hello World Project -->
-        <div class="project-card" data-aos="fade-up">
-            <div class="project-header-info">
-                <h2 class="project-name" data-lang-zh="Spotify Top Music Analysis"
-                    data-lang-en="Spotify Top Music Analysis">
-                    Spotify Top Music Analysis
+        <div class="row row-cols-1 row-cols-lg-2 g-4 project-card-grid">
+            <!-- Flexible Skill Agent (latest) -->
+            <div class="col" data-aos="fade-up">
+                <article class="project-tile" data-detail-id="detail-flexible-skill-agent" tabindex="0"
+                    aria-label="Flexible Skill Agent">
+                    <div class="project-tile-thumb">
+                        <span class="project-tile-badge" data-lang-zh="最新" data-lang-en="Latest">最新</span>
+                        <img src="image/ai.png" alt="Flexible Skill Agent" loading="lazy">
+                    </div>
+                    <div class="project-tile-body">
+                        <h2 class="project-tile-title" data-lang-zh="Flexible Skill Agent"
+                            data-lang-en="Flexible Skill Agent">Flexible Skill Agent</h2>
+                        <p class="project-tile-blurb"
+                            data-lang-zh="基於 Chroma 與 LangChain 的課程助教 RAG：Streamlit 對話、可切換全檔檢索、TA skill 防注入與本地 JSONL 日誌。"
+                            data-lang-en="Course-assistant RAG with Chroma and LangChain: Streamlit chat, toggleable full-file retrieval, TA skill guardrails, and local JSONL logging.">
+                            基於 Chroma 與 LangChain 的課程助教 RAG：Streamlit 對話、可切換全檔檢索、TA skill 防注入與本地 JSONL 日誌。
+                        </p>
+                        <div class="project-tile-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Streamlit</span>
+                            <span class="tag">Chroma</span>
+                            <span class="tag">RAG</span>
+                        </div>
+                        <span class="project-tile-cta" data-lang-zh="查看詳情 <i class='fas fa-arrow-right'></i>"
+                            data-lang-en="View details <i class='fas fa-arrow-right'></i>">查看詳情 <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </article>
             </div>
 
-            <div class="project-description">
-                <p data-lang-zh="這是一個大學課程的大數據分析項目，由我與另一位同學兩個人合力完成，並最終得到此課程所有組別中的最高分數。此項目通過分析Spotify全球73個國家的170萬行音樂數據，揭示音樂成功的關鍵因素。我系統性地進行了NLP情感分析、國家偏好研究、機器學習建模，最終轉化為商業應用建議，完成了完整的數據分析與建模流程。數據來源：<i class='fab fa-kaggle'></i> <a href='https://www.kaggle.com/datasets/asaniczka/top-spotify-songs-in-73-countries-daily-updated/data' target='_blank' class='text-decoration-none'>Kaggle</a>"
-                    data-lang-en="This is a big data analysis project that analyzes 1.7 million rows of music data from Spotify's 73 countries worldwide to reveal the key factors for music success. Starting from data collection, I systematically conducted NLP sentiment analysis, country preference research, machine learning modeling, and finally transformed it into business application recommendations, demonstrating a complete data science workflow. Data Source: <i class='fab fa-kaggle'></i> <a href='https://www.kaggle.com/datasets/asaniczka/top-spotify-songs-in-73-countries-daily-updated/data' target='_blank' class='text-decoration-none'>Kaggle</a>">
-                    這是一個大數據分析項目，通過分析Spotify全球73個國家的170萬行音樂數據，揭示流行音樂火爆的關鍵因素。我系統性地進行了NLP情感分析、國家偏好研究、機器學習建模，最終轉化為商業應用建議，展示了完整的數據科學工作流程。數據來源：<i
-                        class="fab fa-kaggle"></i> <a
-                        href="https://www.kaggle.com/datasets/asaniczka/top-spotify-songs-in-73-countries-daily-updated/data"
-                        target="_blank" class="text-decoration-none">Kaggle</a>
-                </p>
-
-                <!-- 第一部分：數據收集與準備 -->
-                <div class="project-part" data-aos="fade-up">
-                    <h2 class="part-title">
-                        <i class="fas fa-database"></i>
-                        <span data-lang-zh="第一部分：數據收集與準備" data-lang-en="Part 1: Data Collection & Preparation">
-                            第一部分：數據收集與準備
-                        </span>
-                    </h2>
-
-                    <div class="row g-4">
-                        <div class="col-12">
-                            <div class="part-content">
-                                <p data-lang-zh="從Kaggle獲取Spotify每日更新的全球流行音樂dataset，包含25列特徵和170萬行記錄。進行了數據清理、去重和特徵工程，為後續分析奠定基礎。"
-                                    data-lang-en="Obtained Spotify's daily updated global music dataset from Kaggle, containing
-                                25 features and 1.7 million records. Laid the foundation for subsequent analysis through
-                                data cleaning, deduplication, and feature engineering.">
-                                    從Kaggle獲取Spotify每日更新的全球流行音樂dataset，包含25列特徵和170萬行記錄。進行了數據清理、去重和特徵工程，為後續分析奠定基礎。
-                                </p>
-                            </div>
-                        </div>
+            <!-- Spotify -->
+            <div class="col" data-aos="fade-up" data-aos-delay="100">
+                <article class="project-tile" data-detail-id="detail-spotify" tabindex="0"
+                    aria-label="Spotify Top Music Analysis">
+                    <div class="project-tile-thumb">
+                        <img src="image/model.png" alt="Spotify Top Music Analysis" loading="lazy">
                     </div>
+                    <div class="project-tile-body">
+                        <h2 class="project-tile-title" data-lang-zh="Spotify Top Music Analysis"
+                            data-lang-en="Spotify Top Music Analysis">Spotify Top Music Analysis</h2>
+                        <p class="project-tile-blurb"
+                            data-lang-zh="分析 73 國 170 萬行 Spotify 數據：NLP 情感、國家偏好地圖與 XGBoost 熱門預測（課程最高分組）。"
+                            data-lang-en="1.7M-row Spotify dataset across 73 countries: NLP sentiment, country preference maps, and XGBoost hit prediction — top course score.">
+                            分析 73 國 170 萬行 Spotify 數據：NLP 情感、國家偏好地圖與 XGBoost 熱門預測（課程最高分組）。
+                        </p>
+                        <div class="project-tile-tags">
+                            <span class="tag">Kaggle</span>
+                            <span class="tag">BERT</span>
+                            <span class="tag">XGBoost</span>
+                            <span class="tag">GeoPandas</span>
+                        </div>
+                        <span class="project-tile-cta" data-lang-zh="查看詳情 <i class='fas fa-arrow-right'></i>"
+                            data-lang-en="View details <i class='fas fa-arrow-right'></i>">查看詳情 <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hidden detail templates -->
+    <div class="project-detail-sources" aria-hidden="true">
+        <div id="detail-flexible-skill-agent">
+            <p class="project-detail-lead"
+                data-lang-zh="在 <strong class='work-highlight'>my little project</strong> 目錄下的 <strong class='work-highlight'>flexible-skill-agent</strong>（Phase 0）是一個 fictional 課程助教原型，服務合成課程 <strong class='work-highlight'>IS9999 Enterprise AI Systems</strong>。我實現從 <strong class='work-highlight'>ingest</strong> 建索引到 <strong class='work-highlight'>Streamlit</strong> 對話的完整 RAG 流程，並透過 <strong class='work-highlight'>skills/mode_ta.json</strong> 限制僅依上下文作答並加入簡短的 prompt-injection 防護。"
+                data-lang-en="Under <strong class='work-highlight'>my little project</strong>, <strong class='work-highlight'>flexible-skill-agent</strong> (Phase 0) is a fictional course-assistant scaffold for synthetic course <strong class='work-highlight'>IS9999 Enterprise AI Systems</strong>. I built the full RAG loop from <strong class='work-highlight'>ingest</strong> indexing through <strong class='work-highlight'>Streamlit</strong> chat, with <strong class='work-highlight'>skills/mode_ta.json</strong> enforcing context-only answers and a short prompt-injection guard.">
+                在 <strong class="work-highlight">my little project</strong> 目錄下的 <strong class="work-highlight">flexible-skill-agent</strong>（Phase 0）是一個 fictional 課程助教原型，服務合成課程 <strong class="work-highlight">IS9999 Enterprise AI Systems</strong>。我實現從 <strong class="work-highlight">ingest</strong> 建索引到 <strong class="work-highlight">Streamlit</strong> 對話的完整 RAG 流程，並透過 <strong class="work-highlight">skills/mode_ta.json</strong> 限制僅依上下文作答並加入簡短的 prompt-injection 防護。
+            </p>
+
+            <div class="project-metrics">
+                <div class="project-metric">
+                    <span class="metric-value">500/50</span>
+                    <span class="metric-label" data-lang-zh="分塊大小 / 重疊" data-lang-en="Chunk / overlap">分塊大小 / 重疊</span>
                 </div>
-                <!-- 第二部分：分析方向 -->
-                <div class="project-part" data-aos="fade-up">
-                    <h2 class="part-title">
-                        <i class="fas fa-chart-bar"></i>
-                        <span data-lang-zh="第二部分：分析方向" data-lang-en="Part 2: Analysis Directions">
-                            第二部分：分析方向
-                        </span>
-                    </h2>
-
-                    <!-- NLP情感分析 -->
-                    <div class="analysis-point">
-                        <h4 class="analysis-title">
-                            <i class="fas fa-brain"></i>
-                            <span data-lang-zh="NLP情感分析" data-lang-en="NLP Sentiment Analysis">
-                                NLP情感分析
-                            </span>
-                        </h4>
-                        <div class="row g-4">
-                            <div class="col-lg-6">
-                                <div class="image-container" data-aos="zoom-in">
-                                    <img src="image/songname1.png" alt="歌詞情感分析" class="img-fluid clickable-image"
-                                        data-bs-toggle="modal" data-bs-target="#imageModal"
-                                        onclick="openImageModal(this.src, '歌詞情感分析詞雲')">
-                                    <p class="text-muted mt-2">（歌詞情感分析詞雲）</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="analysis-content">
-                                    <p data-lang-zh="篩選熱門歌曲，使用Genius API獲取歌詞，應用BERT模型進行情感分析。發現具有明顯情感（高度正面或負面）的歌詞更易流行，同時歌曲標題和歌詞常包含'love'、'baby'等關鍵詞，將結果用詞雲圖總結，揭示成功歌曲的共同點特征。"
-                                        data-lang-en="Filtered popular songs, obtained lyrics using Genius API, and applied BERT model for sentiment analysis. Found that lyrics with obvious emotions (highly positive or negative) are more likely to be popular, while song titles and lyrics often contain keywords like 'love' and 'baby', revealing successful patterns in music creation.">
-                                        篩選熱門歌曲，使用Genius
-                                        API獲取歌詞，應用BERT模型進行情感分析。發現具有明顯情感（高度正面或負面）的歌詞更易流行，同時歌曲標題和歌詞常包含'love'、'baby'等關鍵詞，將結果用詞雲圖總結，揭示成功歌曲的共同點特征。
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 國家偏好分析 -->
-                    <div class="analysis-point">
-                        <h4 class="analysis-title">
-                            <i class="fas fa-globe"></i>
-                            <span data-lang-zh="國家偏好分析" data-lang-en="Country Preferences Analysis">
-                                國家偏好分析
-                            </span>
-                        </h4>
-                        <div class="row g-4">
-                            <div class="col-lg-6">
-                                <div class="image-container" data-aos="zoom-in">
-                                    <img src="image/loudness.png" alt="國家偏好分析" class="img-fluid clickable-image"
-                                        data-bs-toggle="modal" data-bs-target="#imageModal"
-                                        onclick="openImageModal(this.src, '對音樂嚮度的偏好')">
-                                    <p class="text-muted mt-2">（對音樂嚮度的偏好）</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="image-container" data-aos="zoom-in">
-                                    <img src="image/tempo.png" alt="國家偏好分析" class="img-fluid clickable-image"
-                                        data-bs-toggle="modal" data-bs-target="#imageModal"
-                                        onclick="openImageModal(this.src, '對音樂節奏感的偏好')">
-                                    <p class="text-muted mt-2">（對音樂節奏感的偏好）</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row g-4">
-                            <div class="col-12">
-                                <div class="analysis-content">
-                                    <p data-lang-zh="使用Python做出全球國家的偏好圖，利用音樂特征loudness分析不同國家用戶對音樂嚮度的偏好，顏色越深表示更偏好更動感大聲的歌曲，利用音樂特征tempo分析不同國家用戶對音樂節奏感的偏好，顏色越深表示更偏好節奏感更強更快的歌曲。通過matplotlib和geopandas庫，我創建了互動式地圖視覺化，展示了各國用戶對不同音樂類型的偏好差異。例如，美國用戶偏好流行和嘻哈音樂，英國用戶更喜歡流行和搖滾，加拿大用戶傾向於流行和鄉村音樂，而德國用戶則偏好電子音樂，法國用戶喜歡流行和rap，日本用戶則傾向於J-pop和動漫音樂。這些分析不僅揭示了地區文化差異，還考慮了其他音樂特征如danceability和energy，以提供更全面的用戶偏好洞察。"
-                                        data-lang-en="Created global country preference maps using Python, utilizing music features like loudness to analyze preferences for music loudness across different countries, where darker colors indicate stronger preference for more energetic and loud songs, and tempo to analyze preferences for music rhythm, where darker colors indicate stronger preference for faster-paced songs. Through matplotlib and geopandas libraries, I created interactive map visualizations showing user preferences for different music genres across countries. For example, US users prefer pop and hip-hop, UK users like pop and rock, Canadian users tend toward pop and country music, German users prefer electronic music, French users like pop and rap, and Japanese users tend toward J-pop and anime music. These analyses not only reveal regional cultural differences but also consider other music features like danceability and energy to provide more comprehensive user preference insights.">
-                                        使用Python做出全球國家的偏好圖，利用音樂特征loudness分析不同國家用戶對音樂嚮度的偏好，顏色越深表示更偏好更動感大聲的歌曲，利用音樂特征tempo分析不同國家用戶對音樂節奏感的偏好，顏色越深表示更偏好節奏感更強更快的歌曲。通過matplotlib和geopandas庫，我創建了互動式地圖視覺化，展示了各國用戶對不同音樂類型的偏好差異。例如，美國用戶偏好流行和嘻哈音樂，英國用戶更喜歡流行和搖滾，加拿大用戶傾向於流行和鄉村音樂，而德國用戶則偏好電子音樂，法國用戶喜歡流行和rap，日本用戶則傾向於J-pop和動漫音樂。這些分析不僅揭示了地區文化差異，還考慮了其他音樂特征如danceability和energy，以提供更全面的用戶偏好洞察。這些洞察有助於音樂平台針對不同地區用戶提供個性化推薦，同時為音樂創作者提供創作指導，並優化全球音樂分發策略。
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 機器學習建模 -->
-                    <div class="analysis-point">
-                        <h4 class="analysis-title">
-                            <i class="fas fa-robot"></i>
-                            <span data-lang-zh="機器學習建模" data-lang-en="Machine Learning Modeling">
-                                機器學習建模
-                            </span>
-                        </h4>
-                        <div class="row g-4">
-                            <div class="col-lg-6">
-                                <div class="image-container" data-aos="zoom-in">
-                                    <img src="image/model.png" alt="機器學習建模" class="img-fluid clickable-image"
-                                        data-bs-toggle="modal" data-bs-target="#imageModal"
-                                        onclick="openImageModal(this.src, '簡單流程示意圖')">
-                                    <p class="text-muted mt-2">（簡單流程示意圖）</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="analysis-content">
-                                    <p data-lang-zh="開發簡單XGBoost分類模型預測一首歌曲是否能進入受歡迎歌曲排行榜，這個模型的判斷標準是基於音頻特徵如tempo、duration、key和valence。模型達到72.56%的準確度，優於基準模型，為音樂平台提供數據驅動的決策支持。<br>左圖為簡單流程示意圖，展示這個project如何先由NLP情緒分析和國家分析篩選過關歌曲，再將歌曲數據輸入模型以預測是否這首歌有爆火潛質。這個模型不僅能幫助音樂平台預測哪些歌曲可能成為熱門，還能為創作者提供有價值的反饋，指導他們在創作過程中優化音頻特徵以提高歌曲的受歡迎程度。"
-                                        data-lang-en="Developed a simple XGBoost classification model to predict whether a song can enter the popular songs ranking. The model's judgment criteria are based on audio features such as tempo, duration, key, and valence. The model achieved 72.56% accuracy, outperforming the baseline model, providing data-driven decision support for music platforms. The left diagram is a simple flow chart, showing how this project first filters qualified songs through NLP sentiment analysis and country analysis, then inputs the song data into the model to predict whether the song has the potential to go viral. This model not only helps music platforms predict which songs may become popular, but also provides valuable feedback to creators, guiding them to optimize audio features during the creation process to increase the song's popularity.">
-                                        開發簡單XGBoost分類模型預測一首歌曲是否能進入受歡迎歌曲排行榜，這個模型的判斷標準是基於音頻特徵如tempo、duration、key和valence。模型達到72.56%的準確度，優於基準模型，為音樂平台提供數據驅動的決策支持。<br>左圖為簡單流程示意圖，展示這個project如何先由NLP情緒分析和國家分析篩選過關歌曲，再將歌曲數據輸入模型以預測是否這首歌有爆火潛質。這個模型不僅能幫助音樂平台預測哪些歌曲可能成為熱門，還能為創作者提供有價值的反饋，指導他們在創作過程中優化音頻特徵以提高歌曲的受歡迎程度。
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+                <div class="project-metric">
+                    <span class="metric-value">120k</span>
+                    <span class="metric-label" data-lang-zh="全檔模式字元上限" data-lang-en="Full-file char cap">全檔模式字元上限</span>
                 </div>
+                <div class="project-metric">
+                    <span class="metric-value">k=8</span>
+                    <span class="metric-label" data-lang-zh="相似度檢索" data-lang-en="Similarity search">相似度檢索</span>
+                </div>
+                <div class="project-metric">
+                    <span class="metric-value">2</span>
+                    <span class="metric-label" data-lang-zh="全檔來源檔上限" data-lang-en="Max source files">全檔來源檔上限</span>
+                </div>
+            </div>
 
-                <!-- 第三部分：項目總結 -->
-                <div class="project-part" data-aos="fade-up">
-                    <h2 class="part-title">
-                        <i class="fas fa-check-circle"></i>
-                        <span data-lang-zh="第三部分：項目總結" data-lang-en="Part 3: Project Summary">
-                            第三部分：項目總結
-                        </span>
-                    </h2>
+            <div class="project-part project-detail-section">
+                <h2 class="part-title"><i class="fas fa-layer-group"></i>
+                    <span data-lang-zh="技術棧" data-lang-en="Stack">技術棧</span>
+                </h2>
+                <div class="part-content">
+                    <p data-lang-zh="<strong class='work-highlight'>LLM</strong>：<strong class='work-highlight'>OpenRouter</strong>（預設，langchain-openai + <code>core/llm_provider.py</code>），可選 <strong class='work-highlight'>Ollama</strong> 或 <strong class='work-highlight'>Gemini</strong>。<br><strong class='work-highlight'>Embeddings</strong>：Chroma <code>DefaultEmbeddingFunction</code>（本地，ingest 無需 API key）。<br><strong class='work-highlight'>UI</strong>：<strong class='work-highlight'>Streamlit</strong>（<code>app.py</code>，含來源 expander）。<br><strong class='work-highlight'>Vector store</strong>：Chroma（<code>chroma_db/</code>）。"
+                        data-lang-en="<strong class='work-highlight'>LLM</strong>: <strong class='work-highlight'>OpenRouter</strong> by default (<code>langchain-openai</code> + <code>core/llm_provider.py</code>); optional <strong class='work-highlight'>Ollama</strong> or <strong class='work-highlight'>Gemini</strong>.<br><strong class='work-highlight'>Embeddings</strong>: Chroma <code>DefaultEmbeddingFunction</code> (local; no API key for ingest).<br><strong class='work-highlight'>UI</strong>: <strong class='work-highlight'>Streamlit</strong> (<code>app.py</code> with source expander).<br><strong class='work-highlight'>Vector store</strong>: Chroma (<code>chroma_db/</code>).">
+                        <strong class="work-highlight">LLM</strong>：<strong class="work-highlight">OpenRouter</strong>（預設），可選 <strong class="work-highlight">Ollama</strong> 或 <strong class="work-highlight">Gemini</strong>。<br>
+                        <strong class="work-highlight">Embeddings</strong>：Chroma 本地嵌入。<br>
+                        <strong class="work-highlight">UI</strong>：<strong class="work-highlight">Streamlit</strong>。<br>
+                        <strong class="work-highlight">Vector store</strong>：Chroma（<code>chroma_db/</code>）。
+                    </p>
+                </div>
+            </div>
 
+            <div class="project-part project-detail-section">
+                <h2 class="part-title"><i class="fas fa-search"></i>
+                    <span data-lang-zh="檢索與功能" data-lang-en="Retrieval &amp; features">檢索與功能</span>
+                </h2>
+                <div class="part-content">
+                    <p data-lang-zh="側邊欄 <strong class='work-highlight'>Full file mode</strong> 預設開啟：先以 <strong class='key-metric'>k=8</strong> 相似度搜尋，選最多 <strong class='key-metric'>兩個</strong>來源檔，再載入該檔在 Chroma 中的<strong class='key-metric'>全部 chunks</strong>（可在問題中提及 <code>*.pdf</code> / <code>*.md</code> 優先該檔）；上下文上限 <strong class='key-metric'>120,000</strong> 字元。關閉後改為經典 top-8 chunk 檢索。<br><code>ingest.py</code> 載入 <code>data/*.md</code> 與 PDF，分塊後建索引；<code>core/chat_log.py</code> 可將對話寫入本地 <code>logs/chat_YYYY-MM-DD.jsonl</code>（預設開啟，<code>logs/</code> 已 gitignore）。"
+                        data-lang-en="Sidebar <strong class='work-highlight'>Full file mode</strong> defaults on: <strong class='key-metric'>k=8</strong> similarity search, up to <strong class='key-metric'>two</strong> source files, then <strong class='key-metric'>all chunks</strong> for those files from Chroma (name a <code>*.pdf</code> / <code>*.md</code> in the question to prioritize); context capped at <strong class='key-metric'>120,000</strong> characters. Off switches to classic top-8 chunks.<br><code>ingest.py</code> indexes <code>data/*.md</code> and PDFs; <code>core/chat_log.py</code> appends to local <code>logs/chat_YYYY-MM-DD.jsonl</code> (on by default; <code>logs/</code> gitignored).">
+                        側邊欄 <strong class="work-highlight">Full file mode</strong> 預設開啟：先以 <strong class="key-metric">k=8</strong> 相似度搜尋，選最多 <strong class="key-metric">兩個</strong>來源檔，再載入該檔在 Chroma 中的<strong class="key-metric">全部 chunks</strong>；上下文上限 <strong class="key-metric">120,000</strong> 字元。關閉後改為經典 top-8 chunk 檢索。<br>
+                        <code>ingest.py</code> 建索引；<code>core/chat_log.py</code> 支援本地 JSONL 對話日誌。
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-part project-detail-section">
+                <h2 class="part-title"><i class="fas fa-folder-tree"></i>
+                    <span data-lang-zh="專案結構（摘錄）" data-lang-en="Layout (excerpt)">專案結構（摘錄）</span>
+                </h2>
+                <div class="part-content">
+                    <p class="mb-0"><code>app.py</code> · <code>ingest.py</code> · <code>core/</code>（chat_log, llm_provider, vector_store）· <code>data/</code> · <code>skills/mode_ta.json</code></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="detail-spotify">
+            <p class="project-detail-lead"
+                data-lang-zh="這是一個大學課程的大數據分析項目，由我與另一位同學兩個人合力完成，並最終得到此課程所有組別中的<strong class='key-metric'>最高分數</strong>。此項目通過分析 Spotify 全球 73 個國家的 <strong class='key-metric'>170 萬行</strong>音樂數據，揭示音樂成功的關鍵因素。數據來源：<i class='fab fa-kaggle'></i> <a href='https://www.kaggle.com/datasets/asaniczka/top-spotify-songs-in-73-countries-daily-updated/data' target='_blank' rel='noopener' class='text-decoration-none'>Kaggle</a>"
+                data-lang-en="A university big-data project completed with a partner, earning the <strong class='key-metric'>highest score</strong> in the course. We analyzed <strong class='key-metric'>1.7 million</strong> rows of Spotify data across <strong class='key-metric'>73 countries</strong>. Data: <i class='fab fa-kaggle'></i> <a href='https://www.kaggle.com/datasets/asaniczka/top-spotify-songs-in-73-countries-daily-updated/data' target='_blank' rel='noopener' class='text-decoration-none'>Kaggle</a>">
+                這是一個大學課程的大數據分析項目，由我與另一位同學兩個人合力完成，並最終得到此課程所有組別中的<strong class="key-metric">最高分數</strong>。此項目通過分析 Spotify 全球 73 個國家的 <strong class="key-metric">170 萬行</strong>音樂數據，揭示音樂成功的關鍵因素。數據來源：<i class="fab fa-kaggle"></i> <a href="https://www.kaggle.com/datasets/asaniczka/top-spotify-songs-in-73-countries-daily-updated/data" target="_blank" rel="noopener" class="text-decoration-none">Kaggle</a>
+            </p>
+
+            <div class="project-part">
+                <h2 class="part-title"><i class="fas fa-database"></i>
+                    <span data-lang-zh="第一部分：數據收集與準備" data-lang-en="Part 1: Data Collection &amp; Preparation">第一部分：數據收集與準備</span>
+                </h2>
+                <div class="part-content">
+                    <p data-lang-zh="從 Kaggle 獲取 Spotify 每日更新的全球流行音樂 dataset，包含 25 列特徵和 170 萬行記錄。進行了數據清理、去重和特徵工程，為後續分析奠定基礎。"
+                        data-lang-en="Obtained Spotify's daily updated global music dataset from Kaggle, containing 25 features and 1.7 million records. Laid the foundation through data cleaning, deduplication, and feature engineering.">
+                        從 Kaggle 獲取 Spotify 每日更新的全球流行音樂 dataset，包含 25 列特徵和 170 萬行記錄。進行了數據清理、去重和特徵工程，為後續分析奠定基礎。
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-part">
+                <h2 class="part-title"><i class="fas fa-chart-bar"></i>
+                    <span data-lang-zh="第二部分：分析方向" data-lang-en="Part 2: Analysis Directions">第二部分：分析方向</span>
+                </h2>
+
+                <div class="analysis-point">
+                    <h4 class="analysis-title"><i class="fas fa-brain"></i>
+                        <span data-lang-zh="NLP 情感分析" data-lang-en="NLP Sentiment Analysis">NLP 情感分析</span>
+                    </h4>
                     <div class="row g-4">
-                        <div class="col-12">
-                            <div class="part-content">
-                                <p data-lang-zh="項目成功揭示一些音樂成功的關鍵因素：情感明顯張揚的歌詞更易流行、地區偏好差異顯著，並且使用機器學習模型預測熱門歌曲。這些發現為音樂行業提供了數據驅動的決策框架，涵蓋從創作到營銷的各個環節。除了完成數據的分析，還將結果轉化為商業價值，發現可以通過數據洞察為音樂公司提供個性化推薦、本地化營銷、創作指導等用途。這些應用幫助音樂平台優化算法、改善用戶體驗，並為創作者提供數據驅動的創作指導。"
-                                    data-lang-en="The project successfully revealed key factors for music success: lyrics with obvious and expressive emotions are more likely to become popular, regional preferences show significant differences, and machine learning models can effectively predict hit songs. These findings provide a data-driven decision framework for the music industry, covering all aspects from creation to marketing. In addition to completing the data analysis, the results were transformed into business value, discovering that data insights can provide music companies with personalized recommendations, localized marketing, creation guidance, and other applications. These applications help music platforms optimize algorithms, improve user experience, and provide data-driven creation guidance for creators.">
-                                    項目成功揭示一些音樂成功的關鍵因素：情感明顯張揚的歌詞更易流行、地區偏好差異顯著，並且使用機器學習模型預測熱門歌曲。這些發現為音樂行業提供了數據驅動的決策框架，涵蓋從創作到營銷的各個環節。除了完成數據的分析，還將結果轉化為商業價值，發現可以通過數據洞察為音樂公司提供個性化推薦、本地化營銷、創作指導等用途。這些應用幫助音樂平台優化算法、改善用戶體驗，並為創作者提供數據驅動的創作指導。
+                        <div class="col-lg-6">
+                            <div class="image-container">
+                                <img src="image/songname1.png" alt="歌詞情感分析" class="img-fluid clickable-image"
+                                    data-bs-toggle="modal" data-bs-target="#imageModal"
+                                    onclick="openImageModal(this.src, '歌詞情感分析詞雲')">
+                                <p class="text-muted mt-2">（歌詞情感分析詞雲）</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="analysis-content">
+                                <p data-lang-zh="篩選熱門歌曲，使用 Genius API 獲取歌詞，應用 BERT 模型進行情感分析。發現具有明顯情感（高度正面或負面）的歌詞更易流行。"
+                                    data-lang-en="Filtered popular songs, obtained lyrics via Genius API, and applied BERT for sentiment analysis. Lyrics with strong positive or negative emotion correlated with popularity.">
+                                    篩選熱門歌曲，使用 Genius API 獲取歌詞，應用 BERT 模型進行情感分析。發現具有明顯情感（高度正面或負面）的歌詞更易流行。
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- 圖片查看模態框 -->
-                <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="imageModalLabel">圖片預覽</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="analysis-point">
+                    <h4 class="analysis-title"><i class="fas fa-globe"></i>
+                        <span data-lang-zh="國家偏好分析" data-lang-en="Country Preferences Analysis">國家偏好分析</span>
+                    </h4>
+                    <div class="row g-4">
+                        <div class="col-lg-6">
+                            <div class="image-container">
+                                <img src="image/loudness.png" alt="響度偏好" class="img-fluid clickable-image"
+                                    data-bs-toggle="modal" data-bs-target="#imageModal"
+                                    onclick="openImageModal(this.src, '對音樂響度的偏好')">
+                                <p class="text-muted mt-2">（對音樂響度的偏好）</p>
                             </div>
-                            <div class="modal-body text-center">
-                                <img id="modalImage" src="" alt="Preview" class="img-fluid" style="max-height: 70vh;">
-                                <p id="imageCaption" class="mt-2 text-muted"></p>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="image-container">
+                                <img src="image/tempo.png" alt="節奏偏好" class="img-fluid clickable-image"
+                                    data-bs-toggle="modal" data-bs-target="#imageModal"
+                                    onclick="openImageModal(this.src, '對音樂節奏感的偏好')">
+                                <p class="text-muted mt-2">（對音樂節奏感的偏好）</p>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="analysis-content">
+                                <p data-lang-zh="使用 Python 與 matplotlib、geopandas 繪製全球 loudness 與 tempo 偏好地圖，揭示地區文化差異與 danceability、energy 等特徵的綜合洞察。"
+                                    data-lang-en="Built global loudness and tempo preference maps with Python, matplotlib, and geopandas, revealing regional differences and insights across danceability, energy, and other features.">
+                                    使用 Python 與 matplotlib、geopandas 繪製全球 loudness 與 tempo 偏好地圖，揭示地區文化差異與 danceability、energy 等特徵的綜合洞察。
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Bootstrap JS -->
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-                <!-- AOS JS -->
-                <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-                <!-- 自定义JS -->
-                <script src="js/script.js"></script>
+                <div class="analysis-point">
+                    <h4 class="analysis-title"><i class="fas fa-robot"></i>
+                        <span data-lang-zh="機器學習建模" data-lang-en="Machine Learning Modeling">機器學習建模</span>
+                    </h4>
+                    <div class="row g-4">
+                        <div class="col-lg-6">
+                            <div class="image-container">
+                                <img src="image/model.png" alt="流程示意圖" class="img-fluid clickable-image"
+                                    data-bs-toggle="modal" data-bs-target="#imageModal"
+                                    onclick="openImageModal(this.src, '簡單流程示意圖')">
+                                <p class="text-muted mt-2">（簡單流程示意圖）</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="analysis-content">
+                                <p data-lang-zh="開發 XGBoost 分類模型預測歌曲能否進入熱門榜，依據 tempo、duration、key、valence 等音頻特徵，準確率達 <strong class='key-metric'>72.56%</strong>，優於基準模型。"
+                                    data-lang-en="Developed an XGBoost classifier for chart entry using tempo, duration, key, valence, and related audio features, reaching <strong class='key-metric'>72.56%</strong> accuracy — above the baseline.">
+                                    開發 XGBoost 分類模型預測歌曲能否進入熱門榜，依據 tempo、duration、key、valence 等音頻特徵，準確率達 <strong class="key-metric">72.56%</strong>，優於基準模型。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                <script>
-                    // 初始化AOS
-                    AOS.init();
+            <div class="project-part">
+                <h2 class="part-title"><i class="fas fa-check-circle"></i>
+                    <span data-lang-zh="第三部分：項目總結" data-lang-en="Part 3: Project Summary">第三部分：項目總結</span>
+                </h2>
+                <div class="part-content">
+                    <p data-lang-zh="項目揭示情感張揚的歌詞、顯著的地區偏好差異，以及可用的熱門預測模型；並將洞察轉化為個性化推薦、本地化營銷與創作指導等商業價值。"
+                        data-lang-en="We surfaced drivers of hits — expressive lyrics, regional taste gaps, and a practical chart-prediction model — and tied insights to recommendations, localized marketing, and creator guidance.">
+                        項目揭示情感張揚的歌詞、顯著的地區偏好差異，以及可用的熱門預測模型；並將洞察轉化為個性化推薦、本地化營銷與創作指導等商業價值。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                    // 圖片模態框功能
-                    function openImageModal(imageSrc, caption) {
-                        const modalImage = document.getElementById('modalImage');
-                        const modalCaption = document.getElementById('imageCaption');
-                        const modalTitle = document.getElementById('imageModalLabel');
+    <div class="modal fade" id="projectDetailModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectDetailTitle"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="projectDetailBody"></div>
+            </div>
+        </div>
+    </div>
 
-                        modalImage.src = imageSrc;
-                        modalCaption.textContent = caption || '';
-                        modalTitle.textContent = caption ? caption : '圖片預覽';
-                    }
-                </script>
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel">圖片預覽</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="modalImage" src="" alt="Preview" class="img-fluid" style="max-height: 70vh;">
+                    <p id="imageCaption" class="mt-2 text-muted"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/project.js"></script>
 </body>
 
 </html>
