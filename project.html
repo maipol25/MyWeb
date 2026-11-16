@@ -61,15 +61,17 @@
                         <h2 class="project-tile-title" data-lang-zh="Flexible Skill Agent"
                             data-lang-en="Flexible Skill Agent">Flexible Skill Agent</h2>
                         <p class="project-tile-blurb"
-                            data-lang-zh="靈活學習助理：放入教材即自動分析並生成技能與提示詞，可切換不同學科或材料組合；以 vibe coding 持續迭代。"
-                            data-lang-en="Flexible learning assistant: add materials for auto-analysis and generated skills and prompts—swap subjects or document sets; built through vibe coding.">
-                            靈活學習助理：放入教材即自動分析並生成技能與提示詞，可切換不同學科或材料組合；以 vibe coding 持續迭代。
+                            data-lang-zh="「面具（mask）」模式學習助理：上傳 PDF／Markdown → 本地索引 → LLM 自動起草技能與系統提示詞 → 依教材 RAG 對話；可為不同課程切換面具，以 vibe coding 在 Cursor 持續演進。"
+                            data-lang-en="Mask-mode learning assistant: upload PDFs/Markdown → local indexing → LLM-drafted skills &amp; system prompts → corpus-grounded RAG chat. Swap masks per course; evolved through vibe coding in Cursor.">
+                            「面具（mask）」模式學習助理：上傳 PDF／Markdown → 本地索引 → LLM 自動起草技能與系統提示詞 → 依教材 RAG 對話；可為不同課程切換面具，以 vibe coding 在 Cursor 持續演進。
                         </p>
                         <div class="project-tile-tags">
                             <span class="tag">Python</span>
                             <span class="tag">Streamlit</span>
+                            <span class="tag">LangChain</span>
                             <span class="tag">Chroma</span>
                             <span class="tag">RAG</span>
+                            <span class="tag">OpenRouter</span>
                         </div>
                         <span class="project-tile-cta" data-lang-zh="查看詳情 <i class='fas fa-arrow-right'></i>"
                             data-lang-en="View details <i class='fas fa-arrow-right'></i>">查看詳情 <i class="fas fa-arrow-right"></i></span>
@@ -110,62 +112,96 @@
     <div class="project-detail-sources" aria-hidden="true">
         <div id="detail-flexible-skill-agent">
             <p class="project-detail-lead"
-                data-lang-zh="<strong class='work-highlight'>Flexible Skill Agent</strong> 是我打造的<strong class='work-highlight'>靈活學習助理</strong>實驗：把<strong class='work-highlight'>教材或文件</strong>放進系統後，會<strong class='key-metric'>自動分析內容</strong>，再<strong class='key-metric'>自動生成技能（skills）與提示詞（prompts）</strong>，讓通用模型變成<strong class='work-highlight'>貼合該套材料的專用助理</strong>。同一套流程可重複用於<strong class='work-highlight'>不同學科或不同材料組合</strong>，不必每次從零設定。開發上我主要以 <strong class='work-highlight'>vibe coding</strong> 在 Cursor 裡邊聊邊做、快速試錯與調整。"
-                data-lang-en="<strong class='work-highlight'>Flexible Skill Agent</strong> is my experiment in a <strong class='work-highlight'>flexible learning assistant</strong>: you put in <strong class='work-highlight'>course materials or documents</strong>, the system <strong class='key-metric'>analyzes them automatically</strong>, then <strong class='key-metric'>generates skills and prompts</strong> so a general model becomes a <strong class='work-highlight'>specialist tuned to that corpus</strong>. The same flow works for <strong class='work-highlight'>different subjects or material sets</strong> without rebuilding from scratch. I built it mainly through <strong class='work-highlight'>vibe coding</strong> in Cursor—iterating in conversation and trying ideas fast.">
-                <strong class="work-highlight">Flexible Skill Agent</strong> 是我打造的<strong class="work-highlight">靈活學習助理</strong>實驗：把<strong class="work-highlight">教材或文件</strong>放進系統後，會<strong class="key-metric">自動分析內容</strong>，再<strong class="key-metric">自動生成技能（skills）與提示詞（prompts）</strong>，讓通用模型變成<strong class="work-highlight">貼合該套材料的專用助理</strong>。同一套流程可重複用於<strong class="work-highlight">不同學科或不同材料組合</strong>，不必每次從零設定。開發上我主要以 <strong class="work-highlight">vibe coding</strong> 在 Cursor 裡邊聊邊做、快速試錯與調整。
+                data-lang-zh="<strong class='work-highlight'>Flexible Skill Agent</strong> 是我在本機探索的<strong class='work-highlight'>靈活學習助理</strong>（目前 <strong class='key-metric'>Phase 2 — 面具模式</strong>）：同一套流程可把<strong class='work-highlight'>教材或筆記</strong>變成<strong class='work-highlight'>專用對話助理</strong>，而不必為每門課手工重寫提示詞。開發方式以 <strong class='work-highlight'>vibe coding</strong> 為主——在 <strong class='work-highlight'>Cursor</strong> 裡邊描述需求邊改程式，快速試錯。"
+                data-lang-en="<strong class='work-highlight'>Flexible Skill Agent</strong> is my local <strong class='work-highlight'>flexible learning assistant</strong> experiment (<strong class='key-metric'>Phase 2 — mask mode</strong>): one repeatable flow turns <strong class='work-highlight'>course materials or notes</strong> into a <strong class='work-highlight'>dedicated chat assistant</strong> without hand-writing prompts for every class. I build it mainly through <strong class='work-highlight'>vibe coding</strong> in <strong class='work-highlight'>Cursor</strong>—describing intent and iterating in conversation.">
+                <strong class="work-highlight">Flexible Skill Agent</strong> 是我在本機探索的<strong class="work-highlight">靈活學習助理</strong>（目前 <strong class="key-metric">Phase 2 — 面具模式</strong>）：同一套流程可把<strong class="work-highlight">教材或筆記</strong>變成<strong class="work-highlight">專用對話助理</strong>，而不必為每門課手工重寫提示詞。開發方式以 <strong class="work-highlight">vibe coding</strong> 為主——在 <strong class="work-highlight">Cursor</strong> 裡邊描述需求邊改程式，快速試錯。
             </p>
 
             <div class="project-metrics">
                 <div class="project-metric">
                     <span class="metric-value">①</span>
-                    <span class="metric-label" data-lang-zh="放入材料" data-lang-en="Add materials">放入材料</span>
+                    <span class="metric-label" data-lang-zh="上傳資料" data-lang-en="Upload">上傳資料</span>
                 </div>
                 <div class="project-metric">
                     <span class="metric-value">②</span>
-                    <span class="metric-label" data-lang-zh="自動分析" data-lang-en="Auto-analyze">自動分析</span>
+                    <span class="metric-label" data-lang-zh="本地索引" data-lang-en="Local index">本地索引</span>
                 </div>
                 <div class="project-metric">
                     <span class="metric-value">③</span>
-                    <span class="metric-label" data-lang-zh="技能與提示詞" data-lang-en="Skills &amp; prompts">技能與提示詞</span>
+                    <span class="metric-label" data-lang-zh="生成面具技能" data-lang-en="Mask skill JSON">生成面具技能</span>
                 </div>
                 <div class="project-metric">
                     <span class="metric-value">④</span>
-                    <span class="metric-label" data-lang-zh="專用助理" data-lang-en="Tailored assistant">專用助理</span>
+                    <span class="metric-label" data-lang-zh="RAG 對話" data-lang-en="RAG chat">RAG 對話</span>
                 </div>
             </div>
 
             <div class="project-part project-detail-section">
-                <h2 class="part-title"><i class="fas fa-layer-group"></i>
-                    <span data-lang-zh="技術棧" data-lang-en="Stack">技術棧</span>
+                <h2 class="part-title"><i class="fas fa-circle-info"></i>
+                    <span data-lang-zh="這是什麼" data-lang-en="What it is">這是什麼</span>
                 </h2>
                 <div class="part-content">
-                    <p data-lang-zh="以<strong class='work-highlight'>網頁小應用</strong>呈現對話介面，後端用 Python 處理文件讀取與問答流程；可接上不同大語言模型。倉庫與細部工具會隨迭代更新，之後可在此補上連結。"
-                        data-lang-en="A <strong class='work-highlight'>browser-based mini app</strong> for chat, with Python handling document ingestion and Q&amp;A. It can plug into different large language models. Repo and toolchain details will be added here as the project evolves.">
-                        以<strong class="work-highlight">網頁小應用</strong>呈現對話介面，後端用 Python 處理文件讀取與問答流程；可接上不同大語言模型。倉庫與細部工具會隨迭代更新，之後可在此補上連結。
+                    <p data-lang-zh="<strong>給一般人的一句話：</strong>像把一疊講義丟進「會自己讀書的助教機器」——它先整理內容、自動寫好規則（<strong class='work-highlight'>技能 skill</strong>＋<strong class='work-highlight'>系統提示詞</strong>），再戴著<strong class='work-highlight'>面具 mask</strong>（一組材料對應的設定檔）只根據那份資料回答。<strong class='key-metric'>RAG</strong>（檢索增強生成）可先比喻成：問問題前先在筆記裡翻相關段落，再請模型依段落作答，減少憑空編造。"
+                        data-lang-en="<strong>In plain terms:</strong> Like dropping a stack of handouts into a &quot;self-study TA&quot;—it organizes the text, drafts rules (<strong class='work-highlight'>skill</strong> + <strong class='work-highlight'>system prompt</strong>), then wears a <strong class='work-highlight'>mask</strong> (one corpus = one config) to answer only from that material. <strong class='key-metric'>RAG</strong> (retrieval-augmented generation) is roughly: search your notes for relevant passages first, then ask the model to answer from those snippets—less guessing.">
+                        <strong>給一般人的一句話：</strong>像把一疊講義丟進「會自己讀書的助教機器」——它先整理內容、自動寫好規則（<strong class="work-highlight">技能 skill</strong>＋<strong class="work-highlight">系統提示詞</strong>），再戴著<strong class="work-highlight">面具 mask</strong>（一組材料對應的設定檔）只根據那份資料回答。<strong class="key-metric">RAG</strong>（檢索增強生成）可先比喻成：問問題前先在筆記裡翻相關段落，再請模型依段落作答，減少憑空編造。
                     </p>
                 </div>
             </div>
 
             <div class="project-part project-detail-section">
-                <h2 class="part-title"><i class="fas fa-search"></i>
-                    <span data-lang-zh="運作方式" data-lang-en="How it works">運作方式</span>
+                <h2 class="part-title"><i class="fas fa-route"></i>
+                    <span data-lang-zh="怎麼運作" data-lang-en="How it works">怎麼運作</span>
                 </h2>
                 <div class="part-content">
-                    <p data-lang-zh="上傳或指定一組教材後，系統先<strong class='work-highlight'>理解與整理</strong>內容，再依材料<strong class='key-metric'>產出對應的技能定義與提示詞</strong>，約束助理如何回答（例如只依教材、扮演特定角色）。換一套 PDF 或筆記，就能<strong class='work-highlight'>快速切換成另一門課或另一個主題</strong>的專用助理。對話時可查看引用來源，方便核對答案是否扎根在材料裡。"
-                        data-lang-en="After you upload or point the system at a material set, it <strong class='work-highlight'>reads and organizes</strong> the content, then <strong class='key-metric'>derives matching skill definitions and prompts</strong> that shape how the assistant answers (e.g. stay on-source, play a specific role). Swap in a different PDF or notes and you can <strong class='work-highlight'>spin up another subject-specific assistant</strong> quickly. Chat UI can surface cited sources so answers stay grounded in the materials.">
-                        上傳或指定一組教材後，系統先<strong class="work-highlight">理解與整理</strong>內容，再依材料<strong class="key-metric">產出對應的技能定義與提示詞</strong>，約束助理如何回答（例如只依教材、扮演特定角色）。換一套 PDF 或筆記，就能<strong class="work-highlight">快速切換成另一門課或另一個主題</strong>的專用助理。對話時可查看引用來源，方便核對答案是否扎根在材料裡。
-                    </p>
+                    <ol
+                        data-lang-zh="<li>在 <strong class='work-highlight'>Streamlit</strong> 介面上傳 <strong class='work-highlight'>PDF</strong> 或 <strong class='work-highlight'>Markdown</strong>，檔案存到該面具的資料夾。</li><li><strong class='key-metric'>ingest</strong> 流程把文件切成片段，用<strong class='work-highlight'>Chroma</strong> 在<strong class='work-highlight'>本機</strong>建立向量索引（嵌入預設本地，不必為建索引另外付 API）。</li><li><strong class='work-highlight'>mask_factory</strong> 抽樣文件內容，經<strong class='work-highlight'>LLM</strong> 起草 <code>skills/masks/{id}.json</code>：角色、答題規則、引用檔名、簡短防注入拒絕句。</li><li>確認技能後進入聊天：每個問題先做相似度搜尋，把命中片段當 <strong class='key-metric'>RETRIEVED CONTEXT</strong> 餵給模型，並標出來源檔名。</li><li>側欄可切換 <strong class='work-highlight'>Full file mode</strong>：先找最相關的 1–2 份檔，再把該檔在索引中的片段整批送入（有字數上限），適合需要通讀單一講義的問題；關閉則用經典 top‑k 片段模式。</li><li>換一套教材＝換面具；內建預設 <strong class='work-highlight'>course_ta</strong> 面具保留示範課程助理行為。</li>"
+                        data-lang-en="<li>Upload <strong class='work-highlight'>PDF</strong> or <strong class='work-highlight'>Markdown</strong> in the <strong class='work-highlight'>Streamlit</strong> UI; files land in that mask&apos;s folder.</li><li>The <strong class='key-metric'>ingest</strong> pipeline chunks documents and builds a local <strong class='work-highlight'>Chroma</strong> vector index (default embeddings run on your machine—no cloud key needed to index).</li><li><strong class='work-highlight'>mask_factory</strong> samples the corpus and asks an <strong class='work-highlight'>LLM</strong> to draft <code>skills/masks/{id}.json</code>: role, answer rules, filename citations, and a short injection guard.</li><li>After you confirm the skill, chat runs <strong class='key-metric'>RAG</strong>: retrieve similar chunks, pass them as <strong class='key-metric'>RETRIEVED CONTEXT</strong>, and cite source filenames.</li><li>Sidebar <strong class='work-highlight'>Full file mode</strong> (default on): pick up to two relevant files and load all their indexed chunks (with a character cap) for whole-handout questions; turn off for classic top‑k snippets only.</li><li>New materials = new mask; the built-in <strong class='work-highlight'>course_ta</strong> mask keeps the demo course-TA behavior.</li>">
+                        <li>在 <strong class="work-highlight">Streamlit</strong> 介面上傳 <strong class="work-highlight">PDF</strong> 或 <strong class="work-highlight">Markdown</strong>，檔案存到該面具的資料夾。</li>
+                        <li><strong class="key-metric">ingest</strong> 流程把文件切成片段，用<strong class="work-highlight">Chroma</strong> 在<strong class="work-highlight">本機</strong>建立向量索引（嵌入預設本地，不必為建索引另外付 API）。</li>
+                        <li><strong class="work-highlight">mask_factory</strong> 抽樣文件內容，經<strong class="work-highlight">LLM</strong> 起草 <code>skills/masks/{id}.json</code>：角色、答題規則、引用檔名、簡短防注入拒絕句。</li>
+                        <li>確認技能後進入聊天：每個問題先做相似度搜尋，把命中片段當 <strong class="key-metric">RETRIEVED CONTEXT</strong> 餵給模型，並標出來源檔名。</li>
+                        <li>側欄可切換 <strong class="work-highlight">Full file mode</strong>：先找最相關的 1–2 份檔，再把該檔在索引中的片段整批送入（有字數上限），適合需要通讀單一講義的問題；關閉則用經典 top‑k 片段模式。</li>
+                        <li>換一套教材＝換面具；內建預設 <strong class="work-highlight">course_ta</strong> 面具保留示範課程助理行為。</li>
+                    </ol>
                 </div>
             </div>
 
             <div class="project-part project-detail-section">
-                <h2 class="part-title"><i class="fas fa-folder-tree"></i>
-                    <span data-lang-zh="專案結構（摘錄）" data-lang-en="Layout (excerpt)">專案結構（摘錄）</span>
+                <h2 class="part-title"><i class="fas fa-screwdriver-wrench"></i>
+                    <span data-lang-zh="我用什麼做" data-lang-en="What I used">我用什麼做</span>
                 </h2>
                 <div class="part-content">
-                    <p class="mb-0" data-lang-zh="材料資料夾 · 技能設定 · 對話介面 · 核心邏輯模組（細部目錄與 GitHub 連結待補）"
-                        data-lang-en="Materials folder · skill configs · chat UI · core logic modules (folder tree and GitHub link to be added)">
-                        材料資料夾 · 技能設定 · 對話介面 · 核心邏輯模組（細部目錄與 GitHub 連結待補）
+                    <p class="mb-2" data-lang-zh="<strong>給一般人的一句話：</strong>用 Python 把小應用、文件索引與雲端／本機大模型接在一起；聊天預設走 API，索引與嵌入多在本機完成。"
+                        data-lang-en="<strong>In plain terms:</strong> Python ties together a small web UI, document indexing, and cloud or local chat models—indexing and embeddings stay mostly on your machine.">
+                        <strong>給一般人的一句話：</strong>用 Python 把小應用、文件索引與雲端／本機大模型接在一起；聊天預設走 API，索引與嵌入多在本機完成。
+                    </p>
+                    <ul
+                        data-lang-zh="<li><strong class='work-highlight'>Python</strong> — 主程式、面具註冊、上傳管線與對話邏輯。</li><li><strong class='work-highlight'>Streamlit</strong> — 瀏覽器裡的操作介面（上傳 → 確認技能 → 聊天）。</li><li><strong class='work-highlight'>LangChain</strong> — 文件載入、文字切割（<code>langchain-text-splitters</code>）與訊息格式。</li><li><strong class='work-highlight'>langchain-openai</strong> — 以 OpenAI 相容介面連到 <strong class='work-highlight'>OpenRouter</strong>（預設聊天後端）。</li><li><strong class='work-highlight'>OpenRouter</strong> — 雲端 LLM API 閘道；在 <code>.env</code> 換模型名稱即可。</li><li><strong class='work-highlight'>Ollama</strong> / <strong class='work-highlight'>Gemini</strong> — 可選本機或 Google 聊天模型（<code>LLM_PROVIDER</code> 切換；Gemini 需 <code>langchain-google-genai</code>）。</li><li><strong class='work-highlight'>Chroma</strong> — 本機向量資料庫，持久化到 <code>chroma_db/</code>。</li><li><strong class='work-highlight'>RAG</strong> — <code>core/vector_store.py</code> 檢索片段再組成回答上下文。</li><li><strong class='work-highlight'>PyPDF</strong>（<code>langchain-community</code>）— 從 PDF 擷取文字供索引與抽樣。</li><li><strong class='work-highlight'>python-dotenv</strong> — 在本機安全讀取 API 金鑰與模型設定。</li><li><strong class='work-highlight'>Cursor</strong> — vibe coding 開發環境（邊聊邊改程式、快速迭代）。</li>"
+                        data-lang-en="<li><strong class='work-highlight'>Python</strong> — App logic, mask registry, upload pipeline, and chat.</li><li><strong class='work-highlight'>Streamlit</strong> — Browser UI (upload → confirm skill → chat).</li><li><strong class='work-highlight'>LangChain</strong> — Loaders, splitting (<code>langchain-text-splitters</code>), and message types.</li><li><strong class='work-highlight'>langchain-openai</strong> — OpenAI-compatible client for <strong class='work-highlight'>OpenRouter</strong> (default chat backend).</li><li><strong class='work-highlight'>OpenRouter</strong> — Cloud LLM API gateway; swap <code>OPENROUTER_MODEL</code> in <code>.env</code>.</li><li><strong class='work-highlight'>Ollama</strong> / <strong class='work-highlight'>Gemini</strong> — Optional local or Google chat backends via <code>LLM_PROVIDER</code> (Gemini uses <code>langchain-google-genai</code>).</li><li><strong class='work-highlight'>Chroma</strong> — On-disk vector store under <code>chroma_db/</code>.</li><li><strong class='work-highlight'>RAG</strong> — <code>core/vector_store.py</code> retrieves chunks into prompt context.</li><li><strong class='work-highlight'>PyPDF</strong> (<code>langchain-community</code>) — Extract PDF text for indexing and sampling.</li><li><strong class='work-highlight'>python-dotenv</strong> — Load secrets and model config locally.</li><li><strong class='work-highlight'>Cursor</strong> — Vibe-coding IDE for conversational iteration.</li>">
+                        <li><strong class="work-highlight">Python</strong> — 主程式、面具註冊、上傳管線與對話邏輯。</li>
+                        <li><strong class="work-highlight">Streamlit</strong> — 瀏覽器裡的操作介面（上傳 → 確認技能 → 聊天）。</li>
+                        <li><strong class="work-highlight">LangChain</strong> — 文件載入、文字切割（<code>langchain-text-splitters</code>）與訊息格式。</li>
+                        <li><strong class="work-highlight">langchain-openai</strong> — 以 OpenAI 相容介面連到 <strong class="work-highlight">OpenRouter</strong>（預設聊天後端）。</li>
+                        <li><strong class="work-highlight">OpenRouter</strong> — 雲端 LLM API 閘道；在 <code>.env</code> 換模型名稱即可。</li>
+                        <li><strong class="work-highlight">Ollama</strong> / <strong class="work-highlight">Gemini</strong> — 可選本機或 Google 聊天模型（<code>LLM_PROVIDER</code> 切換；Gemini 需 <code>langchain-google-genai</code>）。</li>
+                        <li><strong class="work-highlight">Chroma</strong> — 本機向量資料庫，持久化到 <code>chroma_db/</code>。</li>
+                        <li><strong class="work-highlight">RAG</strong> — <code>core/vector_store.py</code> 檢索片段再組成回答上下文。</li>
+                        <li><strong class="work-highlight">PyPDF</strong>（<code>langchain-community</code>）— 從 PDF 擷取文字供索引與抽樣。</li>
+                        <li><strong class="work-highlight">python-dotenv</strong> — 在本機安全讀取 API 金鑰與模型設定。</li>
+                        <li><strong class="work-highlight">Cursor</strong> — vibe coding 開發環境（邊聊邊改程式、快速迭代）。</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-part project-detail-section">
+                <h2 class="part-title"><i class="fas fa-flag-checkered"></i>
+                    <span data-lang-zh="目前進度" data-lang-en="Current status">目前進度</span>
+                </h2>
+                <div class="part-content">
+                    <p class="mb-0"
+                        data-lang-zh="Phase 2 面具模式可在本機端到端跑通（<code>streamlit run app.py</code>）。倉庫附<strong class='work-highlight'>虛構示範教材</strong>與合規說明：真實校內 PDF 應只留在本機、不進 git。側欄可選將對話寫入 <code>logs/*.jsonl</code> 方便除錯。這是<strong class='work-highlight'>教育／實驗用腳手架</strong>，不是已上線的產品；GitHub 公開連結之後會補在網站上。"
+                        data-lang-en="Phase 2 mask mode runs end-to-end locally (<code>streamlit run app.py</code>). The repo ships <strong class='work-highlight'>synthetic demo materials</strong> and compliance notes—keep real campus PDFs local, not in git. Optional <code>logs/*.jsonl</code> chat logs in the sidebar aid debugging. This is an <strong class='work-highlight'>educational scaffold</strong>, not a production deployment; a public GitHub link will be added on the site later.">
+                        Phase 2 面具模式可在本機端到端跑通（<code>streamlit run app.py</code>）。倉庫附<strong class="work-highlight">虛構示範教材</strong>與合規說明：真實校內 PDF 應只留在本機、不進 git。側欄可選將對話寫入 <code>logs/*.jsonl</code> 方便除錯。這是<strong class="work-highlight">教育／實驗用腳手架</strong>，不是已上線的產品；GitHub 公開連結之後會補在網站上。
                     </p>
                 </div>
             </div>
