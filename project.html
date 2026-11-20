@@ -141,9 +141,9 @@
                     <span data-lang-zh="這是什麼" data-lang-en="What it is">這是什麼</span>
                 </h2>
                 <div class="part-content">
-                    <p data-lang-zh="<strong>給一般人的一句話：</strong>像把一疊講義丟進「會自己讀書的助教機器」——它先整理內容、自動寫好規則（<strong class='work-highlight'>技能 skill</strong>＋<strong class='work-highlight'>系統提示詞</strong>），再戴著<strong class='work-highlight'>面具 mask</strong>（一組材料對應的設定檔）只根據那份資料回答。<strong class='key-metric'>RAG</strong>（檢索增強生成）可先比喻成：問問題前先在筆記裡翻相關段落，再請模型依段落作答，減少憑空編造。"
-                        data-lang-en="<strong>In plain terms:</strong> Like dropping a stack of handouts into a &quot;self-study TA&quot;—it organizes the text, drafts rules (<strong class='work-highlight'>skill</strong> + <strong class='work-highlight'>system prompt</strong>), then wears a <strong class='work-highlight'>mask</strong> (one corpus = one config) to answer only from that material. <strong class='key-metric'>RAG</strong> (retrieval-augmented generation) is roughly: search your notes for relevant passages first, then ask the model to answer from those snippets—less guessing.">
-                        <strong>給一般人的一句話：</strong>像把一疊講義丟進「會自己讀書的助教機器」——它先整理內容、自動寫好規則（<strong class="work-highlight">技能 skill</strong>＋<strong class="work-highlight">系統提示詞</strong>），再戴著<strong class="work-highlight">面具 mask</strong>（一組材料對應的設定檔）只根據那份資料回答。<strong class="key-metric">RAG</strong>（檢索增強生成）可先比喻成：問問題前先在筆記裡翻相關段落，再請模型依段落作答，減少憑空編造。
+                    <p data-lang-zh="像把一疊講義丟進「會自己讀書的助教機器」——它先整理內容、自動寫好規則（<strong class='work-highlight'>技能 skill</strong>＋<strong class='work-highlight'>系統提示詞</strong>），再戴著<strong class='work-highlight'>面具 mask</strong>（一組材料對應的設定檔）只根據那份資料回答。<strong class='key-metric'>RAG</strong>（檢索增強生成）可先比喻成：問問題前先在筆記裡翻相關段落，再請模型依段落作答，減少憑空編造。"
+                        data-lang-en="Like dropping a stack of handouts into a &quot;self-study TA&quot;—it organizes the text, drafts rules (<strong class='work-highlight'>skill</strong> + <strong class='work-highlight'>system prompt</strong>), then wears a <strong class='work-highlight'>mask</strong> (one corpus = one config) to answer only from that material. <strong class='key-metric'>RAG</strong> (retrieval-augmented generation) is roughly: search your notes for relevant passages first, then ask the model to answer from those snippets—less guessing.">
+                        像把一疊講義丟進「會自己讀書的助教機器」——它先整理內容、自動寫好規則（<strong class="work-highlight">技能 skill</strong>＋<strong class="work-highlight">系統提示詞</strong>），再戴著<strong class="work-highlight">面具 mask</strong>（一組材料對應的設定檔）只根據那份資料回答。<strong class="key-metric">RAG</strong>（檢索增強生成）可先比喻成：問問題前先在筆記裡翻相關段落，再請模型依段落作答，減少憑空編造。
                     </p>
                 </div>
             </div>
@@ -168,12 +168,12 @@
 
             <div class="project-part project-detail-section">
                 <h2 class="part-title"><i class="fas fa-screwdriver-wrench"></i>
-                    <span data-lang-zh="我用什麼做" data-lang-en="What I used">我用什麼做</span>
+                    <span data-lang-zh="相關技術" data-lang-en="Related technologies">相關技術</span>
                 </h2>
                 <div class="part-content">
-                    <p class="mb-2" data-lang-zh="<strong>給一般人的一句話：</strong>用 Python 把小應用、文件索引與雲端／本機大模型接在一起；聊天預設走 API，索引與嵌入多在本機完成。"
-                        data-lang-en="<strong>In plain terms:</strong> Python ties together a small web UI, document indexing, and cloud or local chat models—indexing and embeddings stay mostly on your machine.">
-                        <strong>給一般人的一句話：</strong>用 Python 把小應用、文件索引與雲端／本機大模型接在一起；聊天預設走 API，索引與嵌入多在本機完成。
+                    <p class="mb-2" data-lang-zh="用 Python 把小應用、文件索引與雲端／本機大模型接在一起；聊天預設走 API，索引與嵌入多在本機完成。"
+                        data-lang-en="Python ties together a small web UI, document indexing, and cloud or local chat models—indexing and embeddings stay mostly on your machine.">
+                        用 Python 把小應用、文件索引與雲端／本機大模型接在一起；聊天預設走 API，索引與嵌入多在本機完成。
                     </p>
                     <ul
                         data-lang-zh="<li><strong class='work-highlight'>Python</strong> — 主程式、面具註冊、上傳管線與對話邏輯。</li><li><strong class='work-highlight'>Streamlit</strong> — 瀏覽器裡的操作介面（上傳 → 確認技能 → 聊天）。</li><li><strong class='work-highlight'>LangChain</strong> — 文件載入、文字切割（<code>langchain-text-splitters</code>）與訊息格式。</li><li><strong class='work-highlight'>langchain-openai</strong> — 以 OpenAI 相容介面連到 <strong class='work-highlight'>OpenRouter</strong>（預設聊天後端）。</li><li><strong class='work-highlight'>OpenRouter</strong> — 雲端 LLM API 閘道；在 <code>.env</code> 換模型名稱即可。</li><li><strong class='work-highlight'>Ollama</strong> / <strong class='work-highlight'>Gemini</strong> — 可選本機或 Google 聊天模型（<code>LLM_PROVIDER</code> 切換；Gemini 需 <code>langchain-google-genai</code>）。</li><li><strong class='work-highlight'>Chroma</strong> — 本機向量資料庫，持久化到 <code>chroma_db/</code>。</li><li><strong class='work-highlight'>RAG</strong> — <code>core/vector_store.py</code> 檢索片段再組成回答上下文。</li><li><strong class='work-highlight'>PyPDF</strong>（<code>langchain-community</code>）— 從 PDF 擷取文字供索引與抽樣。</li><li><strong class='work-highlight'>python-dotenv</strong> — 在本機安全讀取 API 金鑰與模型設定。</li><li><strong class='work-highlight'>Cursor</strong> — vibe coding 開發環境（邊聊邊改程式、快速迭代）。</li>"
@@ -199,9 +199,9 @@
                 </h2>
                 <div class="part-content">
                     <p class="mb-0"
-                        data-lang-zh="Phase 2 面具模式可在本機端到端跑通（<code>streamlit run app.py</code>）。倉庫附<strong class='work-highlight'>虛構示範教材</strong>與合規說明：真實校內 PDF 應只留在本機、不進 git。側欄可選將對話寫入 <code>logs/*.jsonl</code> 方便除錯。這是<strong class='work-highlight'>教育／實驗用腳手架</strong>，不是已上線的產品；GitHub 公開連結之後會補在網站上。"
-                        data-lang-en="Phase 2 mask mode runs end-to-end locally (<code>streamlit run app.py</code>). The repo ships <strong class='work-highlight'>synthetic demo materials</strong> and compliance notes—keep real campus PDFs local, not in git. Optional <code>logs/*.jsonl</code> chat logs in the sidebar aid debugging. This is an <strong class='work-highlight'>educational scaffold</strong>, not a production deployment; a public GitHub link will be added on the site later.">
-                        Phase 2 面具模式可在本機端到端跑通（<code>streamlit run app.py</code>）。倉庫附<strong class="work-highlight">虛構示範教材</strong>與合規說明：真實校內 PDF 應只留在本機、不進 git。側欄可選將對話寫入 <code>logs/*.jsonl</code> 方便除錯。這是<strong class="work-highlight">教育／實驗用腳手架</strong>，不是已上線的產品；GitHub 公開連結之後會補在網站上。
+                        data-lang-zh="Phase 2 面具模式已可在本機端到端使用（<code>streamlit run app.py</code>）：<strong class='work-highlight'>學生首頁</strong>（<code>app.py</code>）精簡為戴面具 RAG 聊天與多面具切換；<strong class='work-highlight'>開發者頁</strong>（側欄「开发者 Developer」或首頁教師入口，以 <code>DEV_PASSWORD</code> 解鎖）負責上傳、索引、LLM 生成面具技能、畫廊與面具刪除。側欄預設開啟 <strong class='work-highlight'>Full file mode</strong>，並可將對話寫入本機 <code>logs/*.jsonl</code>（gitignore，不進倉庫）。倉庫內為<strong class='work-highlight'>虛構示範教材</strong>與合規說明；真實校內 PDF 應只留在本機。仍是<strong class='work-highlight'>教育／實驗用腳手架</strong>，非上線產品；公開 GitHub 連結之後會補在網站上。"
+                        data-lang-en="Phase 2 mask mode runs end-to-end locally (<code>streamlit run app.py</code>): the <strong class='work-highlight'>student home</strong> (<code>app.py</code>) is chat-only with mask switching; the <strong class='work-highlight'>developer page</strong> (sidebar &quot;开发者 Developer&quot; or the teacher link on the student home, unlocked with <code>DEV_PASSWORD</code>) handles upload, indexing, LLM-drafted mask skills, gallery, and mask deletion. Sidebar defaults <strong class='work-highlight'>Full file mode</strong> on and can append chats to local <code>logs/*.jsonl</code> (gitignored). The repo ships <strong class='work-highlight'>synthetic demo materials</strong> and compliance notes—keep real campus PDFs local. Still an <strong class='work-highlight'>educational scaffold</strong>, not production; a public GitHub link will be added on the site later.">
+                        Phase 2 面具模式已可在本機端到端使用（<code>streamlit run app.py</code>）：<strong class="work-highlight">學生首頁</strong>（<code>app.py</code>）精簡為戴面具 RAG 聊天與多面具切換；<strong class="work-highlight">開發者頁</strong>（側欄「开发者 Developer」或首頁教師入口，以 <code>DEV_PASSWORD</code> 解鎖）負責上傳、索引、LLM 生成面具技能、畫廊與面具刪除。側欄預設開啟 <strong class="work-highlight">Full file mode</strong>，並可將對話寫入本機 <code>logs/*.jsonl</code>（gitignore，不進倉庫）。倉庫內為<strong class="work-highlight">虛構示範教材</strong>與合規說明；真實校內 PDF 應只留在本機。仍是<strong class="work-highlight">教育／實驗用腳手架</strong>，非上線產品；公開 GitHub 連結之後會補在網站上。
                     </p>
                 </div>
             </div>
