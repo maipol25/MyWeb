@@ -14,6 +14,77 @@
     <!-- 自定义CSS -->
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/intern.css" rel="stylesheet">
+    <style>
+        .work-points .project-title {
+            margin-bottom: 0.75rem;
+        }
+        .work-points .project-details {
+            padding: 1rem 1.1rem;
+        }
+        .work-points .detail-item,
+        .work-points .outcome-section {
+            padding: 0.65rem 0.85rem;
+            margin-bottom: 0.4rem;
+        }
+        .work-points .detail-item span,
+        .work-points .outcome-section span,
+        .work-points .outcome-section p {
+            line-height: 1.45;
+        }
+        .work-points .outcome-section p {
+            margin-bottom: 0;
+        }
+        .work-showcase {
+            margin-top: 0.25rem;
+            padding-top: 1.75rem;
+            border-top: 1px solid rgba(102, 126, 234, 0.12);
+        }
+        .work-showcase .showcase-label {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 1rem;
+            letter-spacing: 0.02em;
+        }
+        .work-showcase .image-container {
+            margin-bottom: 0;
+        }
+        .work-showcase .showcase-item {
+            height: 100%;
+        }
+        .work-showcase .showcase-frame {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .work-showcase .showcase-frame img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: contain;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .work-showcase .showcase-row--triple .showcase-frame img {
+            max-height: min(34vh, 300px);
+        }
+        .work-showcase .showcase-row--duo .showcase-frame img {
+            max-height: min(40vh, 360px);
+        }
+        .work-showcase .showcase-caption {
+            margin: 0.7rem 0 0;
+            font-size: 0.82rem;
+            line-height: 1.4;
+            color: #5c6370;
+            text-align: center;
+        }
+        @media (max-width: 991.98px) {
+            .work-showcase .showcase-row--triple .showcase-frame img,
+            .work-showcase .showcase-row--duo .showcase-frame img {
+                max-height: none;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -64,83 +135,157 @@
     <div class="container intern-container">
         <div class="intern-card" data-aos="fade-up">
             <div class="company-header">
-                <h2 class="company-name" data-lang-zh="AI 代理" data-lang-en="AI Agent">AI 代理</h2>
-                <p class="company-period" data-lang-zh="Gemini Enterprise · 資訊系統學系兩門課程"
-                    data-lang-en="Gemini Enterprise · Two Information Systems courses">
-                    Gemini Enterprise · 資訊系統學系兩門課程
+                <h2 class="company-name" data-lang-zh="AI Agent" data-lang-en="AI Agent">AI Agent</h2>
+                <p class="company-period" data-lang-zh="<strong class='work-highlight'>AI 應用開發專員</strong>"
+                    data-lang-en="<strong class='work-highlight'>AI Application Developer</strong>">
+                    <strong class="work-highlight">AI 應用開發專員</strong>
                 </p>
             </div>
 
             <div class="company-description">
-                <p data-lang-zh="我使用 Gemini Enterprise，為資訊系統學系的兩門課程設計並開發了一個 AI 代理，服務約 300 名用戶，並獲得高度評價。這份工作的價值在於工具已經用在真實課程裡：用戶用得上，而且有用戶手冊、知識庫，以及按回饋做出的後續改進。"
-                    data-lang-en="Using Gemini Enterprise, I designed and developed an AI agent for two courses in the Information Systems Department. It served approximately 300 users and received high praise. The value of the work is that the tool was used on real courses: people could use it, and it was supported by a user manual, a knowledge base, and later changes based on feedback.">
-                    我使用 Gemini Enterprise，為資訊系統學系的兩門課程設計並開發了一個 AI 代理，服務約 300 名用戶，並獲得高度評價。這份工作的價值在於工具已經用在真實課程裡：用戶用得上，而且有用戶手冊、知識庫，以及按回饋做出的後續改進。
+                <p data-lang-zh="我使用 <strong class='work-highlight'>Gemini Enterprise</strong> 和 <strong class='work-highlight'>Microsoft Copilot Studio</strong>，為<strong class='work-highlight'>資訊系統學系</strong>的<strong class='key-metric'>兩門課程</strong>設計並開發專用 <strong class='work-highlight'>AI Agent</strong>。Agent 經訓練後可精準根據資料庫文件回答課程相關問題，準確率達到 <strong class='key-metric'>90% 以上</strong>。Agent 服務約 <strong class='key-metric'>300 名用戶</strong>，並獲得高度評價。同時我收集測試者反饋，持續優化 <strong class='work-highlight'>prompt</strong> 與知識庫資料，並考慮不同背景的使用者，撰寫用戶指南，讓所有人都可以簡單上手使用專用 AI Agent。"
+                    data-lang-en="Using <strong class='work-highlight'>Gemini Enterprise</strong> and <strong class='work-highlight'>Microsoft Copilot Studio</strong>, I designed and developed dedicated <strong class='work-highlight'>AI Agents</strong> for <strong class='key-metric'>two courses</strong> in the <strong class='work-highlight'>Information Systems Department</strong>. After training, the Agents could accurately answer course-related questions based on database documentation, with accuracy exceeding <strong class='key-metric'>90%</strong>. The Agents served approximately <strong class='key-metric'>300 users</strong> and received high praise. I collected feedback from testers, continuously optimized <strong class='work-highlight'>prompts</strong> and knowledge base content, accounted for users from diverse backgrounds, and wrote user guides so everyone could easily get started with the dedicated AI Agents.">
+                    我使用 <strong class="work-highlight">Gemini Enterprise</strong> 和 <strong class="work-highlight">Microsoft Copilot Studio</strong>，為<strong class="work-highlight">資訊系統學系</strong>的<strong class="key-metric">兩門課程</strong>設計並開發專用 <strong class="work-highlight">AI Agent</strong>。Agent 經訓練後可精準根據資料庫文件回答課程相關問題，準確率達到 <strong class="key-metric">90% 以上</strong>。Agent 服務約 <strong class="key-metric">300 名用戶</strong>，並獲得高度評價。同時我收集測試者反饋，持續優化 <strong class="work-highlight">prompt</strong> 與知識庫資料，並考慮不同背景的使用者，撰寫用戶指南，讓所有人都可以簡單上手使用專用 AI Agent。
                 </p>
             </div>
 
-            <div class="row g-4 project-section">
-                <div class="col-lg-6">
-                    <div class="image-container" data-aos="zoom-in">
-                        <img src="image/AI1.png" alt="AI agent design interface" class="img-fluid clickable-image"
-                            data-bs-toggle="modal" data-bs-target="#imageModal"
-                            onclick="openImageModal(this.src, 'AI 代理設計介面', 'AI agent design interface')">
-                    </div>
-                    <div class="image-container" data-aos="zoom-in">
-                        <img src="image/AI2.png" alt="AI agent chat interface" class="img-fluid clickable-image"
-                            data-bs-toggle="modal" data-bs-target="#imageModal"
-                            onclick="openImageModal(this.src, 'AI 代理對話介面', 'AI agent chat interface')">
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
+            <div class="project-section">
+                <div class="work-points">
                     <h3 class="project-title">
                         <i class="fas fa-robot"></i>
-                        <span data-lang-zh="開發與持續改進" data-lang-en="Building and improving the agent">
-                            開發與持續改進
+                        <span data-lang-zh="開發過程" data-lang-en="Development process">
+                            開發過程
                         </span>
                     </h3>
 
                     <div class="project-details">
                         <div class="detail-item">
                             <strong data-lang-zh="開發：" data-lang-en="Built:">開發：</strong>
-                            <span data-lang-zh="使用 Gemini Enterprise 完成代理的設計與開發，供資訊系統學系兩門課程使用，服務約 300 名用戶，並獲得高度評價。"
-                                data-lang-en="Designed and developed the agent with Gemini Enterprise for two Information Systems courses. It served approximately 300 users and received high praise.">
-                                使用 Gemini Enterprise 完成代理的設計與開發，供資訊系統學系兩門課程使用，服務約 300 名用戶，並獲得高度評價。
+                            <span data-lang-zh="使用 <strong class='work-highlight'>Gemini Enterprise</strong> 和 <strong class='work-highlight'>Copilot Studio</strong> 同時開發 <strong class='work-highlight'>AI Agent</strong>，並進行多輪測試，調整改善模型的 <strong class='work-highlight'>prompt</strong>，評估不同模型的 <strong class='work-highlight'>token</strong> 消耗情況與回答質量，最終選擇 <strong class='work-highlight'>Gemini 3.5 flash</strong> 作為最終的模型。並完成 AI Agent 的設計與開發，供<strong class='work-highlight'>資訊系統學系</strong><strong class='key-metric'>兩門課程</strong>使用，服務約 <strong class='key-metric'>300 名用戶</strong>，並獲得高度評價。"
+                                data-lang-en="Designed and developed the <strong class='work-highlight'>AI Agent</strong> with <strong class='work-highlight'>Gemini Enterprise</strong> and <strong class='work-highlight'>Copilot Studio</strong>, and tested it multiple times to adjust and improve the model's <strong class='work-highlight'>prompt</strong>, evaluate <strong class='work-highlight'>token</strong> consumption and answer quality of different models, and finally selected <strong class='work-highlight'>Gemini 3.5 flash</strong> as the final model. The AI Agent was designed and developed for <strong class='key-metric'>two</strong> <strong class='work-highlight'>Information Systems</strong> courses, serving approximately <strong class='key-metric'>300 users</strong> and receiving high praise.">
+                                使用 <strong class="work-highlight">Gemini Enterprise</strong> 和 <strong class="work-highlight">Copilot Studio</strong> 同時開發 <strong class="work-highlight">AI Agent</strong>，並進行多輪測試，調整改善模型的 <strong class="work-highlight">prompt</strong>，評估不同模型的 <strong class="work-highlight">token</strong> 消耗情況與回答質量，最終選擇 <strong class="work-highlight">Gemini 3.5 flash</strong> 作為最終的模型。並完成 AI Agent 的設計與開發，供<strong class="work-highlight">資訊系統學系</strong><strong class="key-metric">兩門課程</strong>使用，服務約 <strong class="key-metric">300 名用戶</strong>，並獲得高度評價。
                             </span>
                         </div>
 
                         <div class="detail-item">
                             <strong data-lang-zh="手冊與問答：" data-lang-en="Manual and Q&amp;A:">手冊與問答：</strong>
-                            <span data-lang-zh="撰寫了完整的用戶手冊，並為用戶提供問答支援。手冊說明如何使用代理，問答支援則回應使用中的具體問題，讓用戶既有書面指引，也能在遇到問題時得到直接協助。"
-                                data-lang-en="Drafted a comprehensive user manual and provided Q&amp;A support. The manual explains how to use the agent, and the Q&amp;A support answers specific questions that come up in use, so users have written guidance and direct help when they run into a problem.">
-                                撰寫了完整的用戶手冊，並為用戶提供問答支援。手冊說明如何使用代理，問答支援則回應使用中的具體問題，讓用戶既有書面指引，也能在遇到問題時得到直接協助。
+                            <span data-lang-zh="撰寫了完整的<strong class='work-highlight'>用戶手冊</strong>，並為用戶提供問答支援。手冊說明如何使用 <strong class='work-highlight'>AI Agent</strong>，問答支援則回應使用中的具體問題，讓用戶既有書面指引，也能在遇到問題時得到直接協助。"
+                                data-lang-en="Drafted a comprehensive <strong class='work-highlight'>user manual</strong> and provided Q&amp;A support. The manual explains how to use the <strong class='work-highlight'>AI Agent</strong>, and the Q&amp;A support answers specific questions that come up in use, so users have written guidance and direct help when they run into a problem.">
+                                撰寫了完整的<strong class="work-highlight">用戶手冊</strong>，並為用戶提供問答支援。手冊說明如何使用 <strong class="work-highlight">AI Agent</strong>，問答支援則回應使用中的具體問題，讓用戶既有書面指引，也能在遇到問題時得到直接協助。
                             </span>
                         </div>
 
                         <div class="detail-item">
                             <strong data-lang-zh="提示工程：" data-lang-en="Prompt engineering:">提示工程：</strong>
-                            <span data-lang-zh="建立提示工程技巧，使 AI 保持可靠表現。這些技巧用來規定代理如何理解問題和組織回答，讓它在兩門課程中維持穩定、可用的表現。"
-                                data-lang-en="Established prompt engineering techniques so that the AI maintains reliable performance. The techniques guide how the agent interprets questions and organises its answers, so its performance stays dependable on both courses.">
-                                建立提示工程技巧，使 AI 保持可靠表現。這些技巧用來規定代理如何理解問題和組織回答，讓它在兩門課程中維持穩定、可用的表現。
+                            <span data-lang-zh="AI Agent 的開發涉及多個部門，我與 <strong class='work-highlight'>CityU</strong> 的<strong class='work-highlight'>資訊系統學系</strong>教授合作，並積極與學校的 <strong class='work-highlight'>IT 部門</strong>、學生、測試者等進行溝通討論，平衡各方需求，運用合理談判方法，為 AI Agent 的開發提供資源和資金上的支持，<strong class='key-metric'>最終成功落地使用</strong>。"
+                                data-lang-en="The development of the <strong class='work-highlight'>AI Agent</strong> involved multiple departments. I collaborated with professors in the <strong class='work-highlight'>Information Systems Department</strong> at <strong class='work-highlight'>City University</strong> and actively engaged with the <strong class='work-highlight'>IT department</strong>, students, and testers to discuss and balance everyone's needs. Through constructive negotiation, I secured the resources and funding needed for the AI Agent's development, enabling <strong class='key-metric'>successful implementation</strong>.">
+                                AI Agent 的開發涉及多個部門，我與 <strong class="work-highlight">CityU</strong> 的<strong class="work-highlight">資訊系統學系</strong>教授合作，並積極與學校的 <strong class="work-highlight">IT 部門</strong>、學生、測試者等進行溝通討論，平衡各方需求，運用合理談判方法，為 AI Agent 的開發提供資源和資金上的支持，<strong class="key-metric">最終成功落地使用</strong>。
                             </span>
                         </div>
 
                         <div class="detail-item">
                             <strong data-lang-zh="知識庫：" data-lang-en="Knowledge base:">知識庫：</strong>
-                            <span data-lang-zh="收集、整理並清理 AI 訓練材料，建立穩健的知識庫。整理後的材料成為代理回答這兩門課程問題時可依據的內容，使回答有一致的基礎。"
-                                data-lang-en="Collected, structured, and cleaned AI training materials to build a robust knowledge base. The prepared materials are what the agent can rely on when answering questions for these two courses, which gives its answers a consistent base.">
-                                收集、整理並清理 AI 訓練材料，建立穩健的知識庫。整理後的材料成為代理回答這兩門課程問題時可依據的內容，使回答有一致的基礎。
+                            <span data-lang-zh="我擁有豐富的 AI 工具使用經驗，開發過程中使用 <strong class='work-highlight'>Cursor</strong> 撰寫 <strong class='work-highlight'>Python</strong> 腳本，幫助收集、整理並清理課程訓練材料，成功將複雜的課程資料轉換為易於理解的格式。並透過 <strong class='work-highlight'>OneDrive</strong> 連接這些材料，建立穩健的<strong class='work-highlight'>知識庫</strong>。整理後的材料成為 AI Agent 回答問題時可依據的內容，保證答案的<strong class='key-metric'>準確性和一致性</strong>。"
+                                data-lang-en="I have extensive experience with AI tools. During development, I used <strong class='work-highlight'>Cursor</strong> to write <strong class='work-highlight'>Python</strong> scripts to collect, organize, and clean course training materials, successfully transforming complex course content into an easy-to-understand format. I connected these materials through <strong class='work-highlight'>OneDrive</strong> to build a robust <strong class='work-highlight'>knowledge base</strong>. The curated materials served as the source of information for the <strong class='work-highlight'>AI Agent</strong>'s responses, ensuring <strong class='key-metric'>accuracy and consistency</strong>.">
+                                我擁有豐富的 AI 工具使用經驗，開發過程中使用 <strong class="work-highlight">Cursor</strong> 撰寫 <strong class="work-highlight">Python</strong> 腳本，幫助收集、整理並清理課程訓練材料，成功將複雜的課程資料轉換為易於理解的格式。並透過 <strong class="work-highlight">OneDrive</strong> 連接這些材料，建立穩健的<strong class="work-highlight">知識庫</strong>。整理後的材料成為 AI Agent 回答問題時可依據的內容，保證答案的<strong class="key-metric">準確性和一致性</strong>。
                             </span>
                         </div>
 
                         <div class="outcome-section">
                             <p>
                                 <strong data-lang-zh="回饋與改進：" data-lang-en="Feedback and refinement:">回饋與改進：</strong>
-                                <span data-lang-zh="收集用戶回饋，分析表現數據，並反覆改進邏輯與準確度。回饋和表現數據被用來調整代理如何推理，以及回答是否準確，因此這個服務約 300 名用戶的工具可以按實際使用繼續改進。"
-                                    data-lang-en="Collected user feedback, analysed performance data, and iteratively refined its logic and accuracy. Feedback and performance data were used to adjust how the agent reasons and how accurate its answers are, so the tool serving approximately 300 users could keep improving from actual use.">
-                                    收集用戶回饋，分析表現數據，並反覆改進邏輯與準確度。回饋和表現數據被用來調整代理如何推理，以及回答是否準確，因此這個服務約 300 名用戶的工具可以按實際使用繼續改進。
+                                <span data-lang-zh="收集用戶回饋，分析<strong class='work-highlight'>表現數據</strong>，並反覆改進邏輯與準確度。回饋和表現數據被用來調整 <strong class='work-highlight'>AI Agent</strong> 如何推理，以及回答是否準確，因此這個服務約 <strong class='key-metric'>300 名用戶</strong>的工具可以按實際使用繼續改進。"
+                                    data-lang-en="Collected user feedback, analysed <strong class='work-highlight'>performance data</strong>, and iteratively refined its logic and accuracy. Feedback and performance data were used to adjust how the <strong class='work-highlight'>AI Agent</strong> reasons and how accurate its answers are, so the tool serving approximately <strong class='key-metric'>300 users</strong> could keep improving from actual use.">
+                                    收集用戶回饋，分析<strong class="work-highlight">表現數據</strong>，並反覆改進邏輯與準確度。回饋和表現數據被用來調整 <strong class="work-highlight">AI Agent</strong> 如何推理，以及回答是否準確，因此這個服務約 <strong class="key-metric">300 名用戶</strong>的工具可以按實際使用繼續改進。
                                 </span>
                             </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-showcase">
+                    <p class="showcase-label" data-lang-zh="介面與使用示例" data-lang-en="Interfaces and usage examples">
+                        介面與使用示例
+                    </p>
+
+                    <div class="row g-3 g-lg-4 mb-3 mb-lg-4 showcase-row showcase-row--triple align-items-end">
+                        <div class="col-lg-4" data-aos="fade-up">
+                            <figure class="showcase-item">
+                                <div class="image-container showcase-frame">
+                                    <img src="image/AI1.png" alt="Gemini Agent design"
+                                        class="clickable-image" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                        onclick="openImageModal(this.src, 'Gemini Enterprise — Agent 設計介面', 'Gemini Enterprise — Agent design workspace')">
+                                </div>
+                                <figcaption class="showcase-caption">
+                                    <span data-lang-zh="<strong class='work-highlight'>Gemini Enterprise</strong>：在 <strong class='work-highlight'>Google AI Studio</strong> 中設計與設定 <strong class='work-highlight'>IS Teaching Assistant Agent</strong>。"
+                                        data-lang-en="<strong class='work-highlight'>Gemini Enterprise</strong>: designing and configuring the <strong class='work-highlight'>IS Teaching Assistant Agent</strong> in <strong class='work-highlight'>Google AI Studio</strong>.">
+                                        <strong class="work-highlight">Gemini Enterprise</strong>：在 <strong class="work-highlight">Google AI Studio</strong> 中設計與設定 <strong class="work-highlight">IS Teaching Assistant Agent</strong>。
+                                    </span>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="50">
+                            <figure class="showcase-item">
+                                <div class="image-container showcase-frame">
+                                    <img src="image/AI2.png" alt="Gemini student chat"
+                                        class="clickable-image" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                        onclick="openImageModal(this.src, 'Gemini Enterprise — 學生端對話介面', 'Gemini Enterprise — student chat interface')">
+                                </div>
+                                <figcaption class="showcase-caption">
+                                    <span data-lang-zh="<strong class='work-highlight'>Gemini Enterprise</strong>：學生端對話介面，供修課同學提問與使用建議問題。"
+                                        data-lang-en="<strong class='work-highlight'>Gemini Enterprise</strong>: student-facing chat where learners ask course questions and use suggested prompts.">
+                                        <strong class="work-highlight">Gemini Enterprise</strong>：學生端對話介面，供修課同學提問與使用建議問題。
+                                    </span>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <figure class="showcase-item">
+                                <div class="image-container showcase-frame">
+                                    <img src="image/AI3.png" alt="IS4834 Teaching Assistant"
+                                        class="clickable-image" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                        onclick="openImageModal(this.src, 'Copilot — IS4834 教學助理', 'Copilot — IS4834 Teaching Assistant')">
+                                </div>
+                                <figcaption class="showcase-caption">
+                                    <span data-lang-zh="<strong class='work-highlight'>Copilot Studio</strong>：<strong class='key-metric'>IS4834</strong> 課程專用教學助理首頁與英文示例問題。"
+                                        data-lang-en="<strong class='work-highlight'>Copilot Studio</strong>: <strong class='key-metric'>IS4834</strong> dedicated teaching assistant home screen with sample questions in English.">
+                                        <strong class="work-highlight">Copilot Studio</strong>：<strong class="key-metric">IS4834</strong> 課程專用教學助理首頁與英文示例問題。
+                                    </span>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class="row g-3 g-lg-4 showcase-row showcase-row--duo align-items-end">
+                        <div class="col-lg-6" data-aos="fade-up">
+                            <figure class="showcase-item">
+                                <div class="image-container showcase-frame">
+                                    <img src="image/AI4.png" alt="Supervised vs unsupervised learning Q&amp;A"
+                                        class="clickable-image" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                        onclick="openImageModal(this.src, 'Copilot — 監督式與非監督式學習說明', 'Copilot — supervised vs. unsupervised learning')">
+                                </div>
+                                <figcaption class="showcase-caption">
+                                    <span data-lang-zh="<strong class='work-highlight'>Copilot</strong>：依課程內容回答<strong class='work-highlight'>監督式與非監督式機器學習</strong>的差異與適用情境。"
+                                        data-lang-en="<strong class='work-highlight'>Copilot</strong>: answers on <strong class='work-highlight'>supervised vs. unsupervised machine learning</strong>, grounded in course materials.">
+                                        <strong class="work-highlight">Copilot</strong>：依課程內容回答<strong class="work-highlight">監督式與非監督式機器學習</strong>的差異與適用情境。
+                                    </span>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="50">
+                            <figure class="showcase-item">
+                                <div class="image-container showcase-frame">
+                                    <img src="image/AI5.png" alt="Machine learning examples Q&amp;A"
+                                        class="clickable-image" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                        onclick="openImageModal(this.src, 'Copilot — 機器學習實例問答', 'Copilot — machine learning examples')">
+                                </div>
+                                <figcaption class="showcase-caption">
+                                    <span data-lang-zh="<strong class='work-highlight'>Copilot</strong>：延續對話，列舉監督式與非監督式學習的具體課程相關例子。"
+                                        data-lang-en="<strong class='work-highlight'>Copilot</strong>: follow-up dialogue with concrete course-related examples of supervised and unsupervised learning.">
+                                        <strong class="work-highlight">Copilot</strong>：延續對話，列舉監督式與非監督式學習的具體課程相關例子。
+                                    </span>
+                                </figcaption>
+                            </figure>
                         </div>
                     </div>
                 </div>

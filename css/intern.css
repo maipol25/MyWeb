@@ -442,3 +442,25 @@
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
+
+/* ==================== Work page (work.html) keyword emphasis ==================== */
+.company-header .company-period strong.work-highlight,
+.company-description strong.work-highlight,
+.work-points span strong.work-highlight,
+.work-showcase span strong.work-highlight {
+    font-weight: 600;
+    color: #4a5568;
+    margin-right: 0;
+    display: inline;
+    font-size: inherit;
+}
+
+.company-description strong.key-metric,
+.work-points span strong.key-metric,
+.work-showcase span strong.key-metric {
+    font-weight: 700;
+    color: #5a67d8;
+    margin-right: 0;
+    display: inline;
+    font-size: inherit;
+}
